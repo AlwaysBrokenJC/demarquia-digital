@@ -2,10 +2,10 @@
 
 **Arquitectura de un Estado Descentralizado, Criptográfico y de Representación Aleatoria**
 
-**Versión:** v0.4.5  
+**Versión:** v0.4.6  
 **Fecha:** 18 de septiembre de 2026  
 **Licencia:** Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Puedes copiar, compartir y mejorar este texto con libertad, siempre que des crédito al autor original y publiques tus cambios bajo la misma licencia, gratis y en público.  
-**Autoría:** crédito al autor original; iteración v0.4-v0.4.5 en conversación de diseño.  
+**Autoría:** crédito al autor original; iteración v0.4-v0.4.6 en conversación de diseño.  
 **Repositorio:** https://github.com/AlwaysBrokenJC/demarquia-digital
 
 ---
@@ -85,7 +85,7 @@ Este documento propone una "Política sin Políticos": devolverle al pueblo el p
 
 La democracia representativa actual es fácil de corromper, cansa a la gente y deja que el presupuesto se secuestra. Por eso este diseño apunta a un Estado sin intermediarios de carrera.
 
-La votación pasa por máquinas físicas y una credencial con biometría que vive en tu tarjeta, no en un servidor del gobierno. En la práctica se arranca con la vía mínima del Cap. 2; la malla de tres chips rivales queda como meta de seguridad a largo plazo. No hace falta un político que vote por ti: hay democracia directa (tú decides) y demarquía (cargos por sorteo).
+La votación pasa por máquinas físicas sencillas (TVM) y una credencial con biometría que vive en tu tarjeta, no en un servidor del gobierno. El día de voto es presencial: terminal sellada, papel de archivo, VPN y cola local. No hace falta un político que vote por ti: hay democracia directa (tú decides) y demarquía (cargos por sorteo).
 
 Las leyes nacen en un Ágora Digital abierta a cualquier ciudadano. Pasan un filtro constitucional. Un Congreso de 500 personas (mitad sorteadas de quien se ofreció, mitad de quienes aprobaron un examen práctico del sistema) las pulen con ayuda de traductores legales. Al final, el pueblo aprueba o rechaza. Nadie delega su voto.
 
@@ -141,7 +141,7 @@ Cada ciudadano elige cuánto participa:
 - **Ambos:** local y federal.
 - **Ninguno:** Opt-Out cívico: no votas, pero conservas tu ID civil y tus obligaciones legales y fiscales.
 
-Puedes cambiar esto en la app, en cualquier terminal administrativa (**TMC**, Terminal de Módulo Cívico) o en la terminal de voto (**TVM**, Terminal de Votación Malla) al empezar la sesión, antes de votar. Es inmediato, sin castigo y sin tener que justificarte.
+Puedes cambiar esto en la app, en cualquier terminal administrativa (**TMC**, Terminal de Módulo Cívico) o en la terminal de voto (**TVM**, Terminal de Votación) al empezar la sesión, antes de votar. Es inmediato, sin castigo y sin tener que justificarte.
 
 ### 1.6 Pueblos Originarios: Autonomía con Piso Universal de Derechos
 
@@ -189,23 +189,11 @@ Para votar: metes la credencial, pones el dedo e ingresas una frase que solo tú
 
 Esa misma frase admite una Frase de coacción (Capítulo 9): si te amenazan, puedes dar conscientemente la versión “bajo coacción”. La máquina muestra que el voto se registró (para protegerte), pero en la cadena de bloques ese voto se anula en silencio.
 
-### 2.3 Terminales de Votación Malla (TVM): especificación objetivo
+### 2.3 Terminales de Votación (TVM)
 
-El voto que cuenta solo se emite en Terminales de Votación Malla (TVM): máquinas físicas en jornadas electorales. No se vota desde el celular. Motivo: coacción remota, programas maliciosos, capturas de pantalla y pérdida del secreto del voto. El voto presencial también cuida el ritual cívico.
+El voto que cuenta solo se emite en Terminales de Votación (TVM): máquinas físicas en jornadas electorales. No se vota desde el celular. Motivo: coacción remota, programas maliciosos, capturas de pantalla y pérdida del secreto del voto. El voto presencial también cuida el ritual cívico.
 
-La especificación objetivo de seguridad a largo plazo es una malla completa con tres microprocesadores de diseños distintos, fabricados en fábricas de chips de países rivales (por ejemplo: un chip occidental, uno de diseño abierto hecho en el país, uno de una fábrica asiática no alineada). Los tres calculan la huella digital del voto en paralelo. Si no coinciden bit a bit, la máquina se bloquea y reporta el incidente. Para falsificar un voto, esos países rivales tendrían que conspirar juntos.
-
-En esa misma meta, las TVM tienen antenas y routers de baja frecuencia para una red entre terminales: cada máquina se conecta con las vecinas. Cada voto se encripta y viaja en milisegundos a la cadena de bloques nacional.
-
-Para adopción real, capas tempranas y operación práctica del día de voto, el tronco usa la vía mínima de la sección 2.4. La malla de tres chips rivales queda como meta de endurecimiento cuando el país pueda fabricarla, auditarla y sostenerla a escala.
-
-Al empezar la sesión, tras autenticarte, la TVM te muestra tu nivel de participación (local, federal, ambos o ninguno) y te deja cambiarlo antes de votar. Quien no use la app puede gestionar todo desde la terminal el día de la votación.
-
-Las TVM solo se encienden en jornadas electorales (Trimestrales; Mega Anual, la votación anual grande del ciclo; y Extraordinarias). Fuera de eso están apagadas y custodiadas. Para trámites cívicos el resto del año usas las **Terminales de Módulo Cívico (TMC)** o la app.
-
-### 2.4 Vía mínima: el día de voto
-
-La vía mínima es cómo se vota en la práctica mientras el país construye la especificación objetivo. Misma credencial (CSC), mismo secreto del voto, mismo rechazo al voto por celular. Menos piezas raras de hardware.
+La TVM es una terminal sencilla, sellada y práctica. Misma credencial (CSC), mismo secreto del voto, mismo rechazo al voto por celular. Así se vota el día de la elección.
 
 1. **Terminal sencilla.** Una tableta reforzada, una sola arquitectura de chip, carcasa sellada. Fácil de desplegar y de reemplazar.
 
@@ -229,15 +217,19 @@ La vía mínima es cómo se vota en la práctica mientras el país construye la 
 
 10. **Auditoría.** Se contrasta una muestra de boletas de urna con el registro digital. Equipos que buscan fallas a propósito intentan romper el flujo antes que lo haga alguien hostil.
 
-### 2.5 Auditorías Destructivas Internacionales
+Al empezar la sesión, tras autenticarte, la TVM te muestra tu nivel de participación (local, federal, ambos o ninguno) y te deja cambiarlo antes de votar. Quien no use la app puede gestionar todo desde la terminal el día de la votación.
 
-Cada año se sortea el 1% de las TVM para auditoría destructiva: equipos internacionales rotativos abren los chips con microscopía electrónica. Las máquinas se sacrifican a propósito por la confianza pública. Los hallazgos se publican enteros y obligan a actualizar si hay anomalías. En fase de vía mínima el sorteo aplica al parque desplegado (terminales sencillas incluidas); al subir a la especificación objetivo, el foco de microscopía se concentra en la malla de tres chips.
+Las TVM solo se encienden en jornadas electorales (Trimestrales; Mega Anual, la votación anual grande del ciclo; y Extraordinarias). Fuera de eso están apagadas y custodiadas. Para trámites cívicos el resto del año usas las **Terminales de Módulo Cívico (TMC)** o la app.
 
-### 2.6 Diseño Universal y Accesibilidad
+### 2.4 Auditorías Destructivas Internacionales
+
+Cada año se sortea el 1% de las TVM para auditoría destructiva: equipos internacionales rotativos abren el hardware con microscopía electrónica. Las máquinas se sacrifican a propósito por la confianza pública. Los hallazgos se publican enteros y obligan a actualizar si hay anomalías. El sorteo aplica al parque desplegado.
+
+### 2.5 Diseño Universal y Accesibilidad
 
 Las TVM incluyen conector de audio, audífonos inalámbricos y lectura en voz alta de la pantalla. La interfaz se adapta con voz e iconografía de alto contraste para quien tiene debilidad visual, analfabetismo o límites motrices.
 
-### 2.7 La App Cívica Complementaria
+### 2.6 La App Cívica Complementaria
 
 Hay una app oficial gratuita. No permite votar. Sí permite:
 
@@ -253,7 +245,7 @@ Hay una app oficial gratuita. No permite votar. Sí permite:
 
 Es código abierto y también se distribuye fuera de tiendas comerciales.
 
-### 2.8 Terminales de Módulo Cívico (TMC)
+### 2.7 Terminales de Módulo Cívico (TMC)
 
 Las TMC son distintas de las TVM. No pueden emitir voto vinculante, bajo ninguna configuración. Solo sirven para gestión cívica.
 
@@ -272,7 +264,7 @@ La autenticación es más simple (CSC + frase), porque no procesan voto. El hard
 
 La separación TVM / TMC es constitucional e irreversible. Ningún software puede convertir una TMC en urna.
 
-### 2.9 El Protocolo BIOS (Plan post-colapso)
+### 2.8 El Protocolo BIOS (Plan post-colapso)
 
 Si cae la infraestructura eléctrica más de 72 horas (pulso electromagnético, tormenta solar, etc.), el Estado entra en hibernación: Protocolo BIOS. Las TVM tienen jaula de Faraday y paneles solares propios.
 
@@ -513,7 +505,7 @@ Si una métrica automática dispara la cancelación de algo crítico (Filtro 3),
 1. **Justicia operativa:** jueces y equipos sorteados en funciones (no burocracia VIP).
 2. **Seguridad:** policías operativos / seguridad local.
 3. **Defensa en aislamiento operativo:** fuerzas armadas con misión y alcance acotados.
-4. **Infraestructura de soberanía:** TVM, CSC, auditoría, red entre terminales, boleta física.
+4. **Infraestructura de soberanía:** TVM, CSC, auditoría, VPN/cola local, boleta física.
 5. **División de Desastres:** capacidad operativa (no clientela).
 6. **Créditos universales del paquete:** voucher educativo + prima mínima del seguro (catastrófico y enfermedades transmisibles), pagados a instituciones y aseguradoras. El monto lo ajusta el pueblo en la Mega Anual; la burocracia sola no lo tumba.
 
@@ -915,7 +907,7 @@ Quien controla el cálculo del punto de quiebre controla efectivamente el gasto.
 
 ### 10.6 Riesgo de Hardware Residual
 
-Aún con triple chip, fábricas en países rivales, papel paralelo y auditorías destructivas, ataques coordinados a la cadena de suministro a escala estatal siguen siendo riesgo.
+Aún con terminal sellada, papel paralelo, VPN, cola local y auditorías destructivas, ataques coordinados a la cadena de suministro a escala estatal siguen siendo riesgo.
 
 ### 10.7 Conflictos Transfronterizos
 
@@ -976,7 +968,7 @@ Las versiones propias son bienvenidas. Si una región, país o comunidad quiere 
 
 ### 11.4 Versionado
 
-Versionado semántico. Cambios menores incrementan patch (v0.4.5). Cambios significativos incrementan menor (v0.5). La transición a v1.0 representa la primera implementación nacional efectiva del sistema.
+Versionado semántico. Cambios menores incrementan patch (v0.4.6). Cambios significativos incrementan menor (v0.5). La transición a v1.0 representa la primera implementación nacional efectiva del sistema.
 
 ### 11.5 Gobernanza de Mantenedores (Issue Abierto)
 
@@ -992,8 +984,7 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 ## Glosario
 
 - **CSC:** Credencial de Soberanía Criptográfica; tarjeta con chip seguro que guarda tu identidad cívica y biometría en el dispositivo.
-- **TVM:** Terminal de Votación Malla; máquina física donde se emite el voto vinculante.
-- **Vía mínima:** diseño práctico del día de voto (terminal sencilla, recibo genérico, boleta de auditoría, urna translúcida); la malla de tres chips rivales queda como meta de seguridad.
+- **TVM:** Terminal de Votación; máquina física sencilla y sellada donde se emite el voto vinculante (anti-apertura, recibo genérico, boleta de auditoría, urna translúcida, VPN y cola local).
 - **Anti-apertura:** si abren la carcasa de la terminal, se borran llaves o la placa queda inutilizable para firmar votos.
 - **Recibo del votante:** ticket térmico genérico (“Gracias por participar…”); siempre igual, también bajo coacción; no trae desglose del voto.
 - **Boleta de auditoría:** ticket que va a la urna (número de terminal + código aleatorio + info o resumen del voto); se deposita de inmediato.
@@ -1020,7 +1011,7 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 - **Propuesta de cambio:** en GitHub, el mecanismo para sugerir una edición al texto o al código.
 - **Versión propia / copia adaptada:** adaptación del modelo bajo la misma licencia; en software a veces se llama *fork*.
 - **Núcleo (del manifiesto / del sistema):** el tronco no negociable y las reglas base que una jurisdicción adopta.
-- **Red entre terminales:** cada TVM se conecta con las vecinas para enviar votos sin depender de un solo centro.
+- **VPN + cola local / modo isla:** la TVM intenta siempre la VPN del gobierno; guarda votos en cola local cifrada; si cae la red, sigue en modo isla y reenvía al volver.
 - **Freno de emergencia con jurado:** corte de seguridad: 100 ciudadanos sorteados revisan en persona antes de aceptar una cancelación automática crítica.
 - **Contrato automático / reglas de pago automáticas:** pago que se ejecuta según reglas públicas fijadas de antemano, sin intermediario discrecional.
 - **IA:** inteligencia artificial.
@@ -1032,21 +1023,23 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 
 - **v0.2 (24 mayo 2026):** Refinamiento iterativo. Eliminación del examen como condición de voto. Principio de universalidad de leyes. Régimen detallado de ciudadanía, residencia y refugio. Pueblos originarios con autonomía y piso universal. Asambleas consultivas de menores y residentes. Doble figura de Traductores. Argumentos Críticos obligatorios. Asambleas deliberativas. Punto de quiebre presupuestal. Triple factor de autenticación. Hardware abierto. Bancos de preguntas open source. Presidente sin poder ejecutivo. División de Desastres. Capítulo de modelado de amenazas e issues abiertos. Gobernanza open source en GitHub.
 
-- **v0.3 (24 mayo 2026):** Auditoría adversarial externa (Grok, Gemini, ChatGPT) procesada. Bifurcación 50/50 del Congreso (250 sorteo puro + 250 con examen). Democracia directa pura sin delegación. 4 votaciones anuales (3 Trimestrales + 1 Mega Anual) más Extraordinarias. Plazos mínimos. Filtro constitucional previo del TSC. Tope flexible por boleta. Niveles de participación configurables. Abstención sin penalización. Renuncia voluntaria a biometría. Asambleas Deliberativas por voluntariado. Educación cívica permanente sin examen con tutoría en dos niveles. Blindaje laboral constitucional. Compensaciones detalladas. Hardware multi-chip con bloques geopolíticos rivales y papel paralelo. Modo ciego en TVM. Latencia democrática. Red teams permanentes. Prohibición de decisiones automatizadas monocriterio. Ruido aleatorio en umbrales. Circuit breaker con jurado físico. Sunset clauses. Separación radical de capacidades coercitivas. Reconocimiento honesto de violencia última. Tres escenarios de transición: paralelo gradual, pacto con élites, post-colapso.
+- **v0.3 (24 mayo 2026):** Auditoría adversarial externa (Grok, Gemini, ChatGPT) procesada. Bifurcación 50/50 del Congreso (250 sorteo puro + 250 con examen). Democracia directa pura sin delegación. 4 votaciones anuales (3 Trimestrales + 1 Mega Anual) más Extraordinarias. Plazos mínimos. Filtro constitucional previo del TSC. Tope flexible por boleta. Niveles de participación configurables. Abstención sin penalización. Renuncia voluntaria a biometría. Asambleas Deliberativas por voluntariado. Educación cívica permanente sin examen con tutoría en dos niveles. Blindaje laboral constitucional. Compensaciones detalladas. Hardware de voto presencial con papel paralelo. Modo ciego en TVM. Latencia democrática. Red teams permanentes. Prohibición de decisiones automatizadas monocriterio. Ruido aleatorio en umbrales. Circuit breaker con jurado físico. Sunset clauses. Separación radical de capacidades coercitivas. Reconocimiento honesto de violencia última. Tres escenarios de transición: paralelo gradual, pacto con élites, post-colapso.
 
-- **v0.4 (18 septiembre 2026):** Reescritura completa en **lenguaje sencillo** (apto para video / lectura fácil). Prefacio filosófico explícito: tronco = **minarquía demárquica digital**; ancap = fork. Frase clavada en 1.8: *«El Opt-Out cívico no es secesión fiscal ni salida del orden legal.»* Nuevo **Cap. 5A Economía y Propiedad**: cierra issues **10.11** (edu/salud) y **10.12** (economía). Clavados: meta fiscal 15% PIB / techo duro 20% (Triple Llave); moneda A+ (peso fiscal + libertad privada); sin salario mínimo económico en tronco (sí compensación cívica Cap. 4); voucher educativo (Estado paga a institución; matrícula + evidencia; portabilidad); salud vía crédito a aseguradora en competencia (Estado paga a aseguradora; portabilidad); opt-out del beneficio con rebaja 80%/20% al pool; banca libre sin rescates salvo desastre+72h; depósitos acotados; Gamma limpio; gasto fijo operativo en 6 partidas. Gasto fijo del Cap. 5 alineado (ya no salarios de médicos/maestros ni “luz de hospitales” como fijo: el tronco no opera escuelas ni hospitales). Plantillas de fork ancap/social previstas en Cap. 11.
+- **v0.4 (18 septiembre 2026):** Reescritura completa en **lenguaje sencillo** (apto para video / lectura fácil). Prefacio filosófico explícito: tronco = **minarquía demárquica digital**; variantes = versión propia. Frase clavada en 1.8: *«El Opt-Out cívico no es secesión fiscal ni salida del orden legal.»* Nuevo **Cap. 5A Economía y Propiedad**: cierra issues **10.11** (edu/salud) y **10.12** (economía). Clavados: meta fiscal 15% PIB / techo duro 20% (Triple Llave); moneda A+ (peso fiscal + libertad privada); sin salario mínimo económico en tronco (sí compensación cívica Cap. 4); voucher educativo (Estado paga a institución; matrícula + evidencia; portabilidad); salud vía crédito a aseguradora en competencia (Estado paga a aseguradora; portabilidad); opt-out del beneficio con rebaja 80%/20% al pool; banca libre sin rescates salvo desastre+72h; depósitos acotados; Gamma limpio; gasto fijo operativo en 6 partidas. Gasto fijo del Cap. 5 alineado (ya no salarios de médicos/maestros ni “luz de hospitales” como fijo: el tronco no opera escuelas ni hospitales). Plantillas de variantes (más minimalistas o más sociales) previstas en Cap. 11.
 
 - **v0.4.1 (18 septiembre 2026):** Humanización del relato y destino país desde el día 1. Repositorio público enlazado. Resumen ejecutivo y Capítulo 9 alineados con adopción nacional en capas (escenarios A-C); la viabilidad deja de centrarse en municipios piloto. Prefacio de forks en tono breve.
 
 - **v0.4.2 (18 septiembre 2026):** Pass humanizer (blader/humanizer). Menos contraste not-X-but-Y espurio y defensas a objeciones que el lector frío no trae. Cero em dashes en prosa. Menos negritas decorativas. Declaración con el objetivo de frente.
 
-- **v0.4.3 (18 septiembre 2026):** Glosario al final; glosas en primeras menciones (PIB, Frase de coacción, Opt-Out, IA, hash, cadena de bloques, RISC-V, pull request, Mega Anual, caducidad). Se retiró ancap del relato del tronco: el tronco se afirma como libertario → minarquía demárquica digital; forks como variantes con otro énfasis (más minimalistas o más sociales). NIP de Coacción renombrado a Frase de coacción.
+- **v0.4.3 (18 septiembre 2026):** Glosario al final; glosas en primeras menciones (PIB, Frase de coacción, Opt-Out, IA, huella digital, cadena de bloques, chip de diseño abierto, propuesta de cambio, Mega Anual, caducidad). Se limpió el relato del tronco: se afirma como libertario hacia minarquía demárquica digital; las versiones propias son variantes con otro énfasis (más minimalistas o más sociales). NIP de Coacción renombrado a Frase de coacción.
 
-- **v0.4.4 (18 septiembre 2026):** Lenguaje más ciudadano: menos jerga de ingeniería. Hash → huella digital; blockchain → cadena de bloques; RISC-V → chip de diseño abierto; pull request → propuesta de cambio; sandbox → aislamiento operativo; mesh → red entre terminales; circuit breaker → freno de emergencia; kernel → núcleo; fork (en el cuerpo) → versión propia / copia adaptada; Red Team → equipo que busca fallas a propósito; Goodhart solo en glosario; malware → programas maliciosos; datasets → datos de entrenamiento; smart contract → contrato automático / reglas de pago automáticas. Glosario reescrito en llano.
+- **v0.4.4 (18 septiembre 2026):** Lenguaje más ciudadano: menos jerga de ingeniería. Hash → huella digital; blockchain → cadena de bloques; chip de diseño abierto en llano; pull request → propuesta de cambio; sandbox → aislamiento operativo; mesh → conectividad entre terminales; circuit breaker → freno de emergencia; kernel → núcleo; fork (en el cuerpo) → versión propia / copia adaptada; Red Team → equipo que busca fallas a propósito; Goodhart solo en glosario; malware → programas maliciosos; datasets → datos de entrenamiento; smart contract → contrato automático / reglas de pago automáticas. Glosario reescrito en llano.
 
-- **v0.4.5 (18 septiembre 2026):** Diseño de voto acordado: la malla de tres chips rivales queda como especificación objetivo; se añade la vía mínima del día de voto (terminal sencilla, anti-apertura, recibo genérico, boleta de auditoría, urna translúcida, operativa anti-borrado, cola local con VPN, impresora sellada, auditoría por contraste). Glosario: vía mínima, anti-apertura, recibo del votante, boleta de auditoría, urna translúcida. Cap. 9 alineado con recibo bajo coacción.
+- **v0.4.5 (18 septiembre 2026):** Diseño de voto del día de jornada: terminal sencilla, anti-apertura, recibo genérico, boleta de auditoría, urna translúcida, operativa anti-borrado, cola local con VPN, impresora sellada, auditoría por contraste. Glosario: anti-apertura, recibo del votante, boleta de auditoría, urna translúcida. Cap. 9 alineado con recibo bajo coacción.
+
+- **v0.4.6 (18 septiembre 2026):** Se retira el diseño maximalista de hardware multi-origen. El sistema de voto presencial del tronco es la TVM práctica: terminal sencilla anti-apertura, CSC + biometría en tarjeta + frase / Frase de coacción, pantalla acordeón sin llevarse desglose, rollo térmico de archivo (recibo idéntico al votante + boleta de auditoría a urna translúcida), VPN siempre + cola local + modo isla, impresora sellada y operativa de sombra/urna tintada. Un solo diseño de terminal; sin meta alternativa de hardware. Glosario y plan de adopción alineados.
 
 ---
 
-*Demarquía Digital · manifiesto v0.4.5 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
+*Demarquía Digital · manifiesto v0.4.6 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
 
