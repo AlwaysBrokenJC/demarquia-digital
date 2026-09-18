@@ -16,6 +16,8 @@ Propuesta libertaria de **minarquía demárquica digital**: un Estado delgado, s
 
 Archivo principal: [`manifiesto-v0.4-lenguaje-claro.md`](manifiesto-v0.4-lenguaje-claro.md)
 
+Plan de camino (destino país): [`plan-adopcion-nacional-capas.md`](plan-adopcion-nacional-capas.md)
+
 Fuentes de trabajo (borradores y base v0.3): `base.txt` / `base.pdf`, `prefacio-filosofia-v0.4-borrador.md`, `cap-economia-propiedad-borrador.md`, `mapa-inicial.md`.
 
 ## Canal
