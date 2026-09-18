@@ -2,10 +2,10 @@
 
 **Arquitectura de un Estado Descentralizado, Criptográfico y de Representación Aleatoria**
 
-**Versión:** v0.4.2  
+**Versión:** v0.4.3  
 **Fecha:** 18 de septiembre de 2026  
 **Licencia:** Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Puedes copiar, compartir y mejorar este texto con libertad, siempre que des crédito al autor original y publiques tus cambios bajo la misma licencia, gratis y en público.  
-**Autoría:** crédito al autor original; iteración v0.4-v0.4.2 en conversación de diseño.  
+**Autoría:** crédito al autor original; iteración v0.4-v0.4.3 en conversación de diseño.  
 **Repositorio:** https://github.com/AlwaysBrokenJC/demarquia-digital
 
 ---
@@ -24,15 +24,15 @@ El objetivo es devolver el poder al pueblo y construir, juntos y a lo largo del 
 
 > Demarquía Digital es un proyecto libertario que apunta a una minarquía demárquica digital: un Estado sin políticos de carrera, con cargos por sorteo, voto directo del pueblo (sin que nadie vote por ti), derechos que protegen tu libertad frente al poder, y tecnología que hace difícil hacer trampa.
 >
-> Sigue habiendo impuestos y un Estado con fuerza pública acotada; por eso el tronco no es anarcocapitalismo. La meta es que el Estado gaste como máximo cerca del 15% del PIB, con un techo duro del 20%. Para romper ese techo hace falta la Triple Llave (el mismo blindaje que para cambiar la Constitución). El gasto se recorta, caduca si no sirve y se limpia de grasa burocrática.
+> Hay impuestos y un Estado con fuerza pública acotada. La meta es que el Estado gaste como máximo cerca del 15% del producto interno bruto (PIB), con un techo duro del 20%. Para romper ese techo hace falta la Triple Llave (el mismo blindaje que para cambiar la Constitución). El gasto se recorta, caduca si no sirve y se limpia de grasa burocrática.
 >
-> Si alguien quiere una versión ancap o una versión más social, puede hacer un fork bajo la misma licencia, pero debe decir con claridad qué rompe del tronco.
+> Quien quiera una variante más minimalista o más social puede hacer un fork bajo la misma licencia, y debe decir con claridad qué rompe del tronco.
 
 ## Prefacio filosófico
 
 ### 1. Diagnóstico honesto
 
-Demarquía Digital diseña un Estado: impuestos (también si eliges no votar), policía, defensa limitada, presupuesto, pago por el tiempo cívico, División de Desastres y un fondo soberano de largo plazo. Quien quiere abolir el Estado por completo (anarcocapitalismo) deja de estar hablando de este documento.
+Demarquía Digital diseña un Estado: impuestos (también si eliges no votar), policía, defensa limitada, presupuesto, pago por el tiempo cívico, División de Desastres y un fondo soberano de largo plazo. Quien quiere abolir el Estado por completo deja de estar hablando de este documento.
 
 El código base privilegia derechos negativos (libertad frente a la coerción), Triple Llave al 75% popular, leyes iguales para todos, financiamiento político solo de personas (no de empresas) y un motor de presupuesto que encoge la grasa en vez de maximizar el gasto. Eso lo aleja de una socialdemocracia expansiva.
 
@@ -42,9 +42,9 @@ La etiqueta del tronco es minarquía demárquica digital.
 
 | Posición | Encaje |
 |----------|--------|
-| **Ancap** | Fork. Pediría impuestos voluntarios o abolidos, pluralizar la coerción y reescribir economía y Caps. 5-6. El Opt-Out cívico *no* alcanza. |
 | **Minarquía clásica** | Espíritu cercano; el tronco es un poco más grueso (créditos de edu/salud, educación cívica, cascada de excedentes). |
 | **Minarquía demárquica digital** | **Tronco.** Libertad negativa + sorteo + voto directo + hardware que asume ataques + techo fiscal. |
+| **Otras variantes** | Forks con otro énfasis (más minimalistas o más sociales), bajo la misma licencia, declarando qué dejan fuera del tronco. |
 
 ### 3. Lo no negociable del tronco
 
@@ -75,7 +75,7 @@ Es el derecho a no participar en la vida pública: renuncias al voto. Dejas inta
 
 ### 7. Gobernanza del repo
 
-Con el tiempo el repositorio tendrá una carpeta `forks/` y plantillas breves (por ejemplo ancap o más social) que digan con claridad qué cláusulas del tronco deja fuera cada variante.
+Con el tiempo el repositorio tendrá una carpeta `forks/` y plantillas breves (por ejemplo variantes más minimalistas o más sociales) que digan con claridad qué cláusulas del tronco deja fuera cada variante.
 
 ---
 
@@ -187,19 +187,19 @@ Tu identidad cívica vive en una tarjeta con chip seguro (CSC): la huella y los 
 
 Para votar: metes la credencial, pones el dedo e ingresas una frase que solo tú memorizas. Hacen falta tres cosas a la vez: la tarjeta (lo que tienes), la biometría (lo que eres) y la frase (lo que sabes). Solo si las tres coinciden, el chip libera la llave que firma tu voto en la cadena de bloques.
 
-Esa frase se conecta con el NIP de Coacción (Capítulo 9): si te amenazan, puedes dar conscientemente la versión “bajo coacción”. La máquina muestra que el voto se registró (para protegerte), pero en la blockchain ese voto se anula en silencio.
+Esa misma frase admite una Frase de coacción (Capítulo 9): si te amenazan, puedes dar conscientemente la versión “bajo coacción”. La máquina muestra que el voto se registró (para protegerte), pero en la cadena de bloques ese voto se anula en silencio.
 
 ### 2.3 Terminales de Votación Malla (TVM)
 
 El voto que cuenta solo se emite en Terminales de Votación Malla (TVM): máquinas físicas en jornadas electorales. No se vota desde el celular. Motivo: coacción remota, malware, capturas de pantalla y pérdida del secreto del voto. El voto presencial también cuida el ritual cívico.
 
-Cada TVM tiene tres microprocesadores de arquitecturas distintas, fabricados en bloques geopolíticos rivales (por ejemplo: un chip occidental, uno RISC-V de diseño abierto local, uno de fundición asiática no alineada). Los tres calculan el hash del voto en paralelo. Si no coinciden bit a bit, la máquina se bloquea y reporta el incidente. Para falsificar un voto, rivales geopolíticos tendrían que coludir: casi imposible.
+Cada TVM tiene tres microprocesadores de arquitecturas distintas, fabricados en bloques geopolíticos rivales (por ejemplo: un chip occidental, uno RISC-V local (arquitectura de chip de diseño abierto), uno de fundición asiática no alineada). Los tres calculan el hash del voto (la huella digital del voto) en paralelo. Si no coinciden bit a bit, la máquina se bloquea y reporta el incidente. Para falsificar un voto, rivales geopolíticos tendrían que coludir: casi imposible.
 
-Las TVM tienen antenas y routers de baja frecuencia para una red mesh. Cada voto se encripta y viaja en milisegundos a la blockchain nacional.
+Las TVM tienen antenas y routers de baja frecuencia para una red mesh. Cada voto se encripta y viaja en milisegundos a la cadena de bloques nacional.
 
 Al empezar la sesión, tras autenticarte, la TVM te muestra tu nivel de participación (local, federal, ambos o ninguno) y te deja cambiarlo antes de votar. Quien no use la app puede gestionar todo desde la terminal el día de la votación.
 
-Las TVM solo se encienden en jornadas electorales (Trimestrales, Mega Anual y Extraordinarias). Fuera de eso están apagadas y custodiadas. Para trámites cívicos el resto del año usas las **Terminales de Módulo Cívico (TMC)** o la app.
+Las TVM solo se encienden en jornadas electorales (Trimestrales; Mega Anual, la votación anual grande del ciclo; y Extraordinarias). Fuera de eso están apagadas y custodiadas. Para trámites cívicos el resto del año usas las **Terminales de Módulo Cívico (TMC)** o la app.
 
 #### Verificación diferida por firma de terminal
 
@@ -212,12 +212,12 @@ Al cerrar la jornada, cada TVM imprime **una sola boleta resumen** firmada con s
 
 Se deposita en urna sellada. Nunca se imprime el contenido de un voto individual. Ni siquiera el votante recibe comprobante de *su* voto concreto: solo la confirmación de que se registró.
 
-Después, las boletas se escanean y se cruzan con la blockchain. Si los números coinciden con firma válida, la integridad queda verificada. Si no, auditoría inmediata.
+Después, las boletas se escanean y se cruzan con la cadena de bloques. Si los números coinciden con firma válida, la integridad queda verificada. Si no, auditoría inmediata.
 
 Esto da:
 
 - Verificación matemática sin romper el secreto del voto.
-- Respaldo físico si la red o la blockchain fallan.
+- Respaldo físico si la red o la cadena de bloques fallan.
 - Privacidad absoluta: solo existe el agregado por terminal.
 
 Si hay interferencia de red, la TVM sigue guardando votos encriptados en local hasta recuperar conexión o emitir la boleta al cierre.
@@ -318,7 +318,7 @@ Para entrar al pool de los 250 “filtrados” hay que aprobar un examen prácti
 
 ### 3.5 Bancos de Preguntas Competitivos
 
-No hay un solo banco de preguntas. Hay cuatro (A, B, C y D), mantenidos por equipos sorteados distintos que no se comunican entre sí. Cada examen toma 30 preguntas de cada banco (120 en total). Los cuatro son públicos, versionados en GitHub y abiertos a pull requests de cualquiera.
+No hay un solo banco de preguntas. Hay cuatro (A, B, C y D), mantenidos por equipos sorteados distintos que no se comunican entre sí. Cada examen toma 30 preguntas de cada banco (120 en total). Los cuatro son públicos, versionados en GitHub y abiertos a propuestas de cambio en GitHub (pull requests) de cualquiera.
 
 Si un banco está en auditoría, el examen se reparte entre los otros tres. Un banco con muchas impugnaciones exitosas pierde peso hasta resolverse o reemplazarse. Ningún equipo lleva el mismo banco más de dos ciclos seguidos.
 
@@ -526,7 +526,7 @@ Se usan indicadores que chocan a propósito. Si optimizas uno, otro empeora. Eso
 
 Cada año los Auditores publican un análisis de métricas manipuladas (por ejemplo: etiquetar grasa burocrática como “gasto esencial”). Si hay manipulación documentada, recorte automático extra del 10% al ministerio infractor.
 
-### 5.8 Cláusulas de Caducidad (Sunset)
+### 5.8 Cláusulas de Caducidad
 
 Toda política grande caduca sola en N años si no demuestra resultados según métricas acordadas de antemano. Para extenderla hace falta nueva votación ciudadana con evaluación pública de impacto.
 
@@ -665,17 +665,17 @@ Este capítulo justifica el motor financiero; no lo sustituye:
 | Punto de quiebre + ruido | Anti-burocracia, no anti-mercado |
 | Gasto fijo operativo | Núcleo de protección + infra cívica |
 | Cascada Alpha/Beta/Gamma | Resiliencia, no deuda eterna, no clientelismo |
-| Sunset + anti-Goodhart | Toda política pública es sospechosa hasta prueba |
+| Caducidad + anti-Goodhart | Toda política pública es sospechosa hasta prueba |
 
 ### 5A.9 Qué queda fuera (forks)
 
-- Abolición de impuestos / defensa privada pura → fork ancap.
+- Abolición de impuestos / defensa privada pura → fork con otro énfasis (más minimalista); fuera del tronco.
 - Nacionalización amplia / planificación / topes patrimoniales → fork no-minárquico (debe renunciar a este capítulo).
 - Renta básica universal sin criterio 1.2 → requiere Triple Llave si se constitucionaliza; queda fuera del default.
 
 ### 5A.10 Qué queda cerrado en el tronco (edu/salud y economía)
 
-> **Cerrado en tronco (minarquía):** propiedad privada por defecto, sin topes de acumulación, impuestos acotados al núcleo + gasto condicionado, empresas públicas bajo sunset, no rescates clientelares, regulación universal, salud/educación vía voucher + seguro competitivo con opt-out fiscal, banca libre sin rescates con depósitos acotados.  
+> **Cerrado en tronco (minarquía):** propiedad privada por defecto, sin topes de acumulación, impuestos acotados al núcleo + gasto condicionado, empresas públicas bajo caducidad, no rescates clientelares, regulación universal, salud/educación vía voucher + seguro competitivo con opt-out fiscal, banca libre sin rescates con depósitos acotados.  
 > **Clavado:** meta 15% PIB / techo duro 20% PIB (Triple Llave).  
 > **Clavado:** régimen A+ (peso como unidad fiscal con regla dura + libertad monetaria privada).  
 > **Clavado:** salario mínimo económico fuera del tronco (compensación cívica Cap. 4 sí).  
@@ -724,7 +724,7 @@ No se diseña milicia armada distribuida (riesgo de señores de la guerra). Se a
 
 **Modo Ciego opcional en TVM:** ves propuestas sin nombres de autores, partidos legacy ni métricas sociales. Decides sobre el contenido, no sobre marcas.
 
-**Registro Público de Influencia Política:** quien alcance umbral de difusión política masiva debe registrar financiamiento, automatización, segmentación y datasets de entrenamiento si usa IA. Información auditable.
+**Registro Público de Influencia Política:** quien alcance umbral de difusión política masiva debe registrar financiamiento, automatización, segmentación y datasets de entrenamiento si usa inteligencia artificial (IA). Información auditable.
 
 **Etiquetado obligatorio de contenido IA:** todo contenido político generado o asistido por IA debe etiquetarse. Las plataformas que operan en el territorio responden por incumplimiento con multas automáticas.
 
@@ -858,7 +858,7 @@ Así la alfabetización cívica deja de ser solo tarea del Estado y se vuelve tr
 
 Tres mecanismos contra monopolios armados locales (carteles, mafias):
 
-**NIP de Coacción:** si te fuerzan a votar bajo amenaza, ingresas la frase mental en su versión preconfigurada de coacción. La TVM muestra “Voto registrado con éxito” (te protege), pero el voto se anula en silencio en la blockchain y se emite un reporte geolocalizado encriptado al Comando de Seguridad.
+**Frase de coacción:** si te fuerzan a votar bajo amenaza, ingresas la frase mental en su versión preconfigurada de coacción. La TVM muestra “Voto registrado con éxito” (te protege), pero el voto se anula en silencio en la cadena de bloques y se emite un reporte geolocalizado encriptado al Comando de Seguridad.
 
 **Triple factor:** credencial + biometría + frase mental a la vez. Robar tarjeta y dedo no basta sin la frase consciente.
 
@@ -892,7 +892,7 @@ El sistema introduce verificación criptográfica, auditorías, jurados aleatori
 
 ### 10.2 Tiranía de los Core Maintainers del Repositorio
 
-El manifiesto vive en GitHub y evoluciona por pull requests. Alguien tiene permisos de merge final. Si los mantenedores se corrompen o secuestran, controlan el Estado. Requiere gobernanza del repositorio (ver Cap. 11.5; sigue abierto).
+El manifiesto vive en GitHub y evoluciona por propuestas de cambio (pull requests). Alguien tiene permisos de merge final. Si los mantenedores se corrompen o secuestran, controlan el Estado. Requiere gobernanza del repositorio (ver Cap. 11.5; sigue abierto).
 
 ### 10.3 Escalabilidad Nacional y Fragmentación Regulatoria
 
@@ -948,7 +948,7 @@ Mientras más se blinda contra irracionalidad, más tecnocrático. Mientras más
 
 ### 11.1 Infraestructura
 
-Repositorio público en GitHub. Motivo: uso general consolidado, mentalidad open source, herramientas nativas de pull requests, issues, versionado y discusión pública.
+Repositorio público en GitHub. Motivo: uso general consolidado, mentalidad open source, herramientas nativas de propuestas de cambio (pull requests), issues, versionado y discusión pública.
 
 ### 11.2 Componentes del Repositorio
 
@@ -959,17 +959,17 @@ Repositorio público en GitHub. Motivo: uso general consolidado, mentalidad open
 - Código de conducta (`CODE_OF_CONDUCT.md`).
 - Plantillas estandarizadas para issues y pull requests.
 - Documentación técnica de hardware (TVM, CSC) con especificaciones abiertas.
-- Carpeta de forks regionales y nacionales (`forks/`), con plantillas `FORK-ANCAP.md` y `FORK-SOCIAL.md`.
+- Carpeta de forks regionales y nacionales (`forks/`), con plantillas para variantes con otro énfasis (más minimalistas o más sociales).
 
 ### 11.3 Filosofía de Contribución
 
 Cualquier persona en el mundo puede proponer cambios vía pull request. Las contribuciones se evalúan por la comunidad activa y por los mecanismos de validación que cada componente exige.
 
-Los forks son bienvenidos. Si una región, país o comunidad quiere adaptar el modelo, puede crear su propia versión bajo la misma licencia CC BY-SA 4.0. La proliferación de variantes auditables entre sí enriquece el ecosistema.
+Los forks son bienvenidos. Si una región, país o comunidad quiere adaptar el modelo, o explorar otras variantes filosóficas con otro énfasis, puede crear su propia versión bajo la misma licencia CC BY-SA 4.0. La proliferación de variantes auditables entre sí enriquece el ecosistema.
 
 ### 11.4 Versionado
 
-Versionado semántico. Cambios menores incrementan patch (v0.4.2). Cambios significativos incrementan menor (v0.5). La transición a v1.0 representa la primera implementación nacional efectiva del sistema.
+Versionado semántico. Cambios menores incrementan patch (v0.4.3). Cambios significativos incrementan menor (v0.5). La transición a v1.0 representa la primera implementación nacional efectiva del sistema.
 
 ### 11.5 Gobernanza de Mantenedores (Issue Abierto)
 
@@ -982,6 +982,34 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 
 ---
 
+## Glosario
+
+- **CSC:** Credencial de Soberanía Criptográfica; tarjeta con chip seguro que guarda tu identidad cívica y biometría en el dispositivo.
+- **TVM:** Terminal de Votación Malla; máquina física donde se emite el voto vinculante.
+- **TMC:** Terminal de Módulo Cívico; terminal administrativa (trámites, examen, configuración); no emite voto.
+- **TSC:** Tribunal Supremo de Consenso; antivirus constitucional; miembros sorteados del Pool Judicial.
+- **Protocolo BIOS:** plan post-colapso si cae la electricidad más de 72 horas; hibernación del Estado con tómbola física.
+- **Triple Llave:** blindaje para cambiar la Constitución o romper el techo fiscal (Congreso + Tribunal + 75% popular).
+- **Opt-Out cívico:** renuncia al voto; dejas intactas obligaciones fiscales y el orden legal.
+- **Opt-out del beneficio:** renuncia al crédito de edu/salud con rebaja fiscal del 80% (el 20% va al pool); distinto del Opt-Out cívico.
+- **PIB:** producto interno bruto; medida del tamaño de la economía frente a la cual se fija la meta/techo de gasto.
+- **Frase de coacción:** versión preconfigurada de tu frase mental; si te fuerzan a votar, el sistema finge éxito y anula el voto en silencio.
+- **Ágora:** portal abierto donde cualquier ciudadano activo registra propuestas de ley.
+- **Pool:** lista de personas disponibles para sorteo de un cargo o función (Congreso, judicial, seguridad, etc.).
+- **Goodhart / anti-Goodhart:** cuando una métrica se vuelve el objetivo, deja de medir bien; la auditoría anual busca esa trampa.
+- **Alpha / Beta / Gamma:** cascada de excedentes: reserva de desastres (Alpha), pago de deuda (Beta), fondo soberano de largo plazo (Gamma).
+- **Red Team:** equipo adversarial permanente que intenta romper el sistema para revelar huecos.
+- **Voucher:** crédito educativo que el Estado paga a la institución elegida; sigue al estudiante.
+- **Caducidad:** toda política o empresa pública vence si no se reautoriza (antes “sunset”).
+- **Mega Anual:** votación anual grande del ciclo (asuntos estructurales).
+- **Cadena de bloques:** registro distribuido donde se asientan los votos firmados.
+- **Hash:** huella digital de un dato (por ejemplo, del voto); sirve para verificar integridad sin revelar el contenido.
+- **RISC-V:** arquitectura de chip de diseño abierto.
+- **Sandbox / aislamiento operativo:** las fuerzas armadas operan con misión y alcance acotados, sin movilización interna libre.
+- **Pull request:** propuesta de cambio en GitHub.
+- **IA:** inteligencia artificial.
+
+---
 ## Historial de versiones del manifiesto
 
 - **v0.1:** Documento original. Estructura inicial con énfasis en hardware criptográfico, Congreso por sorteo, Recorte Ponderado y Cascada de Excedentes.
@@ -994,9 +1022,11 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 
 - **v0.4.1 (18 septiembre 2026):** Humanización del relato y destino país desde el día 1. Repositorio público enlazado. Resumen ejecutivo y Capítulo 9 alineados con adopción nacional en capas (escenarios A-C); la viabilidad deja de centrarse en municipios piloto. Prefacio de forks en tono breve.
 
-- **v0.4.2 (18 septiembre 2026):** Pass humanizer (blader/humanizer). Menos contraste not-X-but-Y espurio y defensas a objeciones que el lector frío no trae; se conserva el contraste ancap/minarquía donde educa. Cero em dashes en prosa. Menos negritas decorativas. Declaración con el objetivo de frente.
+- **v0.4.2 (18 septiembre 2026):** Pass humanizer (blader/humanizer). Menos contraste not-X-but-Y espurio y defensas a objeciones que el lector frío no trae. Cero em dashes en prosa. Menos negritas decorativas. Declaración con el objetivo de frente.
+
+- **v0.4.3 (18 septiembre 2026):** Glosario al final; glosas en primeras menciones (PIB, Frase de coacción, Opt-Out, IA, hash, cadena de bloques, RISC-V, pull request, Mega Anual, caducidad). Se retiró ancap del relato del tronco: el tronco se afirma como libertario → minarquía demárquica digital; forks como variantes con otro énfasis (más minimalistas o más sociales). NIP de Coacción renombrado a Frase de coacción.
 
 ---
 
-*Demarquía Digital · manifiesto v0.4.2 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
+*Demarquía Digital · manifiesto v0.4.3 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
 
