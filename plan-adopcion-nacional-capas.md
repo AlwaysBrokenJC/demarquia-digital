@@ -1,6 +1,6 @@
 # Plan de adopción nacional en capas
 
-**Demarquía Digital** · complemento al manifiesto v0.4.1 · 18 sep 2026
+**Demarquía Digital** · complemento al manifiesto v0.4.2 · 18 sep 2026
 
 El destino es un país bajo minarquía demárquica digital. Las capas son el camino: se ejecutan en secuencia (o en paralelo cuando tiene sentido), siempre con la República demárquica como norte.
 
@@ -14,9 +14,9 @@ Un país con:
 - Constitución de derechos negativos y Triple Llave;
 - techo fiscal: meta **15% del PIB**, duro **20%**;
 - infra física de voto (TVM) y credencial (CSC);
-- economía del Cap. 5A — propiedad privada, peso como unidad fiscal, voucher educativo, seguro de salud en competencia, banca libre.
+- economía del Cap. 5A: propiedad privada, peso como unidad fiscal, voucher educativo, seguro de salud en competencia, banca libre.
 
-Eso es lo que construimos. Todo lo demás — software, normas voluntarias, jurisdicciones intermedias — son peldaños hacia ese orden nacional.
+Eso es lo que construimos. Software, normas voluntarias y jurisdicciones intermedias son peldaños hacia ese orden nacional.
 
 ---
 
@@ -24,17 +24,17 @@ Eso es lo que construimos. Todo lo demás — software, normas voluntarias, juri
 
 **País en el discurso desde el día 1. Capas en la ejecución.**
 
-Cada capa se cuenta como avance hacia la República demárquica. Ninguna exige controlar ejército ni policía al inicio (coherente con el Cap. 9). Antes de subir de capa, conviene poder mostrar — aunque sea de forma tosca — que bajó la corrupción percibida, la captura del presupuesto o la fatiga cívica; si no, no se escala.
+Cada capa se cuenta como avance hacia la República demárquica. Ninguna exige controlar ejército ni policía al inicio (coherente con el Cap. 9). Antes de subir de capa, conviene poder mostrar (aunque sea de forma tosca) que bajó la corrupción percibida, la captura del presupuesto o la fatiga cívica; si no, no se escala.
 
-Un estado o una región pueden servir de cabeza de playa: territorio real donde el kernel manda en lo que su competencia permita, al servicio del proyecto nacional. Lo local no se menosprecia; tampoco se confunde con el techo de ambición.
+Un estado o una región pueden servir de cabeza de playa: territorio real donde el kernel manda en lo que su competencia permita, al servicio del proyecto nacional.
 
-Con honestidad (Cap. 9.3): un reemplazo total y rápido de un Estado consolidado no tiene precedente pacífico. Este plan no promete magia; ordena el riesgo.
+Un reemplazo total y rápido de un Estado consolidado no tiene precedente pacífico (Cap. 9.3). Este plan ordena ese riesgo.
 
 ---
 
 ## Las cuatro capas
 
-### Capa 1 — Nación de opinión
+### Capa 1: Nación de opinión
 
 Que “Demarquía Digital” exista en la cabeza de la gente como alternativa nacional, no como rareza de un rincón.
 
@@ -48,7 +48,7 @@ Tiempo típico: entre medio año y dos años de trabajo cultural y de software l
 
 ---
 
-### Capa 2 — Norma voluntaria nacional
+### Capa 2: Norma voluntaria nacional
 
 Piezas del kernel se vuelven costumbre o compromiso público a escala país, aunque el Estado legacy siga en pie.
 
@@ -62,17 +62,17 @@ Aquí nace el material negociable del “paracaídas dorado” del Escenario B.
 
 ---
 
-### Capa 3 — Soberanía parcial
+### Capa 3: Soberanía parcial
 
-Territorio real donde el kernel manda en lo local-regional, federado o asociado a un proyecto nacional explícito. Un estado, provincia, región autónoma o zona con competencia real adopta el código base (Caps. 1–5A en lo aplicable). Llegan las primeras TVM/CSC — o una malla híbrida honesta: papel más digital auditado —. Hay Congreso demárquico y Ágora vinculante en el ámbito de sus competencias. El gasto fijo de seis partidas y el techo fiscal se recalculan al PIB o presupuesto de esa jurisdicción.
+Territorio real donde el kernel manda en lo local-regional, federado o asociado a un proyecto nacional explícito. Un estado, provincia, región autónoma o zona con competencia real adopta el código base (Caps. 1-5A en lo aplicable). Llegan las primeras TVM/CSC, o una malla híbrida honesta (papel más digital auditado). Hay Congreso demárquico y Ágora vinculante en el ámbito de sus competencias. El gasto fijo de seis partidas y el techo fiscal se recalculan al PIB o presupuesto de esa jurisdicción.
 
-Esto no achica el proyecto: es cabeza de playa de la República. Laboratorio de soberanía al servicio del reemplazo nacional. En países unitarios sin estados fuertes, la misma idea puede tomar forma de ciudades, distritos o zonas bajo bandera nacional.
+Es cabeza de playa de la República: laboratorio de soberanía al servicio del reemplazo nacional. En países unitarios sin estados fuertes, la misma idea puede tomar forma de ciudades, distritos o zonas bajo bandera nacional.
 
 **Cómo sabemos que avanzamos:** corrupción y captura presupuestal a la baja; legitimidad alta y contagio a otras jurisdicciones; capacidad de federar reglas (mismo kernel, forks documentados).
 
 ---
 
-### Capa 4 — Reemplazo constitucional nacional
+### Capa 4: Reemplazo constitucional nacional
 
 El tronco deja de ser capa y pasa a ser el orden jurídico del país.
 
@@ -82,7 +82,7 @@ Vías (Cap. 9, sin romanticismo):
 
 - **B (pacto):** la más deseable si hay élites que prefieren salir con garantías a pelear.
 - **C (post-colapso):** si el Estado legacy ya falló; Demarquía Digital como reinicio, no como golpe improvisado.
-- **A ampliada:** solo si la Capa 3 se contagió tanto que el centro queda vacío de legitimidad — sigue sin ser asalto.
+- **A ampliada:** solo si la Capa 3 se contagió tanto que el centro queda vacío de legitimidad; sigue sin ser asalto.
 
 **Cómo sabemos que avanzamos:** Constitución demárquica en vigor; primera Mega Anual nacional; techo 15/20 medido y publicado.
 
@@ -92,7 +92,7 @@ Eso es, en el versionado del manifiesto, el espíritu de **v1.0**.
 
 ## Tono
 
-Hablamos de república y de país. Cuando una jurisdicción intermedia entra en escena, se presenta como cabeza de playa hacia ese orden nacional — avance concreto, no repliegue. Nombramos el costo histórico (Cap. 9.3) y mostramos por qué las capas reducen violencia innecesaria. No escondemos la ambición.
+Hablamos de república y de país. Cuando una jurisdicción intermedia entra en escena, se presenta como cabeza de playa hacia ese orden nacional: avance concreto. Nombramos el costo histórico (Cap. 9.3) y mostramos por qué las capas reducen violencia innecesaria.
 
 ---
 
@@ -111,7 +111,7 @@ No hace falta el Cap. 2 entero para merecer las Capas 1 y 2.
 
 - **A** = sobre todo Capas 1 → 2 → 3 sin confrontación armada.
 - **B** = atajo político desde Capa 2 hacia Capa 4 con negociación.
-- **C** = salto a Capas 3–4 cuando el tablero legacy desaparece.
+- **C** = salto a Capas 3-4 cuando el tablero legacy desaparece.
 
 El plan en capas no reemplaza esos escenarios: los ordena en el tiempo y en el relato nacional.
 
@@ -126,7 +126,7 @@ Se escala a la siguiente capa solo si:
 3. el relato sigue siendo país;
 4. no se ha traicionado lo no negociable del tronco (no-delegación, derechos negativos, techo fiscal, honestidad).
 
-Si la Capa 3 se vuelve un feudo personal o un partido disfrazado, se documenta como fallo y se forkea — no se maquilla como victoria.
+Si la Capa 3 se vuelve un feudo personal o un partido disfrazado, se documenta como fallo y se forkea.
 
 ---
 
@@ -136,4 +136,4 @@ Un one-pager de las cuatro capas para el canal. Plantillas en `forks/`. Un score
 
 ---
 
-*Demarquía Digital · plan de adopción nacional en capas · v0.4.1*
+*Demarquía Digital · plan de adopción nacional en capas · v0.4.2*

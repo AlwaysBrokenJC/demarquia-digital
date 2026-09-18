@@ -2,49 +2,47 @@
 
 **Arquitectura de un Estado Descentralizado, Criptográfico y de Representación Aleatoria**
 
-**Versión:** v0.4.1  
+**Versión:** v0.4.2  
 **Fecha:** 18 de septiembre de 2026  
 **Licencia:** Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Puedes copiar, compartir y mejorar este texto con libertad, siempre que des crédito al autor original y publiques tus cambios bajo la misma licencia, gratis y en público.  
-**Autoría:** crédito al autor original; iteración v0.4–v0.4.1 en conversación de diseño.  
+**Autoría:** crédito al autor original; iteración v0.4-v0.4.2 en conversación de diseño.  
 **Repositorio:** https://github.com/AlwaysBrokenJC/demarquia-digital
 
 ---
 
 ## Declaración de proyecto abierto
 
-Este sistema no es una solución final ni una verdad terminada. Es una propuesta abierta: cualquiera, en cualquier lugar, puede mejorarla, corregirla o hacer su propia versión.
+Esta es una propuesta abierta: cualquiera, en cualquier lugar, puede mejorarla, corregirla o hacer su propia versión.
 
 Sabemos que todo diseño humano es imperfecto. Por eso lo publicamos con licencia abierta: para que quienes viven las consecuencias de la política puedan intervenir, corregir y forkear este modelo hacia algo más justo.
 
-El objetivo no es la perfección. El objetivo es devolver el poder al pueblo y construir, juntos y a lo largo del tiempo, el mejor sistema que la humanidad pueda imaginar en cada momento de su historia.
+El objetivo es devolver el poder al pueblo y construir, juntos y a lo largo del tiempo, el mejor sistema que la humanidad pueda imaginar en cada momento de su historia.
 
 ---
 
 ## Posición filosófica (en corto)
 
-> Demarquía Digital es un proyecto **libertario** que apunta a una **minarquía demárquica digital**: un Estado sin políticos de carrera, con cargos por sorteo, voto directo del pueblo (sin que nadie vote por ti), derechos que protegen tu libertad frente al poder, y tecnología que hace difícil hacer trampa.
+> Demarquía Digital es un proyecto libertario que apunta a una minarquía demárquica digital: un Estado sin políticos de carrera, con cargos por sorteo, voto directo del pueblo (sin que nadie vote por ti), derechos que protegen tu libertad frente al poder, y tecnología que hace difícil hacer trampa.
 >
-> **No es anarcocapitalismo:** sigue habiendo impuestos y un Estado con fuerza pública acotada.
+> Sigue habiendo impuestos y un Estado con fuerza pública acotada; por eso el tronco no es anarcocapitalismo. La meta es que el Estado gaste como máximo cerca del 15% del PIB, con un techo duro del 20%. Para romper ese techo hace falta la Triple Llave (el mismo blindaje que para cambiar la Constitución). El gasto se recorta, caduca si no sirve y se limpia de grasa burocrática.
 >
-> **No es un Estado de bienestar que crece sin freno:** la meta es que el Estado gaste como máximo cerca del **15% del PIB**, con un techo duro del **20%**. Para romper ese techo hace falta la Triple Llave (el mismo blindaje que para cambiar la Constitución). El gasto se recorta, caduca si no sirve y se limpia de grasa burocrática.
->
-> Si alguien quiere una versión ancap o una versión más social, puede hacer un **fork** bajo la misma licencia — pero debe decir con claridad qué rompe del tronco.
+> Si alguien quiere una versión ancap o una versión más social, puede hacer un fork bajo la misma licencia, pero debe decir con claridad qué rompe del tronco.
 
 ## Prefacio filosófico
 
 ### 1. Diagnóstico honesto
 
-Demarquía Digital **no es anarcocapitalismo**. Diseña un Estado: impuestos (también si eliges no votar), policía, defensa limitada, presupuesto, pago por el tiempo cívico, División de Desastres y un fondo soberano de largo plazo. Quien quiere abolir el Estado por completo deja de estar hablando de este documento.
+Demarquía Digital diseña un Estado: impuestos (también si eliges no votar), policía, defensa limitada, presupuesto, pago por el tiempo cívico, División de Desastres y un fondo soberano de largo plazo. Quien quiere abolir el Estado por completo (anarcocapitalismo) deja de estar hablando de este documento.
 
-Tampoco es una socialdemocracia expansiva. El código base privilegia **derechos negativos** (libertad frente a la coerción), Triple Llave al 75% popular, leyes iguales para todos, financiamiento político solo de personas (no de empresas) y un motor de presupuesto que encoge la grasa en vez de maximizar el gasto.
+El código base privilegia derechos negativos (libertad frente a la coerción), Triple Llave al 75% popular, leyes iguales para todos, financiamiento político solo de personas (no de empresas) y un motor de presupuesto que encoge la grasa en vez de maximizar el gasto. Eso lo aleja de una socialdemocracia expansiva.
 
-La etiqueta del tronco es: **minarquía demárquica digital**.
+La etiqueta del tronco es minarquía demárquica digital.
 
 ### 2. Tres posiciones
 
 | Posición | Encaje |
 |----------|--------|
-| **Ancap** | Fork. Pediría impuestos voluntarios o abolidos, pluralizar la coerción y reescribir economía y Caps. 5–6. El Opt-Out cívico *no* alcanza. |
+| **Ancap** | Fork. Pediría impuestos voluntarios o abolidos, pluralizar la coerción y reescribir economía y Caps. 5-6. El Opt-Out cívico *no* alcanza. |
 | **Minarquía clásica** | Espíritu cercano; el tronco es un poco más grueso (créditos de edu/salud, educación cívica, cascada de excedentes). |
 | **Minarquía demárquica digital** | **Tronco.** Libertad negativa + sorteo + voto directo + hardware que asume ataques + techo fiscal. |
 
@@ -61,7 +59,7 @@ Un fork que rompa estos puntos debe cambiar de nombre.
 
 ### 4. Opt-Out cívico (1.8)
 
-Es el derecho a **no participar en la vida pública**: renuncias al voto. **No** es secesión fiscal ni salir del orden legal. Es distinto del **opt-out del beneficio** de educación o salud (rebaja fiscal del 80% del crédito que no usas).
+Es el derecho a no participar en la vida pública: renuncias al voto. Dejas intactas las obligaciones fiscales y el orden legal (no es secesión). Es distinto del opt-out del beneficio de educación o salud (rebaja fiscal del 80% del crédito que no usas).
 
 ### 5. Economía (ver Cap. 5A)
 
@@ -73,7 +71,7 @@ Es el derecho a **no participar en la vida pública**: renuncias al voto. **No**
 
 ### 6. Una frase sobre el Opt-Out (1.8)
 
-> El Opt-Out cívico no es secesión fiscal ni salida del orden legal.
+> El Opt-Out cívico deja intactas las obligaciones fiscales y el orden legal (no es secesión).
 
 ### 7. Gobernanza del repo
 
@@ -83,19 +81,19 @@ Con el tiempo el repositorio tendrá una carpeta `forks/` y plantillas breves (p
 
 ## Resumen Ejecutivo
 
-Este documento propone una **"Política sin Políticos"**: devolverle al pueblo el poder de decidir, sin intermediarios de carrera.
+Este documento propone una "Política sin Políticos": devolverle al pueblo el poder de decidir, sin intermediarios de carrera.
 
 La democracia representativa actual es fácil de corromper, cansa a la gente y deja que el presupuesto se secuestra. Por eso este diseño apunta a un Estado sin intermediarios de carrera.
 
-La votación pasa por máquinas físicas difíciles de hackear (tres chips de orígenes distintos) y una credencial con biometría que vive en tu tarjeta, no en un servidor del gobierno. No hace falta un político que vote por ti: hay **democracia directa** (tú decides) y **demarquía** (cargos por sorteo).
+La votación pasa por máquinas físicas difíciles de hackear (tres chips de orígenes distintos) y una credencial con biometría que vive en tu tarjeta, no en un servidor del gobierno. No hace falta un político que vote por ti: hay democracia directa (tú decides) y demarquía (cargos por sorteo).
 
-Las leyes nacen en un **Ágora Digital** abierta a cualquier ciudadano. Pasan un filtro constitucional. Un Congreso de 500 personas (mitad sorteadas de quien se ofreció, mitad de quienes aprobaron un examen práctico del sistema) las pulen con ayuda de traductores legales. Al final, el pueblo aprueba o rechaza. **Nadie delega su voto.**
+Las leyes nacen en un Ágora Digital abierta a cualquier ciudadano. Pasan un filtro constitucional. Un Congreso de 500 personas (mitad sorteadas de quien se ofreció, mitad de quienes aprobaron un examen práctico del sistema) las pulen con ayuda de traductores legales. Al final, el pueblo aprueba o rechaza. Nadie delega su voto.
 
-El dinero público se controla con recorte ponderado, cascada de excedentes y la regla de que ninguna decisión importante la toma una sola métrica automática. Hay un presidente que representa al país hacia afuera, pero **sin poder ejecutivo**. Una División de Desastres coordina emergencias bajo vigilancia del Congreso y del pueblo.
+El dinero público se controla con recorte ponderado, cascada de excedentes y la regla de que ninguna decisión importante la toma una sola métrica automática. Hay un presidente que representa al país hacia afuera, pero sin poder ejecutivo. Una División de Desastres coordina emergencias bajo vigilancia del Congreso y del pueblo.
 
-El tronco se llama **minarquía demárquica digital**: el Estado apunta a gastar ≤15% del PIB, con techo duro al 20% (solo rompible con Triple Llave). El gasto fijo se limita a seis partidas. Propiedad, moneda, banca y créditos de edu/salud van en el Capítulo 5A.
+El tronco se llama minarquía demárquica digital: el Estado apunta a gastar ≤15% del PIB, con techo duro al 20% (solo rompible con Triple Llave). El gasto fijo se limita a seis partidas. Propiedad, moneda, banca y créditos de edu/salud van en el Capítulo 5A.
 
-**Sobre si es viable:** el destino es un país. El camino natural es la adopción nacional en capas — primero opinión y normas voluntarias a escala país; luego soberanía parcial donde una jurisdicción abra espacio; al final el orden constitucional demárquico — junto con los escenarios A, B y C del Capítulo 9 (paralelo gradual, pacto con élites, post-colapso). Meterlo de golpe en un Estado consolidado ha tenido, históricamente, un precio de violencia organizada — como todo cambio sistémico real. Este manifiesto no esconde ese costo. El detalle del camino está en el plan de adopción nacional en capas.
+El destino es un país. El camino natural es la adopción nacional en capas: primero opinión y normas voluntarias a escala país; luego soberanía parcial donde una jurisdicción abra espacio; al final el orden constitucional demárquico, junto con los escenarios A, B y C del Capítulo 9 (paralelo gradual, pacto con élites, post-colapso). Meterlo de golpe en un Estado consolidado ha tenido, históricamente, un precio de violencia organizada, como todo cambio sistémico real. El detalle del camino está en el plan de adopción nacional en capas.
 
 ---
 
@@ -103,15 +101,15 @@ El tronco se llama **minarquía demárquica digital**: el Estado apunta a gastar
 
 ### 1.1 Los Derechos Negativos y la Triple Llave de Reforma
 
-La Constitución de la Demarquía Digital se apoya en **derechos negativos**: protegen tu libertad individual, evitan que el poder se concentre y ponen el método técnico-científico por encima de la tradición.
+La Constitución de la Demarquía Digital se apoya en derechos negativos: protegen tu libertad individual, evitan que el poder se concentre y ponen el método técnico-científico por encima de la tradición.
 
-Para que nadie cambie la Constitución a la ligera, existe la **Triple Llave de Reforma**. Hace falta el acuerdo escalonado del Congreso Demárquico, del Tribunal Supremo y de una supermayoría del **75%** en votación popular directa.
+Para que nadie cambie la Constitución a la ligera, existe la Triple Llave de Reforma. Hace falta el acuerdo escalonado del Congreso Demárquico, del Tribunal Supremo y de una supermayoría del 75% en votación popular directa.
 
 El derecho de asociación política es absoluto para toda persona. Puedes organizarte en asociaciones, movimientos o partidos con la forma e ideología que quieras. Cómo se financian esas organizaciones se explica en el Capítulo 6.
 
 ### 1.2 Principio de Universalidad de las Leyes
 
-Ninguna ley puede dar derechos, obligaciones o castigos distintos según quién seas: origen, profesión, creencia o grupo. Si el Estado reparte recursos de forma distinta, el criterio debe ser objetivo, medible, temporal y abierto a cualquiera que lo cumpla — y aplicarse solo.
+Ninguna ley puede dar derechos, obligaciones o castigos distintos según quién seas: origen, profesión, creencia o grupo. Si el Estado reparte recursos de forma distinta, el criterio debe ser objetivo, medible, temporal y abierto a cualquiera que lo cumpla, y aplicarse solo.
 
 Hay una diferencia clara:
 
@@ -122,7 +120,7 @@ Ejemplo: en vez de “ley de apoyo a discapacitados”, se dice “toda persona 
 
 ### 1.3 Derecho Universal al Voto
 
-Si eres ciudadano activo, votas. Sin examen, sin certificado, sin filtro de alfabetización. La única condición es activar tu **Credencial de Soberanía Criptográfica (CSC)** — tu credencial cívica con chip seguro — al cumplir la mayoría de edad.
+Si eres ciudadano activo, votas. Sin examen, sin certificado, sin filtro de alfabetización. La única condición es activar tu Credencial de Soberanía Criptográfica (CSC), tu credencial cívica con chip seguro, al cumplir la mayoría de edad.
 
 ### 1.4 Régimen de Ciudadanía, Residencia y Refugio
 
@@ -141,7 +139,7 @@ Cada ciudadano elige cuánto participa:
 - **Local-local:** solo municipio y estado.
 - **Federal-federal:** solo lo nacional.
 - **Ambos:** local y federal.
-- **Ninguno:** Opt-Out cívico — no votas, pero conservas tu ID civil y tus obligaciones legales y fiscales.
+- **Ninguno:** Opt-Out cívico: no votas, pero conservas tu ID civil y tus obligaciones legales y fiscales.
 
 Puedes cambiar esto en la app, en cualquier terminal administrativa (**TMC**, Terminal de Módulo Cívico) o en la terminal de voto (**TVM**, Terminal de Votación Malla) al empezar la sesión, antes de votar. Es inmediato, sin castigo y sin tener que justificarte.
 
@@ -153,17 +151,17 @@ Las comunidades originarias pueden organizarse a su manera (asamblea, consejo de
 
 El Tribunal es el antivirus constitucional del Estado. Sus miembros salen por sorteo del Pool Judicial: profesionales del derecho que aprobaron un examen ciego abierto.
 
-Para declarar inconstitucional una ley o un presupuesto hace falta un consenso interno del **70% al 80%**. Si no se alcanza, impera la duda razonable y se respeta lo que el pueblo ya votó. El Tribunal está siempre bajo auditoría ciudadana y puede revocarse por voto popular si se detectan sesgos deliberados.
+Para declarar inconstitucional una ley o un presupuesto hace falta un consenso interno del 70% al 80%. Si no se alcanza, impera la duda razonable y se respeta lo que el pueblo ya votó. El Tribunal está siempre bajo auditoría ciudadana y puede revocarse por voto popular si se detectan sesgos deliberados.
 
 ### 1.8 El Opt-Out Cívico: Derecho a la Desconexión
 
 El sistema reconoce el derecho libertario a no participar en la vida pública. Cualquier ciudadano puede pedir el Opt-Out cívico: se borran de inmediato sus registros del padrón de votación. A cambio recibe una Credencial de Identidad Simple.
 
-Sigue obligado a cumplir las leyes y a pagar impuestos como cualquier otro. No hay castigo fiscal ni sanción por desconectarse. Es libertad, no culpa.
+Sigue obligado a cumplir las leyes y a pagar impuestos como cualquier otro. No hay castigo fiscal ni sanción por desconectarse.
 
-Conservas todos tus derechos negativos: expresión, asociación, culto, reunión y debate público. Puedes opinar, militar ideas, financiar campañas con tu propio dinero, organizar movimientos y publicar. **El Opt-Out es renuncia al voto, no renuncia a la ciudadanía ni a los derechos civiles.**
+Conservas todos tus derechos negativos: expresión, asociación, culto, reunión y debate público. Puedes opinar, militar ideas, financiar campañas con tu propio dinero, organizar movimientos y publicar. El Opt-Out es renuncia al voto; no renuncia a la ciudadanía ni a los derechos civiles.
 
-**El Opt-Out cívico no es secesión fiscal ni salida del orden legal.** Es distinto del opt-out del beneficio de educación o salud (rebaja fiscal del 80% del crédito que no usas), explicado en el Capítulo 5A: aquel solo recupera el valor del beneficio rechazado; este renuncia al voto y sigue pagando el núcleo fiscal.
+El Opt-Out cívico deja intactas las obligaciones fiscales y el orden legal (no es secesión). Es distinto del opt-out del beneficio de educación o salud (rebaja fiscal del 80% del crédito que no usas), explicado en el Capítulo 5A: aquel solo recupera el valor del beneficio rechazado; este renuncia al voto y sigue pagando el núcleo fiscal.
 
 Puedes revertir el Opt-Out en cualquier momento, sin castigo ni trámite extra.
 
@@ -181,21 +179,21 @@ Puedes revertir la renuncia re-registrando biometría y recuperando el voto.
 
 ### 2.1 Presunción Constitucional de Compromiso
 
-Olvidamos la fantasía del “hardware inviolable”. Partimos de lo contrario: **asumimos que parte del equipo está comprometido** y diseñamos para sobrevivir a eso. La seguridad no depende de confiar en un fabricante; depende de redundancia, diversidad y auditoría continua.
+Olvidamos la fantasía del “hardware inviolable”. Partimos de lo contrario: asumimos que parte del equipo está comprometido y diseñamos para sobrevivir a eso. La seguridad no depende de confiar en un fabricante; depende de redundancia, diversidad y auditoría continua.
 
 ### 2.2 La Credencial de Soberanía Criptográfica (CSC)
 
-Tu identidad cívica vive en una tarjeta con chip seguro (**CSC**): la huella y los datos biométricos se guardan **en la tarjeta**, encriptados. No viajan por la red ni se guardan en un servidor central del Estado.
+Tu identidad cívica vive en una tarjeta con chip seguro (CSC): la huella y los datos biométricos se guardan en la tarjeta, encriptados. No viajan por la red ni se guardan en un servidor central del Estado.
 
-Para votar: metes la credencial, pones el dedo e ingresas una frase que solo tú memorizas. Hacen falta **tres cosas a la vez**: la tarjeta (lo que tienes), la biometría (lo que eres) y la frase (lo que sabes). Solo si las tres coinciden, el chip libera la llave que firma tu voto en la cadena de bloques.
+Para votar: metes la credencial, pones el dedo e ingresas una frase que solo tú memorizas. Hacen falta tres cosas a la vez: la tarjeta (lo que tienes), la biometría (lo que eres) y la frase (lo que sabes). Solo si las tres coinciden, el chip libera la llave que firma tu voto en la cadena de bloques.
 
 Esa frase se conecta con el NIP de Coacción (Capítulo 9): si te amenazan, puedes dar conscientemente la versión “bajo coacción”. La máquina muestra que el voto se registró (para protegerte), pero en la blockchain ese voto se anula en silencio.
 
 ### 2.3 Terminales de Votación Malla (TVM)
 
-El voto que cuenta **solo** se emite en **Terminales de Votación Malla (TVM)**: máquinas físicas en jornadas electorales. No se vota desde el celular. Motivo: coacción remota, malware, capturas de pantalla y pérdida del secreto del voto. El voto presencial también cuida el ritual cívico.
+El voto que cuenta solo se emite en Terminales de Votación Malla (TVM): máquinas físicas en jornadas electorales. No se vota desde el celular. Motivo: coacción remota, malware, capturas de pantalla y pérdida del secreto del voto. El voto presencial también cuida el ritual cívico.
 
-Cada TVM tiene **tres microprocesadores** de arquitecturas distintas, fabricados en bloques geopolíticos rivales (por ejemplo: un chip occidental, uno RISC-V de diseño abierto local, uno de fundición asiática no alineada). Los tres calculan el hash del voto en paralelo. Si no coinciden bit a bit, la máquina se bloquea y reporta el incidente. Para falsificar un voto, rivales geopolíticos tendrían que coludir: casi imposible.
+Cada TVM tiene tres microprocesadores de arquitecturas distintas, fabricados en bloques geopolíticos rivales (por ejemplo: un chip occidental, uno RISC-V de diseño abierto local, uno de fundición asiática no alineada). Los tres calculan el hash del voto en paralelo. Si no coinciden bit a bit, la máquina se bloquea y reporta el incidente. Para falsificar un voto, rivales geopolíticos tendrían que coludir: casi imposible.
 
 Las TVM tienen antenas y routers de baja frecuencia para una red mesh. Cada voto se encripta y viaja en milisegundos a la blockchain nacional.
 
@@ -212,7 +210,7 @@ Al cerrar la jornada, cada TVM imprime **una sola boleta resumen** firmada con s
 - Firma criptográfica verificable.
 - Hora y ubicación.
 
-Se deposita en urna sellada. **Nunca** se imprime el contenido de un voto individual. Ni siquiera el votante recibe comprobante de *su* voto concreto: solo la confirmación de que se registró.
+Se deposita en urna sellada. Nunca se imprime el contenido de un voto individual. Ni siquiera el votante recibe comprobante de *su* voto concreto: solo la confirmación de que se registró.
 
 Después, las boletas se escanean y se cruzan con la blockchain. Si los números coinciden con firma válida, la integridad queda verificada. Si no, auditoría inmediata.
 
@@ -226,7 +224,7 @@ Si hay interferencia de red, la TVM sigue guardando votos encriptados en local h
 
 ### 2.4 Auditorías Destructivas Internacionales
 
-Cada año se sortea el **1%** de las TVM para auditoría destructiva: equipos internacionales rotativos abren los chips con microscopía electrónica. Las máquinas se sacrifican a propósito por la confianza pública. Los hallazgos se publican enteros y obligan a actualizar si hay anomalías.
+Cada año se sortea el 1% de las TVM para auditoría destructiva: equipos internacionales rotativos abren los chips con microscopía electrónica. Las máquinas se sacrifican a propósito por la confianza pública. Los hallazgos se publican enteros y obligan a actualizar si hay anomalías.
 
 ### 2.5 Diseño Universal y Accesibilidad
 
@@ -234,14 +232,14 @@ Las TVM incluyen conector de audio, audífonos inalámbricos y Text-to-Speech. L
 
 ### 2.6 La App Cívica Complementaria
 
-Hay una app oficial gratuita. **No permite votar.** Sí permite:
+Hay una app oficial gratuita. No permite votar. Sí permite:
 
 - Leer propuestas en el Ágora y respaldar a favor o en contra.
 - Ver las Consideraciones de las asambleas deliberativas.
 - Recibir avisos de votaciones.
 - Acceder a materiales educativos.
-- Marcarte disponible (o no) para sorteos de Congreso, asambleas o jurados — también disponible en TMC.
-- Configurar tu nivel de participación — también en TMC y en la TVM el día de la votación.
+- Marcarte disponible (o no) para sorteos de Congreso, asambleas o jurados (también en TMC).
+- Configurar tu nivel de participación (también en TMC y en la TVM el día de la votación).
 - Pedir tutoría cívica.
 - Consultar tu historial.
 - Reportar incidencias.
@@ -250,7 +248,7 @@ Es código abierto y también se distribuye fuera de tiendas comerciales.
 
 ### 2.7 Terminales de Módulo Cívico (TMC)
 
-Las **TMC** son distintas de las TVM. **No pueden emitir voto vinculante**, bajo ninguna configuración. Solo sirven para gestión cívica.
+Las TMC son distintas de las TVM. No pueden emitir voto vinculante, bajo ninguna configuración. Solo sirven para gestión cívica.
 
 Están permanentes en puntos públicos: módulos electorales locales, bibliotecas, centros comunitarios, oficinas municipales. Así quien no usa app ni celular propio sigue teniendo acceso.
 
@@ -265,15 +263,15 @@ Desde una TMC puedes:
 
 La autenticación es más simple (CSC + frase), porque no procesan voto. El hardware es de diseño abierto y con varios fabricantes.
 
-La separación TVM / TMC es **constitucional e irreversible**. Ningún software puede convertir una TMC en urna.
+La separación TVM / TMC es constitucional e irreversible. Ningún software puede convertir una TMC en urna.
 
 ### 2.8 El Protocolo BIOS (Plan post-colapso)
 
-Si cae la infraestructura eléctrica más de 72 horas (pulso electromagnético, tormenta solar, etc.), el Estado entra en hibernación: **Protocolo BIOS**. Las TVM tienen jaula de Faraday y paneles solares propios.
+Si cae la infraestructura eléctrica más de 72 horas (pulso electromagnético, tormenta solar, etc.), el Estado entra en hibernación: Protocolo BIOS. Las TVM tienen jaula de Faraday y paneles solares propios.
 
 El nivel federal se pausa; el poder baja a los municipios. Un Consejo de Supervivencia de 7 ciudadanos locales, elegidos por tómbola física en cada alcaldía, gestiona logística de supervivencia por 12 meses. Si no hay recuperación, los cabildos deciden federación, autonomía o reconstrucción del kernel nacional (Fork de Soberanía analógico).
 
-**Con honestidad:** es el momento más vulnerable. La tómbola física puede ser tomada por grupos armados. Sin organización comunitaria previa y lealtad cultural al sistema, el Protocolo BIOS no garantiza nada.
+Es el momento más vulnerable. La tómbola física puede ser tomada por grupos armados. Sin organización comunitaria previa y lealtad cultural al sistema, el Protocolo BIOS no garantiza nada.
 
 ---
 
@@ -284,23 +282,23 @@ El nivel federal se pausa; el poder baja a los municipios. Un Consejo de Supervi
 El Ágora es el portal abierto donde cualquier ciudadano activo registra propuestas de ley. Ahí:
 
 - Se vota a favor o en contra; el score visible es la suma neta.
-- Está prohibido el “trending” personalizado, la promoción pagada o el feed a la medida. **Todos ven lo mismo, en el mismo orden.**
+- Está prohibido el “trending” personalizado, la promoción pagada o el feed a la medida. Todos ven lo mismo, en el mismo orden.
 - Puedes ordenar por score, fecha, tema o región.
 - Cada propuesta necesita un mínimo de respaldos firmados con CSC para pasar a la fase técnica.
 - El score marca prioridad: lo más respaldado sube primero al Congreso.
 
 ### 3.2 Filtro Constitucional del Tribunal Supremo
 
-Antes de llegar al Congreso, el Tribunal Supremo revisa **solo** si la propuesta respeta la Constitución, los derechos negativos y la universalidad de las leyes. No juzga si la idea “es buena”; juzga si es válida.
+Antes de llegar al Congreso, el Tribunal Supremo revisa solo si la propuesta respeta la Constitución, los derechos negativos y la universalidad de las leyes. No juzga si la idea “es buena”; juzga si es válida.
 
-Si es inconstitucional, la regresa con explicación escrita de qué viola y por qué. El autor puede corregirla y reingresarla **sin** reiniciar el conteo de respaldos.
+Si es inconstitucional, la regresa con explicación escrita de qué viola y por qué. El autor puede corregirla y reingresarla sin reiniciar el conteo de respaldos.
 
 ### 3.3 El Congreso Demárquico
 
-Ya no hay políticos de carrera. Son **500 ciudadanos**, mitad y mitad:
+Ya no hay políticos de carrera. Son 500 ciudadanos, mitad y mitad:
 
-- **250** sorteados del padrón general entre quienes se marcaron disponibles (sin examen). Capa de sentido común.
-- **250** sorteados del Pool del Congreso: quienes aprobaron el examen de alfabetización operativa y se marcaron disponibles. Capa analítica. El examen se presenta en cualquier TMC, todo el año.
+- 250 sorteados del padrón general entre quienes se marcaron disponibles (sin examen). Capa de sentido común.
+- 250 sorteados del Pool del Congreso: quienes aprobaron el examen de alfabetización operativa y se marcaron disponibles. Capa analítica. El examen se presenta en cualquier TMC, todo el año.
 
 Marcarte disponible es voluntario y revocable. No te obliga a nada hasta que el sorteo caiga en ti.
 
@@ -320,7 +318,7 @@ Para entrar al pool de los 250 “filtrados” hay que aprobar un examen prácti
 
 ### 3.5 Bancos de Preguntas Competitivos
 
-No hay un solo banco de preguntas. Hay **cuatro** (A, B, C y D), mantenidos por equipos sorteados distintos que no se comunican entre sí. Cada examen toma 30 preguntas de cada banco (120 en total). Los cuatro son públicos, versionados en GitHub y abiertos a pull requests de cualquiera.
+No hay un solo banco de preguntas. Hay cuatro (A, B, C y D), mantenidos por equipos sorteados distintos que no se comunican entre sí. Cada examen toma 30 preguntas de cada banco (120 en total). Los cuatro son públicos, versionados en GitHub y abiertos a pull requests de cualquiera.
 
 Si un banco está en auditoría, el examen se reparte entre los otros tres. Un banco con muchas impugnaciones exitosas pierde peso hasta resolverse o reemplazarse. Ningún equipo lleva el mismo banco más de dos ciclos seguidos.
 
@@ -329,7 +327,7 @@ Reglas clave:
 - Cada pregunta cita fuente verificable.
 - Cualquier ciudadano puede impugnar vía app o TMC. Si el 5% del padrón respalda en 30 días, la pregunta se congela y un panel sorteado decide: conservar, modificar o retirar.
 - El sistema vigila si dos o más validadores coinciden “demasiado” (por ejemplo >90% en varios ciclos). Eso dispara alerta de posible coordinación; pueden quedar fuera mientras se audita.
-- Si una sola escuela concentra >15% de los aprobados de un pool en dos ciclos seguidos, se audita esa institución y las preguntas relacionadas — para evitar que el pool se vuelva club de egresados privilegiados.
+- Si una sola escuela concentra >15% de los aprobados de un pool en dos ciclos seguidos, se audita esa institución y las preguntas relacionadas, para evitar que el pool se vuelva club de egresados privilegiados.
 - Banco consistentemente impugnado pierde peso.
 
 ### 3.6 Pools Técnicos Especializados
@@ -338,21 +336,21 @@ Las funciones técnicas las ejercen profesionales sorteados desde pools con exam
 
 **Pools confirmados:** Judicial, Diplomático, Seguridad Pública (jefes municipales), Abogados Traductores, Auditores Presupuestales, Ciberseguridad, Presidencial, Educación (tutores cívicos de plaza fija).
 
-**Reglas comunes:** umbral alto de examen (75–80% en objetivas), doble ciego en redacción con tres evaluadores, revalidación cada 4–5 años, cooldown mínimo de 8 años tras ejercer, sorteo del puesto desde el pool.
+**Reglas comunes:** umbral alto de examen (75-80% en objetivas), doble ciego en redacción con tres evaluadores, revalidación cada 4-5 años, cooldown mínimo de 8 años tras ejercer, sorteo del puesto desde el pool.
 
 ### 3.7 Las Dos Figuras del Traductor
 
-**Figura A — Traductor Personal del Proponente:** asesor uno a uno, asignado por sorteo (tú no lo eliges). Te acompaña desde que entra la iniciativa hasta el voto final. Traduce en vivo lo que pasa en el Congreso a tu lenguaje. Puedes traer además un asesor externo de confianza; si ambos discrepan, se publican las dos lecturas. Se puede recusar por conflicto o incompetencia.
+**Figura A: Traductor Personal del Proponente.** asesor uno a uno, asignado por sorteo (tú no lo eliges). Te acompaña desde que entra la iniciativa hasta el voto final. Traduce en vivo lo que pasa en el Congreso a tu lenguaje. Puedes traer además un asesor externo de confianza; si ambos discrepan, se publican las dos lecturas. Se puede recusar por conflicto o incompetencia.
 
-**Figura B — Cuerpo de 5 Traductores del Congreso:** equipo rotativo sorteado del pool, cada uno de una jurisdicción distinta (para no converger ideológicamente). Producen cinco versiones públicas comparables de cada sesión. Con el tiempo construyen un corpus de “legal en lenguaje claro”.
+**Figura B: Cuerpo de 5 Traductores del Congreso.** equipo rotativo sorteado del pool, cada uno de una jurisdicción distinta (para no converger ideológicamente). Producen cinco versiones públicas comparables de cada sesión. Con el tiempo construyen un corpus de “legal en lenguaje claro”.
 
 ---
 
 ### 3.8 Argumentos Críticos Obligatorios
 
-Toda propuesta en el Ágora debe traer una sección de **Argumentos Críticos** antes de pasar al Tribunal y al Congreso. No es decoración: es requisito. Así toda ley llega con sus debilidades ya a la vista.
+Toda propuesta en el Ágora debe traer una sección de Argumentos Críticos antes de pasar al Tribunal y al Congreso. Es un requisito, no un adorno. Así toda ley llega con sus debilidades ya a la vista.
 
-Los Argumentos Críticos son una colección abierta de razones por las que la propuesta podría estar mal, ser difícil de aplicar, tener efectos no deseados, vacíos legales o mejoras pendientes. No es “un contra”; es un conjunto vivo.
+Los Argumentos Críticos son una colección abierta de razones por las que la propuesta podría estar mal, ser difícil de aplicar, tener efectos no deseados, vacíos legales o mejoras pendientes: un conjunto vivo, no un solo “contra”.
 
 **Quién puede aportar:**
 
@@ -373,13 +371,13 @@ Los Argumentos Críticos son una colección abierta de razones por las que la pr
 
 Antes de cada Trimestral o Mega Anual se reúnen asambleas de 100 a 500 ciudadanos por jurisdicción (según el tamaño del lugar). Solo se sortea entre voluntarios inscritos. El algoritmo busca diversidad demográfica, geográfica, etaria y socioeconómica.
 
-Estas asambleas **no deciden**: deliberan. Escuchan a expertos de todos los lados, discuten días y publican un documento de **Consideraciones** que aparece en la TVM junto al voto (también en audio). No estás obligado a leerlo; está disponible. Es la forma principal de bajar la carga cognitiva sin meter intermediarios.
+Estas asambleas no deciden: deliberan. Escuchan a expertos de todos los lados, discuten días y publican un documento de Consideraciones que aparece en la TVM junto al voto (también en audio). No estás obligado a leerlo; está disponible. Es la forma principal de bajar la carga cognitiva sin meter intermediarios.
 
 Los participantes reciben honorarios (Capítulo 4).
 
 ### 3.10 El Veto del Autor
 
-Si en el Congreso le cambian el sentido a tu iniciativa, tienes el **Veto del Autor**:
+Si en el Congreso le cambian el sentido a tu iniciativa, tienes el Veto del Autor:
 
 - **Total:** retirar y destruir la propuesta antes del voto masivo.
 - **Parcial, frase por frase:** marcar segmentos y exigir volver a tu versión o una nueva traducción.
@@ -425,8 +423,8 @@ Una sola propuesta por convocatoria. No se cuelan otras “de relleno”.
 
 ### 4.5 Tope de Propuestas por Boleta
 
-- Trimestral: máximo 15–20.
-- Mega Anual: máximo 25–30 estructurales.
+- Trimestral: máximo 15-20.
+- Mega Anual: máximo 25-30 estructurales.
 - Extraordinaria: una.
 
 Si hay más listas que cupo, suben las de mayor score; el resto espera.
@@ -435,34 +433,34 @@ Si hay más listas que cupo, suben las de mayor score; el resto espera.
 
 En la TVM puedes:
 
-- Validar el presupuesto general de un solo golpe (**Paquete Maestro**), o
-- **Desglosar** y aprobar o rechazar sectores por separado (Defensa, Salud, Infraestructura, etc.).
+- Validar el presupuesto general de un solo golpe (Paquete Maestro), o
+- Desglosar y aprobar o rechazar sectores por separado (Defensa, Salud, Infraestructura, etc.).
 
-Ambos modos son soberanía directa. Ninguno es delegación.
+Ambos modos son soberanía directa: ninguno delega el voto.
 
 ### 4.7 Abstención sin Penalización ni Cómputo
 
 Votar es derecho, no obligación. Si no entiendes un tema o no quieres decidirlo, no votes en ese punto. Tu abstención no cuenta como sí ni como no. Solo cuentan los votos emitidos.
 
-Cada decisión la toman quienes sí se sintieron listos para votarla — directo, sin intermediarios. Baja la fatiga sin abrir la puerta a “representantes”.
+Cada decisión la toman quienes sí se sintieron listos para votarla, directo y sin intermediarios. Baja la fatiga sin abrir la puerta a “representantes”.
 
 ### 4.8 No Delegación
 
-**No existe delegación de voto bajo ningún esquema.** No se transfiere, no se presta, no se acumula, no se vende. Aceptamos la fatiga residual a cambio de cerrar la puerta a carreras políticas por acumulación de seguidores.
+No existe delegación de voto bajo ningún esquema. No se transfiere, no se presta, no se acumula, no se vende. Aceptamos la fatiga residual a cambio de cerrar la puerta a carreras políticas por acumulación de seguidores.
 
 ### 4.9 Blindaje Laboral del Ejercicio Cívico
 
 Votar, deliberar, servir en Congreso o jurado, o participar en asamblea escolar es derecho constitucionalmente protegido.
 
 - El patrón debe permitir la ausencia con aviso mínimo de 48 horas (en sorteos puede ser menos).
-- El patrón **no** paga esas horas: las cubre el Estado.
+- El patrón no paga esas horas: las cubre el Estado.
 - Prohibido despedir, sancionar, quitar bonos, dañar evaluaciones, reducir horas o cualquier represalia.
 - Represalia documentada = delito grave, con sanción automática: indemnización de 12 meses al trabajador y multa al patrón al fondo público.
 - Conservas puesto, antigüedad y prestaciones como si no hubieras faltado.
 
 ### 4.10 Compensaciones por Ejercicio Cívico
 
-Esto **no** es un salario mínimo económico del mercado laboral. Es pago por servicio democrático.
+Esto es pago por servicio democrático, distinto de un salario mínimo económico del mercado laboral.
 
 **Voto regular en TVM:** el Estado paga el 20% del salario promedio nacional o de tu salario, lo que sea mayor, por jornada. Transferencia automática al autenticarte.
 
@@ -478,11 +476,11 @@ Aplica a formal, informal, autoempleado, desempleado activo, jubilado y estudian
 
 ### 5.1 Recorte Ponderado con Punto de Quiebre
 
-Cada partida del presupuesto trae un **punto de quiebre**: el porcentaje bajo el cual el programa deja de ser operable. Lo calcula el Pool de Auditores Presupuestales.
+Cada partida del presupuesto trae un punto de quiebre: el porcentaje bajo el cual el programa deja de ser operable. Lo calcula el Pool de Auditores Presupuestales.
 
-- Si el pueblo vota un recorte **por debajo** del punto de quiebre → se recorta el gasto discrecional en proporción.
-- Si el recorte **supera** el punto de quiebre → el programa se cancela entero y el 100% va a la Cascada de Excedentes.
-- Ves esa información **antes** de confirmar el voto.
+- Si el pueblo vota un recorte por debajo del punto de quiebre → se recorta el gasto discrecional en proporción.
+- Si el recorte supera el punto de quiebre → el programa se cancela entero y el 100% va a la Cascada de Excedentes.
+- Ves esa información antes de confirmar el voto.
 
 La metodología del punto de quiebre es pública e impugnable.
 
@@ -505,14 +503,14 @@ Si una métrica automática dispara la cancelación de algo crítico (Filtro 3),
 
 **Gasto Fijo Operativo intocable** (seis partidas; coherente con el Cap. 5A):
 
-1. **Justicia operativa** — jueces y equipos sorteados en funciones (no burocracia VIP).
-2. **Seguridad** — policías operativos / seguridad local.
-3. **Defensa sandbox** — fuerzas armadas bajo aislamiento operativo.
-4. **Infraestructura de soberanía** — TVM, CSC, auditoría, red mesh, boleta física.
-5. **División de Desastres** — capacidad operativa (no clientela).
-6. **Créditos universales del paquete** — voucher educativo + prima mínima del seguro (catastrófico y enfermedades transmisibles), pagados a instituciones y aseguradoras. El **monto** lo ajusta el pueblo en la Mega Anual; la burocracia sola no lo tumba.
+1. **Justicia operativa:** jueces y equipos sorteados en funciones (no burocracia VIP).
+2. **Seguridad:** policías operativos / seguridad local.
+3. **Defensa sandbox:** fuerzas armadas bajo aislamiento operativo.
+4. **Infraestructura de soberanía:** TVM, CSC, auditoría, red mesh, boleta física.
+5. **División de Desastres:** capacidad operativa (no clientela).
+6. **Créditos universales del paquete:** voucher educativo + prima mínima del seguro (catastrófico y enfermedades transmisibles), pagados a instituciones y aseguradoras. El monto lo ajusta el pueblo en la Mega Anual; la burocracia sola no lo tumba.
 
-Todo lo demás es **gasto condicionado**: entra al recorte, a las cláusulas de caducidad y a las métricas anti-trampa.
+Todo lo demás es gasto condicionado: entra al recorte, a las cláusulas de caducidad y a las métricas anti-trampa.
 
 ### 5.5 Prohibición de Decisiones Automáticas con una Sola Métrica
 
@@ -536,9 +534,9 @@ Toda política grande caduca sola en N años si no demuestra resultados según m
 
 El dinero que sobra de los recortes se reparte por contrato inteligente inalterable:
 
-1. **Alpha — Bóveda de Resiliencia (30%):** reserva líquida para desastres y protección civil. Tope: 2% del PIB. Si se llena, rebosa a la siguiente.
-2. **Beta — Amortización de Deuda (40%):** pago de capital de la deuda con mayor tasa.
-3. **Gamma — Fondo de Inversión Soberano (30% + rebose de Alpha):** fondo global de propiedad nacional (modelo Noruega) para pensiones de largo plazo. **No** presta ni capitaliza amigos del poder.
+1. **Alpha, Bóveda de Resiliencia (30%):** reserva líquida para desastres y protección civil. Tope: 2% del PIB. Si se llena, rebosa a la siguiente.
+2. **Beta, Amortización de Deuda (40%):** pago de capital de la deuda con mayor tasa.
+3. **Gamma, Fondo de Inversión Soberano (30% + rebose de Alpha):** fondo global de propiedad nacional (modelo Noruega) para pensiones de largo plazo. No presta ni capitaliza amigos del poder.
 
 ---
 
@@ -548,36 +546,36 @@ El dinero que sobra de los recortes se reparte por contrato inteligente inaltera
 
 ### 5A.0 Principio rector
 
-1. **La propiedad privada es la regla**; la propiedad estatal es la excepción temporal y justificada.
-2. **El Estado no dirige la economía**; protege contratos, personas y propiedad, y financia solo lo que el pueblo autoriza bajo el motor del Cap. 5.
-3. **Ninguna empresa o asociación captura el fisco ni la política** (coherente con Cap. 6): el capital organizado no compra leyes.
+1. La propiedad privada es la regla; la propiedad estatal es la excepción temporal y justificada.
+2. El Estado no dirige la economía; protege contratos, personas y propiedad, y financia solo lo que el pueblo autoriza bajo el motor del Cap. 5.
+3. Ninguna empresa o asociación captura el fisco ni la política (coherente con Cap. 6): el capital organizado no compra leyes.
 
 Esto es minarquía con demarquía: mercado libre + Estado delgado sorteado + presupuesto bajo cuchillo popular.
 
 ### 5A.1 Régimen de propiedad
 
-**Propiedad privada.** Toda persona física y moral puede adquirir, usar, transferir y heredar bienes lícitos. El título se registra en un sistema público auditable. Se permite pluralidad de registradores certificados bajo estándares universales — no hace falta un monopolio estatal único de registros.
+**Propiedad privada.** Toda persona física y moral puede adquirir, usar, transferir y heredar bienes lícitos. El título se registra en un sistema público auditable. Se permite pluralidad de registradores certificados bajo estándares universales; no hace falta un monopolio estatal único de registros.
 
 **Expropiación.** Solo por ley de aplicación universal, con compensación a valor de mercado independiente, plazo corto y recurso judicial. Si toca el código base de derechos negativos, exige Triple Llave. Prohibidas las expropiaciones por identidad, clase, sector o “interés estratégico” indefinido.
 
 **Bienes comunes y naturales.** Recursos no apropiables por ocupación pacífica (aire, cuencas críticas, espectro de uso público) se rigen por reglas universales de uso, no por nacionalización automática de industrias. Concesiones temporales, subastas transparentes, caducidad obligatoria.
 
-**Sin topes a la acumulación.** La minarquía no castiga el éxito. No hay techos patrimoniales ni impuestos confiscatorios al stock. La contención del poder económico se hace por: (a) prohibición de financiar política con capital de personas morales, (b) leyes universales antirust solo contra coerción, fraude o monopsonio coercitivo demostrado, (c) transparencia de contratos con el Estado. *No* por redistribución patrimonial forzada.
+**Sin topes a la acumulación.** La minarquía no castiga el éxito. No hay techos patrimoniales ni impuestos confiscatorios al stock. La contención del poder económico se hace por: (a) prohibición de financiar política con capital de personas morales, (b) leyes universales antirust solo contra coerción, fraude o monopsonio coercitivo demostrado, (c) transparencia de contratos con el Estado. No por redistribución patrimonial forzada.
 
 ### 5A.2 Impuestos (mal necesario acotado)
 
-El impuesto existe solo para financiar el núcleo minárquico y los servicios que el pueblo mantenga vivos vía Cap. 5. No es herramienta de ingeniería social ni de igualdad de resultados.
+El impuesto existe solo para financiar el núcleo minárquico y los servicios que el pueblo mantenga vivos vía Cap. 5. No sirve de herramienta de ingeniería social ni de igualdad de resultados.
 
-**Gasto fijo operativo** — las seis partidas del Cap. 5.4. Todo lo demás es gasto condicionado.
+**Gasto fijo operativo:** las seis partidas del Cap. 5.4. Todo lo demás es gasto condicionado.
 
-**Forma tributaria preferida.** Pocas bases, universales, predecibles. Preferencia por impuestos al consumo, uso de suelo o externalidades medibles sobre impuestos a la renta del trabajo o al capital productivo — *salvo* que el pueblo vote lo contrario en Mega Anual con Argumentos Críticos. Prohibido: impuesto retroactivo; impuesto por identidad; tasas punitivas a sectores nombrados.
+**Forma tributaria preferida.** Pocas bases, universales, predecibles. Preferencia por impuestos al consumo, uso de suelo o externalidades medibles sobre impuestos a la renta del trabajo o al capital productivo, salvo que el pueblo vote lo contrario en Mega Anual con Argumentos Críticos. Prohibido: impuesto retroactivo; impuesto por identidad; tasas punitivas a sectores nombrados.
 
-**Opt-Out cívico.** Quien ejerce Opt-Out cívico **sigue pagando impuestos** (1.8). La protección de derechos negativos no es gratis; la secesión fiscal no es parte del tronco.
+**Opt-Out cívico.** Quien ejerce Opt-Out cívico sigue pagando impuestos (1.8). La protección de derechos negativos tiene costo fiscal; la secesión fiscal queda fuera del tronco.
 
 **Meta y techo fiscal (clavado).**
 
-- **Meta operativa:** la carga total del Estado apunta a ≤ **15% del PIB**. Cada Mega Anual publica la carga real, la brecha respecto a la meta y el mapa de prelación; el motor del Cap. 5 empuja hacia esa meta.
-- **Techo duro constitucional:** **20% del PIB**. Superarlo no se decide en una Mega ordinaria: exige **Triple Llave** (Congreso Demárquico + TSC + 75% de votación popular directa).
+- **Meta operativa:** la carga total del Estado apunta a ≤ 15% del PIB. Cada Mega Anual publica la carga real, la brecha respecto a la meta y el mapa de prelación; el motor del Cap. 5 empuja hacia esa meta.
+- **Techo duro constitucional:** 20% del PIB. Superarlo no se decide en una Mega ordinaria: exige Triple Llave (Congreso Demárquico + TSC + 75% de votación popular directa).
 - Por debajo del techo, el pueblo puede subir o bajar gasto vía Cap. 5; el 20% es el muro anti-Leviatán.
 
 ### 5A.3 Empresas y “lo estratégico”
@@ -586,25 +584,25 @@ Crear o mantener empresa pública exige: ley universal, caducidad ≤ N años, m
 
 **Prohibido:** monopolios estatales permanentes en sectores competitivos (comercio, banca minorista, manufactura, medios).
 
-**Excepción estrecha:** redes naturales de difícil rivalidad (cierta infraestructura de malla) pueden quedar bajo concesión regulada o propiedad pública temporal — siempre con caducidad y auditoría. “Estratégico” no basta por sí solo.
+**Excepción estrecha:** redes naturales de difícil rivalidad (cierta infraestructura de malla) pueden quedar bajo concesión regulada o propiedad pública temporal, siempre con caducidad y auditoría. “Estratégico” no basta por sí solo.
 
 ### 5A.4 Banca, moneda y crédito
 
-**Banca privada libre** de entrar y salir bajo reglas universales de solvencia transparente y anti-fraude — sin privilegios ni licencias-casta.
+**Banca privada libre** de entrar y salir bajo reglas universales de solvencia transparente y anti-fraude, sin privilegios ni licencias-casta.
 
 **Prohibido** el crédito dirigido a campeones nacionales, sectores amigos o banca de desarrollo clientelar.
 
-**Rescates** de personas morales con dinero público o expansión monetaria: **prohibidos**, salvo desastre sistémico declarado bajo División de Desastres + ratificación popular en 72 h.
+**Rescates** de personas morales con dinero público o expansión monetaria: prohibidos, salvo desastre sistémico declarado bajo División de Desastres + ratificación popular en 72 h.
 
 **Seguro de depósitos acotado** con prima (no garantía ilimitada que socializa pérdidas). El tope exacto lo fija la Mega Anual dentro del techo 15/20.
 
-**Fondo Gamma** (Cascada, Cap. 5.9): reserva/pensiones de largo plazo — **no** presta ni capitaliza amigos del poder.
+**Fondo Gamma** (Cascada, Cap. 5.9): reserva/pensiones de largo plazo; no presta ni capitaliza amigos del poder.
 
 **Crédito entre privados:** libre. El tronco no fija techos mágicos de tasas; fraude, violencia y dolo sí son delito.
 
 **Moneda (régimen A+).**
 
-- **Unidad fiscal:** el **peso** (u homólogo local en forks regionales) es la unidad de curso legal para impuestos, contabilidad del Estado y medición de la carga vs. PIB (meta 15% / techo 20%).
+- **Unidad fiscal:** el peso (u homólogo local en forks regionales) es la unidad de curso legal para impuestos, contabilidad del Estado y medición de la carga vs. PIB (meta 15% / techo 20%).
 - **Regla dura de emisión:** parámetros públicos auditables; expansión de emergencia solo con declaración bajo División de Desastres + ratificación popular en 72 h. Prohibidos los rescates clientelares con expansión monetaria o fiscal.
 - **Libertad monetaria privada:** personas físicas y morales pueden contratar, ahorrar y pagar entre sí en cualquier moneda, cripto o trueque. El Estado no prohíbe ni impone medios privados de pago.
 - **Interoperabilidad:** obligaciones fiscales se liquidan en pesos (o equivalencia transparente al tipo publicado); anti-fraude sin vigilancia masiva del patrimonio privado.
@@ -616,50 +614,50 @@ Crear o mantener empresa pública exige: ley universal, caducidad ≤ N años, m
 
 **Regulación.** Solo reglas universales (seguridad mínima medible, externalidades, información). Prohibidas las licencias que crean castas gremiales sin evidencia de daño. Toda licencia profesional entra a caducidad y revisión anti-Goodhart.
 
-**Trabajo.** Libertad de asociación laboral (coherente con 1.1). El Estado no fija precios ni salarios del mercado. **El salario mínimo económico no forma parte del tronco**; si el pueblo lo quiere, debe aprobarlo como ley universal ordinaria (1.2), no como supuesto constitucional. Sí permanece la compensación cívica del Cap. 4 (pago por servicio democrático: voto/trabajo extendido), que no es salario mínimo económico.
+**Trabajo.** Libertad de asociación laboral (coherente con 1.1). El Estado no fija precios ni salarios del mercado. El salario mínimo económico queda fuera del tronco; si el pueblo lo quiere, debe aprobarlo como ley universal ordinaria (1.2), no como supuesto constitucional. Sí permanece la compensación cívica del Cap. 4 (pago por servicio democrático: voto/trabajo extendido), que es otra cosa.
 
-El blindaje laboral cívico del Cap. 4 se mantiene: proteger el ejercicio del voto no es proteccionismo industrial.
+El blindaje laboral cívico del Cap. 4 se mantiene: protege el ejercicio del voto, no al proteccionismo industrial.
 
 ### 5A.6 Redistribución
 
-La minarquía no niega toda transferencia; niega la redistribución como fin.
+La minarquía admite transferencias acotadas y rechaza la redistribución como fin.
 
 - Asignaciones focalizadas **permitidas** solo bajo 1.2: criterio objetivo, temporal, universalmente accesible (ej. capacidad funcional < X%).
 - Prohibidas las transferencias por identidad, voto, afiliación o “reparación” indefinida.
-- El Fondo Gamma no es cheque clientelar: es reserva intertemporal bajo reglas de cascada.
+- El Fondo Gamma es reserva intertemporal bajo reglas de cascada, no un cheque clientelar.
 
 ### 5A.7 Salud y educación (cierra 10.11)
 
-**Principio.** El Estado **no opera** escuelas ni hospitales. Financia créditos universales; la prestación es privada y competitiva. Todo cuenta contra la meta 15% / techo 20% del PIB.
+**Principio.** El Estado no opera escuelas ni hospitales. Financia créditos universales; la prestación es privada y competitiva. Todo cuenta contra la meta 15% / techo 20% del PIB.
 
-**Educación — voucher.**
+**Educación (voucher).**
 
 - Crédito/voucher universal orientado al menor (y a alfabetización de adultos bajo criterio 1.2 si el pueblo lo mantiene).
-- Los padres (o tutores) **eligen** la institución. El Estado **paga directamente a la institución** contra el voucher — nunca en efectivo a la familia.
+- Los padres (o tutores) eligen la institución. El Estado paga directamente a la institución contra el voucher, nunca en efectivo a la familia.
 - Condiciones de pago: **matrícula activa** en proveedor registrado + evidencia periódica de que el servicio se está prestando (asistencia y/o progreso verificable respecto al piso de lectoescritura/numeracy + capa cívica del Cap. 8). Sin matrícula/servicio verificable, no hay desembolso.
-- **Portabilidad:** en cualquier momento los padres pueden retirar al menor y asignar el voucher a otra institución; el financiamiento sigue al estudiante, no crea plaza cautiva.
+- **Portabilidad:** en cualquier momento los padres pueden retirar al menor y asignar el voucher a otra institución; el financiamiento sigue al estudiante y no crea plaza cautiva.
 - Sin monopolio curricular estatal ni universidad estatal de tronco.
 
-**Salud — seguro en competencia.**
+**Salud (seguro en competencia).**
 
 - Crédito universal a prima de seguros privados que compiten.
-- La persona **elige** aseguradora. El Estado **paga directamente a la aseguradora** el crédito — no deposita el valor en el bolsillo del asegurado (salvo el opt-out fiscal del 80%).
+- La persona elige aseguradora. El Estado paga directamente a la aseguradora el crédito; no deposita el valor en el bolsillo del asegurado (salvo el opt-out fiscal del 80%).
 - Condiciones de pago: póliza activa válida del paquete mínimo + evidencia de cobertura vigente. Sin póliza activa, no hay desembolso del crédito (salvo opt-out).
-- **Portabilidad total:** se puede cambiar de aseguradora en cualquier momento; el crédito sigue a la persona, no crea cliente cautivo.
+- **Portabilidad total:** se puede cambiar de aseguradora en cualquier momento; el crédito sigue a la persona y no crea cliente cautivo.
 - El paquete mínimo de tronco prioriza **cobertura catastrófica + enfermedades transmisibles / externalidades sanitarias**. Lo rutinario tiende al mercado y a planes voluntarios por encima del mínimo.
 - El Estado no es dueño de la red hospitalaria.
 
 **Opt-out del beneficio (≠ Opt-Out cívico 1.8).**
 
-- Cualquier adulto puede renunciar al crédito de seguro de salud (y, en su caso, a créditos educativos propios — no al del menor a cargo) y recibir **rebaja fiscal del 80% del valor del crédito**. El **20%** restante financia administración y colchón de selección adversa del pool.
-- Eso no es secesión fiscal general: solo recuperas el valor del beneficio rechazado.
+- Cualquier adulto puede renunciar al crédito de seguro de salud (y, en su caso, a créditos educativos propios, no al del menor a cargo) y recibir rebaja fiscal del 80% del valor del crédito. El 20% restante financia administración y colchón de selección adversa del pool.
+- Solo recuperas el valor del beneficio rechazado; no hay secesión fiscal general.
 - Sigue vigente la ley, los impuestos del núcleo minárquico y el techo 15/20.
 
-**Focalización extra (1.2).** Apoyos adicionales solo por criterio objetivo, temporal y universalmente accesible — nunca por identidad.
+**Focalización extra (1.2).** Apoyos adicionales solo por criterio objetivo, temporal y universalmente accesible, nunca por identidad.
 
 ### 5A.8 Relación con el Cap. 5
 
-Este capítulo **no sustituye** el motor financiero; lo justifica:
+Este capítulo justifica el motor financiero; no lo sustituye:
 
 | Pieza Cap. 5 | Lectura minárquica |
 |--------------|-------------------|
@@ -671,17 +669,17 @@ Este capítulo **no sustituye** el motor financiero; lo justifica:
 
 ### 5A.9 Qué queda fuera (forks)
 
-- Abolición de impuestos / defensa privada pura → **fork ancap**.
-- Nacionalización amplia / planificación / topes patrimoniales → **fork no-minárquico** (debe renunciar a este capítulo).
-- Renta básica universal sin criterio 1.2 → requiere Triple Llave si se constitucionaliza; no es default.
+- Abolición de impuestos / defensa privada pura → fork ancap.
+- Nacionalización amplia / planificación / topes patrimoniales → fork no-minárquico (debe renunciar a este capítulo).
+- Renta básica universal sin criterio 1.2 → requiere Triple Llave si se constitucionaliza; queda fuera del default.
 
 ### 5A.10 Qué queda cerrado en el tronco (edu/salud y economía)
 
 > **Cerrado en tronco (minarquía):** propiedad privada por defecto, sin topes de acumulación, impuestos acotados al núcleo + gasto condicionado, empresas públicas bajo sunset, no rescates clientelares, regulación universal, salud/educación vía voucher + seguro competitivo con opt-out fiscal, banca libre sin rescates con depósitos acotados.  
 > **Clavado:** meta 15% PIB / techo duro 20% PIB (Triple Llave).  
-> **Clavado:** régimen A+ — peso como unidad fiscal (regla dura) + libertad monetaria privada.  
+> **Clavado:** régimen A+ (peso como unidad fiscal con regla dura + libertad monetaria privada).  
 > **Clavado:** salario mínimo económico fuera del tronco (compensación cívica Cap. 4 sí).  
-> **Clavado:** edu/salud — voucher + seguro competitivo + opt-out con rebaja 80%/20% al pool.  
+> **Clavado:** edu/salud (voucher + seguro competitivo + opt-out con rebaja 80%/20% al pool).  
 > **Clavado:** banca libre + sin rescates + depósitos acotados + Gamma limpio.  
 > **Clavado:** gasto fijo operativo en 6 partidas.  
 > **Parámetro abierto:** tope numérico del seguro de depósitos (Mega Anual).
@@ -692,14 +690,14 @@ Este capítulo **no sustituye** el motor financiero; lo justifica:
 
 ### 6.1 Justicia Dinámica
 
-Los juzgados de primera instancia operan bajo **Justicia Dinámica**.
+Los juzgados de primera instancia operan bajo Justicia Dinámica.
 
-- Casos simples (faltas, procedimientos menores): el juez se sortea del Pool Judicial **la misma mañana** de la audiencia. Así no hay tiempo de sobornar con anticipación.
+- Casos simples (faltas, procedimientos menores): el juez se sortea del Pool Judicial la misma mañana de la audiencia. Así no hay tiempo de sobornar con anticipación.
 - Casos complejos (fraude grande, crimen organizado, evasión estructurada): el sorteo es 30 a 90 días antes. Al juez se le asigna un equipo técnico también sorteado, que rota con él. Se elimina el personal burocrático permanente del juzgado. Los registros se auditan en tiempo real por software que detecta anomalías.
 
 ### 6.2 Ejército en Sandbox
 
-Para evitar golpes de Estado, las Fuerzas Armadas viven en **aislamiento operativo** (sandbox): misión limitada a defensa de fronteras y control técnico de ciberseguridad nacional. No pueden movilizar tropas internas sin autorización explícita de una Asamblea de Emergencia ratificada por el pueblo.
+Para evitar golpes de Estado, las Fuerzas Armadas viven en aislamiento operativo (sandbox): misión limitada a defensa de fronteras y control técnico de ciberseguridad nacional. No pueden movilizar tropas internas sin autorización explícita de una Asamblea de Emergencia ratificada por el pueblo.
 
 ### 6.3 Separación de Capacidades Coercitivas
 
@@ -734,7 +732,7 @@ No se diseña milicia armada distribuida (riesgo de señores de la guerra). Se a
 
 **Equipos adversariales (Red Teams) permanentes:** financiados constitucionalmente. Intentan manipular Ágora, votaciones, pools y exámenes para revelar huecos antes que lo hagan actores hostiles. Publican hallazgos.
 
-**Con honestidad:** esto no detiene por completo la manipulación memética. Influencia extranjera, iglesias, redes familiares y plataformas externas seguirán moldeando opinión. Es defensa de daños, no vacuna total.
+Esto no detiene por completo la manipulación memética. Influencia extranjera, iglesias, redes familiares y plataformas externas seguirán moldeando opinión. Es defensa de daños, no vacuna total.
 
 ### 6.7 Financiamiento político: personas físicas vs. personas morales
 
@@ -748,7 +746,7 @@ La libertad de expresión política es derecho negativo absoluto de toda persona
 - Donar a campañas de ideas, propuestas, candidatos a pools o iniciativas del Ágora.
 - Participar en redes, asambleas informales y cualquier asociación voluntaria.
 
-**Restricción a personas morales** (empresas, corporaciones, sindicatos, ONGs, fundaciones, asociaciones civiles, partidos legacy, iglesias como entidades legales): **no** pueden financiar contenido político, campañas, propaganda, propuestas del Ágora ni publicidad de candidatos a pools o presidencia.
+**Restricción a personas morales** (empresas, corporaciones, sindicatos, ONGs, fundaciones, asociaciones civiles, partidos legacy, iglesias como entidades legales): no pueden financiar contenido político, campañas, propaganda, propuestas del Ágora ni publicidad de candidatos a pools o presidencia.
 
 Motivo: las personas morales agregan capital de muchos individuos para fines específicos; desviar ese capital hacia influencia política distorsiona la voluntad de quienes lo aportaron.
 
@@ -826,26 +824,26 @@ El Estado tiene obligación activa de producir y mantener materiales sobre el si
 
 Quien quiera aprender aprende. Quien no quiera, no. Quien quiera ser tutor se ofrece. La alfabetización cívica crece de forma orgánica y voluntaria.
 
-Aceptamos con honestidad que algunos ciudadanos nunca se informarán bien y votarán mal informados. Ese es el precio de la libertad real. Es preferible a crear filtros que excluyen.
+Aceptamos que algunos ciudadanos nunca se informarán bien y votarán mal informados. Ese es el precio de la libertad real, preferible a crear filtros que excluyen.
 
-### 8.2 Tutores Cívicos Voluntarios — Nivel 1
+### 8.2 Tutores Cívicos Voluntarios (Nivel 1)
 
 Cualquier ciudadano puede inscribirse como tutor cívico voluntario en la app, declarando temas y disponibilidad.
 
 - Los aprendices solicitan tutoría por tema.
-- El sistema empareja por **sorteo**, no por elección, con prohibición de asignar familiares directos o personas con historial previo de interacción.
+- El sistema empareja por sorteo, no por elección, con prohibición de asignar familiares directos o personas con historial previo de interacción.
 - Cada sesión se registra cuando ambas partes confirman.
-- Compensación: tarifa cívica por hora alineada al trabajo cívico extendido del Cap. 4 (10% del salario promedio nacional por hora), vía contrato inteligente. *(No es salario mínimo económico del mercado.)*
+- Compensación: tarifa cívica por hora alineada al trabajo cívico extendido del Cap. 4 (10% del salario promedio nacional por hora), vía contrato inteligente. *(Distinto del salario mínimo económico del mercado.)*
 - Tope semanal de horas compensadas por persona, para que no se vuelva ingreso principal.
 - El aprendiz evalúa la sesión. Tutores con baja evaluación promedio pierden la opción hasta revalidación.
 - Auditoría aleatoria contra sesiones fantasma o fraude.
 - Hasta tres reasignaciones al año por incompatibilidad.
 
-### 8.3 Tutores Cívicos Plaza Fija — Nivel 2
+### 8.3 Tutores Cívicos Plaza Fija (Nivel 2)
 
 Tutores Nivel 1 con evaluación promedio alta (arriba de 4.5/5) durante 100 sesiones evaluadas o 12 meses pueden postularse a plaza fija.
 
-- La plaza se otorga por **sorteo** entre los calificados, no por selección discrecional.
+- La plaza se otorga por sorteo entre los calificados, no por selección discrecional.
 - Salario completo de funcionario equivalente a maestro o técnico medio del Estado, con prestaciones.
 - Si el promedio baja de 3.5/5 durante 6 meses seguidos, pierde la plaza automática. Puede regresar a Nivel 1 sin castigo.
 - Tope estructural: máximo 1 tutor Nivel 2 fijo por cada 10,000 ciudadanos activos.
@@ -870,23 +868,23 @@ Tres mecanismos contra monopolios armados locales (carteles, mafias):
 
 La implementación pacífica desde un Estado consolidado y polarizado es altamente improbable. Los escenarios realistas son tres:
 
-**Escenario A — Estado paralelo gradual.** En sociedades con instituciones funcionales y baja violencia se avanza por capas hacia una república demárquica a escala nacional: primero opinión pública y normas voluntarias; después soberanía parcial donde un estado, región o zona adopte el kernel como cabeza de playa; más adelante el salto constitucional. En el camino caben presupuesto participativo, arbitraje ciudadano, auditoría pública y votaciones no vinculantes — a veces a escala local como módulo técnico, nunca como techo de ambición. Se escala solo cuando baja la corrupción medible y crece la legitimidad. Sin confrontación armada. Sin intentar controlar ejército ni policía en fases tempranas. El plan de adopción nacional en capas desarrolla este camino.
+**Escenario A: Estado paralelo gradual.** En sociedades con instituciones funcionales y baja violencia se avanza por capas hacia una república demárquica a escala nacional: primero opinión pública y normas voluntarias; después soberanía parcial donde un estado, región o zona adopte el kernel como cabeza de playa; más adelante el salto constitucional. En el camino caben presupuesto participativo, arbitraje ciudadano, auditoría pública y votaciones no vinculantes, a veces a escala local como módulo técnico del proyecto nacional. Se escala solo cuando baja la corrupción medible y crece la legitimidad, sin confrontación armada y sin intentar controlar ejército ni policía en fases tempranas. El plan de adopción nacional en capas desarrolla este camino.
 
-**Escenario B — Pacto con élites legacy.** Élites tradicionales aceptan transición negociada a cambio de “paracaídas dorado”: amnistía local, inmunidad de tránsito, protección de activos legales, espacio ceremonial sin poder presupuestal por un periodo acordado. La transición es real; los actores existentes no se destruyen. Modelos históricos: España post-franquismo, Sudáfrica post-apartheid.
+**Escenario B: Pacto con élites legacy.** Élites tradicionales aceptan transición negociada a cambio de “paracaídas dorado”: amnistía local, inmunidad de tránsito, protección de activos legales, espacio ceremonial sin poder presupuestal por un periodo acordado. La transición es real; los actores existentes no se destruyen. Modelos históricos: España post-franquismo, Sudáfrica post-apartheid.
 
-**Escenario C — Post-colapso.** Territorios donde el Estado tradicional ya falló (post-guerra, post-crisis terminal, post-catástrofe). El sistema funciona como reinicio cívico desde cero. Requiere capacidad técnica y voluntad comunitaria. Modelos: democracias post-WWII, post-dictaduras latinoamericanas.
+**Escenario C: Post-colapso.** Territorios donde el Estado tradicional ya falló (post-guerra, post-crisis terminal, post-catástrofe). El sistema funciona como reinicio cívico desde cero. Requiere capacidad técnica y voluntad comunitaria. Modelos: democracias post-WWII, post-dictaduras latinoamericanas.
 
 ### 9.3 Costo histórico de implementación
 
 Implementar este sistema mediante reemplazo total y rápido de un Estado grande consolidado no tiene precedente histórico pacífico. Toda transición sistémica grande tuvo costo de violencia organizada.
 
-Este manifiesto **no promueve la violencia**. Tampoco oculta que ese ha sido históricamente el precio. La decisión de pagarlo o no le corresponde a cada pueblo, no a este documento. Lo que sí afirmamos: cualquier pueblo, en cualquier momento, puede legítimamente decidir reclamar su soberanía. Demarquía Digital se ofrece como herramienta para ese momento, sea pacífico o no.
+Este manifiesto no promueve la violencia y tampoco oculta que ese ha sido históricamente el precio de un reemplazo sistémico. La decisión de pagarlo o no le corresponde a cada pueblo, no a este documento. Cualquier pueblo, en cualquier momento, puede legítimamente decidir reclamar su soberanía. Demarquía Digital se ofrece como herramienta para ese momento, sea pacífico o no.
 
 ---
 
 ## Capítulo 10: Modelado de Amenazas e Issues Abiertos
 
-El sistema reconoce que no es perfecto. Esta sección documenta problemas no resueltos. Su publicación abierta es deliberada: invita a contribuciones específicas.
+Esta sección documenta problemas no resueltos. Su publicación abierta es deliberada: invita a contribuciones específicas.
 
 ### 10.1 Complejidad Computacional Institucional
 
@@ -928,17 +926,17 @@ Para leyes universales con criterio objetivo: protocolos concretos de verificaci
 
 Tema grande no desarrollado: filosofía del castigo, sistema penitenciario, justicia restaurativa, garantías procesales detalladas, libertad condicional, reinserción.
 
-### 10.11 Educación, Salud y Sistemas Públicos — cerrado en tronco (v0.4)
+### 10.11 Educación, Salud y Sistemas Públicos (cerrado en tronco, v0.4)
 
 > Ver Cap. 5A.7: el Estado no opera escuelas ni hospitales; financia voucher educativo (pago a institución + matrícula + evidencia de servicio + portabilidad) y crédito a aseguradora en competencia (pago a aseguradora + portabilidad + paquete mínimo catastrófico/transmisibles); opt-out del beneficio con rebaja fiscal 80%/20% al pool. Detalles de currículo fino y protocolos médicos clínicos quedan al mercado y a la Mega Anual; el régimen institucional ya está en el tronco.
 
-### 10.12 Economía y Régimen de Propiedad — cerrado en tronco (v0.4)
+### 10.12 Economía y Régimen de Propiedad (cerrado en tronco, v0.4)
 
 > Ver Cap. 5A completo: propiedad privada por defecto, sin topes de acumulación, meta fiscal 15% / techo 20% (Triple Llave), moneda A+ (peso fiscal + libertad privada), banca libre sin rescates clientelares, depósitos acotados, Gamma limpio, seis partidas de gasto fijo, sin salario mínimo económico en tronco. Parámetro aún abierto: tope numérico del seguro de depósitos (Mega Anual).
 
 ### 10.13 Tribunal Supremo como Cuello de Botella Soberano
 
-Quien interpreta la Constitución tiene poder metapolítico. El consenso 70–80% mitiga pero no resuelve. Tensión clásica de teoría constitucional.
+Quien interpreta la Constitución tiene poder metapolítico. El consenso 70-80% mitiga pero no resuelve. Tensión clásica de teoría constitucional.
 
 ### 10.14 Contradicción Filosófica entre Descentralización y Blindaje
 
@@ -971,7 +969,7 @@ Los forks son bienvenidos. Si una región, país o comunidad quiere adaptar el m
 
 ### 11.4 Versionado
 
-Versionado semántico. Cambios menores incrementan patch (v0.4.1). Cambios significativos incrementan menor (v0.5). La transición a v1.0 representa la primera implementación nacional efectiva del sistema.
+Versionado semántico. Cambios menores incrementan patch (v0.4.2). Cambios significativos incrementan menor (v0.5). La transición a v1.0 representa la primera implementación nacional efectiva del sistema.
 
 ### 11.5 Gobernanza de Mantenedores (Issue Abierto)
 
@@ -994,9 +992,11 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 
 - **v0.4 (18 septiembre 2026):** Reescritura completa en **lenguaje sencillo** (apto para video / lectura fácil). Prefacio filosófico explícito: tronco = **minarquía demárquica digital**; ancap = fork. Frase clavada en 1.8: *«El Opt-Out cívico no es secesión fiscal ni salida del orden legal.»* Nuevo **Cap. 5A Economía y Propiedad**: cierra issues **10.11** (edu/salud) y **10.12** (economía). Clavados: meta fiscal 15% PIB / techo duro 20% (Triple Llave); moneda A+ (peso fiscal + libertad privada); sin salario mínimo económico en tronco (sí compensación cívica Cap. 4); voucher educativo (Estado paga a institución; matrícula + evidencia; portabilidad); salud vía crédito a aseguradora en competencia (Estado paga a aseguradora; portabilidad); opt-out del beneficio con rebaja 80%/20% al pool; banca libre sin rescates salvo desastre+72h; depósitos acotados; Gamma limpio; gasto fijo operativo en 6 partidas. Gasto fijo del Cap. 5 alineado (ya no salarios de médicos/maestros ni “luz de hospitales” como fijo: el tronco no opera escuelas ni hospitales). Plantillas de fork ancap/social previstas en Cap. 11.
 
-- **v0.4.1 (18 septiembre 2026):** Humanización del relato y destino país desde el día 1. Repositorio público enlazado. Resumen ejecutivo y Capítulo 9 alineados con adopción nacional en capas (escenarios A–C); la viabilidad deja de centrarse en municipios piloto. Prefacio de forks en tono breve.
+- **v0.4.1 (18 septiembre 2026):** Humanización del relato y destino país desde el día 1. Repositorio público enlazado. Resumen ejecutivo y Capítulo 9 alineados con adopción nacional en capas (escenarios A-C); la viabilidad deja de centrarse en municipios piloto. Prefacio de forks en tono breve.
+
+- **v0.4.2 (18 septiembre 2026):** Pass humanizer (blader/humanizer). Menos contraste not-X-but-Y espurio y defensas a objeciones que el lector frío no trae; se conserva el contraste ancap/minarquía donde educa. Cero em dashes en prosa. Menos negritas decorativas. Declaración con el objetivo de frente.
 
 ---
 
-*Demarquía Digital · manifiesto v0.4.1 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
+*Demarquía Digital · manifiesto v0.4.2 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
 
