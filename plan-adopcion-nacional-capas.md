@@ -1,6 +1,6 @@
 # Plan de adopción nacional en capas
 
-**Demarquía Digital** · complemento al manifiesto v0.4.4 · 18 sep 2026
+**Demarquía Digital** · complemento al manifiesto v0.4.5 · 18 sep 2026
 
 El destino es un país bajo minarquía demárquica digital. Las capas son el camino: se ejecutan en secuencia (o en paralelo cuando tiene sentido), siempre con la República demárquica como norte.
 
@@ -64,7 +64,7 @@ Aquí nace el material negociable del “paracaídas dorado” del Escenario B.
 
 ### Capa 3: Soberanía parcial
 
-Territorio real donde el núcleo del sistema manda en lo local-regional, federado o asociado a un proyecto nacional explícito. Un estado, provincia, región autónoma o zona con competencia real adopta el código base (Caps. 1-5A en lo aplicable). Llegan las primeras TVM/CSC, o una malla híbrida honesta (papel más digital auditado). Hay Congreso demárquico y Ágora vinculante en el ámbito de sus competencias. El gasto fijo de seis partidas y el techo fiscal se recalculan al PIB o presupuesto de esa jurisdicción.
+Territorio real donde el núcleo del sistema manda en lo local-regional, federado o asociado a un proyecto nacional explícito. Un estado, provincia, región autónoma o zona con competencia real adopta el código base (Caps. 1-5A en lo aplicable). Llegan las primeras TVM en vía mínima (Cap. 2.4) y CSC, o una malla híbrida honesta (papel más digital auditado). La especificación objetivo de tres chips rivales no es requisito de esta capa. Hay Congreso demárquico y Ágora vinculante en el ámbito de sus competencias. El gasto fijo de seis partidas y el techo fiscal se recalculan al PIB o presupuesto de esa jurisdicción.
 
 Es cabeza de playa de la República: laboratorio de soberanía al servicio del reemplazo nacional. En países unitarios sin estados fuertes, la misma idea puede tomar forma de ciudades, distritos o zonas bajo bandera nacional.
 
@@ -76,7 +76,7 @@ Es cabeza de playa de la República: laboratorio de soberanía al servicio del r
 
 El tronco deja de ser capa y pasa a ser el orden jurídico del país.
 
-Proceso constituyente o Triple Llave (o el equivalente histórico del país). Congreso Demárquico de 500, Tribunal Supremo de Consenso, ciclo electoral nacional, TVM a escala país. El presupuesto migra al motor de los Caps. 5 y 5A. Presidente ceremonial, defensa en aislamiento operativo, División de Desastres.
+Proceso constituyente o Triple Llave (o el equivalente histórico del país). Congreso Demárquico de 500, Tribunal Supremo de Consenso, ciclo electoral nacional, TVM a escala país (vía mínima primero; endurecimiento hacia la especificación objetivo del Cap. 2.3 cuando se pueda sostener). El presupuesto migra al motor de los Caps. 5 y 5A. Presidente ceremonial, defensa en aislamiento operativo, División de Desastres.
 
 Vías (Cap. 9, sin romanticismo):
 
@@ -100,10 +100,10 @@ Hablamos de república y de país. Cuando una jurisdicción intermedia entra en 
 
 1. **Capa 1:** sitio, Ágora no vinculante, tablero fiscal 15/20, repo.
 2. **Capa 2:** plantillas de compromiso político, tableros de seguimiento de legisladores, paquetes de ley modelo.
-3. **Capa 3:** malla de voto auditable (puede empezar híbrida), padrón, Ágora vinculante regional.
-4. **Capa 4:** TVM y CSC a la especificación completa del Cap. 2.
+3. **Capa 3:** malla de voto auditable (puede empezar híbrida o en vía mínima), padrón, Ágora vinculante regional.
+4. **Capa 4:** TVM y CSC a escala país; la especificación objetivo (tres chips / malla completa) es meta de endurecimiento, no el único arranque válido.
 
-No hace falta el Cap. 2 entero para merecer las Capas 1 y 2.
+No hace falta el Cap. 2 entero para merecer las Capas 1 y 2. La vía mínima basta para las primeras jornadas reales.
 
 ---
 
@@ -136,4 +136,4 @@ Una hoja de una página de las cuatro capas para el canal. Plantillas en la carp
 
 ---
 
-*Demarquía Digital · plan de adopción nacional en capas · v0.4.4*
+*Demarquía Digital · plan de adopción nacional en capas · v0.4.5*

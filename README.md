@@ -1,6 +1,6 @@
 # Demarquía Digital
 
-**Manifiesto v0.4.4** · borrador abierto · 18 de septiembre de 2026
+**Manifiesto v0.4.5** · borrador abierto · 18 de septiembre de 2026
 
 ## Qué es
 
@@ -31,4 +31,4 @@ Copia, mejora y adapta con crédito y la misma licencia.
 
 ## Estado
 
-**v0.4.4 · borrador abierto.** Lenguaje más ciudadano; menos jerga de ingeniería. Incluye glosario en llano. Contribuciones, críticas y versiones propias son parte del diseño.
+**v0.4.5 · borrador abierto.** Diseño de voto: vía mínima del día de voto + TVM objetivo a largo plazo. Lenguaje ciudadano; glosario en llano. Contribuciones, críticas y versiones propias son parte del diseño.

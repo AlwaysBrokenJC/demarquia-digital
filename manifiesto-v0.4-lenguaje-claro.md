@@ -2,10 +2,10 @@
 
 **Arquitectura de un Estado Descentralizado, Criptográfico y de Representación Aleatoria**
 
-**Versión:** v0.4.4  
+**Versión:** v0.4.5  
 **Fecha:** 18 de septiembre de 2026  
 **Licencia:** Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Puedes copiar, compartir y mejorar este texto con libertad, siempre que des crédito al autor original y publiques tus cambios bajo la misma licencia, gratis y en público.  
-**Autoría:** crédito al autor original; iteración v0.4-v0.4.4 en conversación de diseño.  
+**Autoría:** crédito al autor original; iteración v0.4-v0.4.5 en conversación de diseño.  
 **Repositorio:** https://github.com/AlwaysBrokenJC/demarquia-digital
 
 ---
@@ -85,7 +85,7 @@ Este documento propone una "Política sin Políticos": devolverle al pueblo el p
 
 La democracia representativa actual es fácil de corromper, cansa a la gente y deja que el presupuesto se secuestra. Por eso este diseño apunta a un Estado sin intermediarios de carrera.
 
-La votación pasa por máquinas físicas difíciles de hackear (tres chips de orígenes distintos) y una credencial con biometría que vive en tu tarjeta, no en un servidor del gobierno. No hace falta un político que vote por ti: hay democracia directa (tú decides) y demarquía (cargos por sorteo).
+La votación pasa por máquinas físicas y una credencial con biometría que vive en tu tarjeta, no en un servidor del gobierno. En la práctica se arranca con la vía mínima del Cap. 2; la malla de tres chips rivales queda como meta de seguridad a largo plazo. No hace falta un político que vote por ti: hay democracia directa (tú decides) y demarquía (cargos por sorteo).
 
 Las leyes nacen en un Ágora Digital abierta a cualquier ciudadano. Pasan un filtro constitucional. Un Congreso de 500 personas (mitad sorteadas de quien se ofreció, mitad de quienes aprobaron un examen práctico del sistema) las pulen con ayuda de traductores legales. Al final, el pueblo aprueba o rechaza. Nadie delega su voto.
 
@@ -189,48 +189,55 @@ Para votar: metes la credencial, pones el dedo e ingresas una frase que solo tú
 
 Esa misma frase admite una Frase de coacción (Capítulo 9): si te amenazan, puedes dar conscientemente la versión “bajo coacción”. La máquina muestra que el voto se registró (para protegerte), pero en la cadena de bloques ese voto se anula en silencio.
 
-### 2.3 Terminales de Votación Malla (TVM)
+### 2.3 Terminales de Votación Malla (TVM): especificación objetivo
 
 El voto que cuenta solo se emite en Terminales de Votación Malla (TVM): máquinas físicas en jornadas electorales. No se vota desde el celular. Motivo: coacción remota, programas maliciosos, capturas de pantalla y pérdida del secreto del voto. El voto presencial también cuida el ritual cívico.
 
-Cada TVM tiene tres microprocesadores de diseños distintos, fabricados en fábricas de chips de países rivales (por ejemplo: un chip occidental, uno de diseño abierto hecho en el país, uno de una fábrica asiática no alineada). Los tres calculan la huella digital del voto en paralelo. Si no coinciden bit a bit, la máquina se bloquea y reporta el incidente. Para falsificar un voto, esos países rivales tendrían que conspirar juntos: casi imposible.
+La especificación objetivo de seguridad a largo plazo es una malla completa con tres microprocesadores de diseños distintos, fabricados en fábricas de chips de países rivales (por ejemplo: un chip occidental, uno de diseño abierto hecho en el país, uno de una fábrica asiática no alineada). Los tres calculan la huella digital del voto en paralelo. Si no coinciden bit a bit, la máquina se bloquea y reporta el incidente. Para falsificar un voto, esos países rivales tendrían que conspirar juntos.
 
-Las TVM tienen antenas y routers de baja frecuencia para una red entre terminales: cada máquina se conecta con las vecinas. Cada voto se encripta y viaja en milisegundos a la cadena de bloques nacional.
+En esa misma meta, las TVM tienen antenas y routers de baja frecuencia para una red entre terminales: cada máquina se conecta con las vecinas. Cada voto se encripta y viaja en milisegundos a la cadena de bloques nacional.
+
+Para adopción real, capas tempranas y operación práctica del día de voto, el tronco usa la vía mínima de la sección 2.4. La malla de tres chips rivales queda como meta de endurecimiento cuando el país pueda fabricarla, auditarla y sostenerla a escala.
 
 Al empezar la sesión, tras autenticarte, la TVM te muestra tu nivel de participación (local, federal, ambos o ninguno) y te deja cambiarlo antes de votar. Quien no use la app puede gestionar todo desde la terminal el día de la votación.
 
 Las TVM solo se encienden en jornadas electorales (Trimestrales; Mega Anual, la votación anual grande del ciclo; y Extraordinarias). Fuera de eso están apagadas y custodiadas. Para trámites cívicos el resto del año usas las **Terminales de Módulo Cívico (TMC)** o la app.
 
-#### Verificación diferida por firma de terminal
+### 2.4 Vía mínima: el día de voto
 
-Al cerrar la jornada, cada TVM imprime **una sola boleta resumen** firmada con su clave única. Esa boleta trae:
+La vía mínima es cómo se vota en la práctica mientras el país construye la especificación objetivo. Misma credencial (CSC), mismo secreto del voto, mismo rechazo al voto por celular. Menos piezas raras de hardware.
 
-- Huella digital agregada de todos los votos de esa terminal.
-- Conteo por opción (sin vincular a personas).
-- Firma criptográfica verificable.
-- Hora y ubicación.
+1. **Terminal sencilla.** Una tableta reforzada, una sola arquitectura de chip, carcasa sellada. Fácil de desplegar y de reemplazar.
 
-Se deposita en urna sellada. Nunca se imprime el contenido de un voto individual. Ni siquiera el votante recibe comprobante de *su* voto concreto: solo la confirmación de que se registró.
+2. **Anti-apertura.** Si abren la carcasa, se borran las llaves de firma o la placa queda inutilizable para firmar votos. No hay “explosión”: la máquina deja de poder autenticar votos.
 
-Después, las boletas se escanean y se cruzan con la cadena de bloques. Si los números coinciden con firma válida, la integridad queda verificada. Si no, auditoría inmediata.
+3. **Identificación.** CSC + biometría en la tarjeta + frase mental. Con Frase de coacción: la pantalla dice éxito; el voto se anula en silencio y puede alertar (Capítulo 9).
 
-Esto da:
+4. **Pantalla.** Interfaz de acordeón: votos sencillos frente a complejos; presupuesto por ramas y topes; resumen en pantalla antes de confirmar. El ciudadano no se lleva desglose de su voto (ni en papel ni para fotografiar después).
 
-- Verificación matemática sin romper el secreto del voto.
-- Respaldo físico si la red o la cadena de bloques fallan.
-- Privacidad absoluta: solo existe el agregado por terminal.
+5. **Impresora tipo ticket.** Un solo rollo de térmico de archivo (papel pensado para durar años sin desvanecerse fácil). Dos impresiones por acto:
+   - Al votante, siempre igual (también con coacción): “Gracias por participar. Tu voto fue registrado con éxito.”
+   - A la urna: número de terminal + código aleatorio del voto + info o resumen del voto (boleta de auditoría). Se deposita de inmediato en la urna.
 
-Si hay interferencia de red, la TVM sigue guardando votos encriptados en local hasta recuperar conexión o emitir la boleta al cierre.
+6. **Urna translúcida.** Se ve que hay boletas adentro (confianza pública), pero lo bastante opaca o tintada para que no se lea el contenido desde fuera y entre menos sol. No cristal claro al sol pleno.
 
-### 2.4 Auditorías Destructivas Internacionales
+7. **Operativa anti-borrado el día D.** Casilla con sombra o toldo; boletas de urna nunca apiladas al sol; al cierre, traslado a depósito fresco. El térmico de archivo aguanta mejor, y aun así se cuida el calor.
 
-Cada año se sortea el 1% de las TVM para auditoría destructiva: equipos internacionales rotativos abren los chips con microscopía electrónica. Las máquinas se sacrifican a propósito por la confianza pública. Los hallazgos se publican enteros y obligan a actualizar si hay anomalías.
+8. **Conectividad.** La VPN privada del gobierno se intenta siempre. Cada voto va a una cola local y se envía cifrado. Cuando el servidor confirma, el voto queda marcado como seguro en red: una coacción posterior no puede borrar lo ya emitido. Si cae la red, la terminal entra en modo isla temporal y reenvía al volver. La elección no depende de internet perfecto.
 
-### 2.5 Diseño Universal y Accesibilidad
+9. **Impresora dentro del sello.** La impresora vive bajo la misma lógica de carcasa y sellos; solo habla con la terminal.
 
-Las TVM incluyen conector de audio, audífonos inalámbricos y Text-to-Speech. La interfaz se adapta con voz e iconografía de alto contraste para quien tiene debilidad visual, analfabetismo o límites motrices.
+10. **Auditoría.** Se contrasta una muestra de boletas de urna con el registro digital. Equipos que buscan fallas a propósito intentan romper el flujo antes que lo haga alguien hostil.
 
-### 2.6 La App Cívica Complementaria
+### 2.5 Auditorías Destructivas Internacionales
+
+Cada año se sortea el 1% de las TVM para auditoría destructiva: equipos internacionales rotativos abren los chips con microscopía electrónica. Las máquinas se sacrifican a propósito por la confianza pública. Los hallazgos se publican enteros y obligan a actualizar si hay anomalías. En fase de vía mínima el sorteo aplica al parque desplegado (terminales sencillas incluidas); al subir a la especificación objetivo, el foco de microscopía se concentra en la malla de tres chips.
+
+### 2.6 Diseño Universal y Accesibilidad
+
+Las TVM incluyen conector de audio, audífonos inalámbricos y lectura en voz alta de la pantalla. La interfaz se adapta con voz e iconografía de alto contraste para quien tiene debilidad visual, analfabetismo o límites motrices.
+
+### 2.7 La App Cívica Complementaria
 
 Hay una app oficial gratuita. No permite votar. Sí permite:
 
@@ -246,7 +253,7 @@ Hay una app oficial gratuita. No permite votar. Sí permite:
 
 Es código abierto y también se distribuye fuera de tiendas comerciales.
 
-### 2.7 Terminales de Módulo Cívico (TMC)
+### 2.8 Terminales de Módulo Cívico (TMC)
 
 Las TMC son distintas de las TVM. No pueden emitir voto vinculante, bajo ninguna configuración. Solo sirven para gestión cívica.
 
@@ -265,7 +272,7 @@ La autenticación es más simple (CSC + frase), porque no procesan voto. El hard
 
 La separación TVM / TMC es constitucional e irreversible. Ningún software puede convertir una TMC en urna.
 
-### 2.8 El Protocolo BIOS (Plan post-colapso)
+### 2.9 El Protocolo BIOS (Plan post-colapso)
 
 Si cae la infraestructura eléctrica más de 72 horas (pulso electromagnético, tormenta solar, etc.), el Estado entra en hibernación: Protocolo BIOS. Las TVM tienen jaula de Faraday y paneles solares propios.
 
@@ -858,7 +865,7 @@ Así la alfabetización cívica deja de ser solo tarea del Estado y se vuelve tr
 
 Tres mecanismos contra monopolios armados locales (carteles, mafias):
 
-**Frase de coacción:** si te fuerzan a votar bajo amenaza, ingresas la frase mental en su versión preconfigurada de coacción. La TVM muestra “Voto registrado con éxito” (te protege), pero el voto se anula en silencio en la cadena de bloques y se emite un reporte geolocalizado encriptado al Comando de Seguridad.
+**Frase de coacción:** si te fuerzan a votar bajo amenaza, ingresas la frase mental en su versión preconfigurada de coacción. La TVM muestra éxito (te protege); el recibo del votante es el mismo texto genérico que en un voto libre; el voto se anula en silencio en la cadena de bloques y puede alertar al Comando de Seguridad.
 
 **Triple factor:** credencial + biometría + frase mental a la vez. Robar tarjeta y dedo no basta sin la frase consciente.
 
@@ -969,7 +976,7 @@ Las versiones propias son bienvenidas. Si una región, país o comunidad quiere 
 
 ### 11.4 Versionado
 
-Versionado semántico. Cambios menores incrementan patch (v0.4.4). Cambios significativos incrementan menor (v0.5). La transición a v1.0 representa la primera implementación nacional efectiva del sistema.
+Versionado semántico. Cambios menores incrementan patch (v0.4.5). Cambios significativos incrementan menor (v0.5). La transición a v1.0 representa la primera implementación nacional efectiva del sistema.
 
 ### 11.5 Gobernanza de Mantenedores (Issue Abierto)
 
@@ -986,6 +993,11 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 
 - **CSC:** Credencial de Soberanía Criptográfica; tarjeta con chip seguro que guarda tu identidad cívica y biometría en el dispositivo.
 - **TVM:** Terminal de Votación Malla; máquina física donde se emite el voto vinculante.
+- **Vía mínima:** diseño práctico del día de voto (terminal sencilla, recibo genérico, boleta de auditoría, urna translúcida); la malla de tres chips rivales queda como meta de seguridad.
+- **Anti-apertura:** si abren la carcasa de la terminal, se borran llaves o la placa queda inutilizable para firmar votos.
+- **Recibo del votante:** ticket térmico genérico (“Gracias por participar…”); siempre igual, también bajo coacción; no trae desglose del voto.
+- **Boleta de auditoría:** ticket que va a la urna (número de terminal + código aleatorio + info o resumen del voto); se deposita de inmediato.
+- **Urna translúcida:** urna donde se ve que hay boletas, tintada u opaca lo bastante para no leer el contenido desde fuera ni al sol pleno.
 - **TMC:** Terminal de Módulo Cívico; terminal administrativa (trámites, examen, configuración); no emite voto.
 - **TSC:** Tribunal Supremo de Consenso; filtro constitucional; miembros sorteados del Pool Judicial.
 - **Protocolo BIOS:** plan post-colapso si cae la electricidad más de 72 horas; hibernación del Estado con tómbola física.
@@ -1032,7 +1044,9 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 
 - **v0.4.4 (18 septiembre 2026):** Lenguaje más ciudadano: menos jerga de ingeniería. Hash → huella digital; blockchain → cadena de bloques; RISC-V → chip de diseño abierto; pull request → propuesta de cambio; sandbox → aislamiento operativo; mesh → red entre terminales; circuit breaker → freno de emergencia; kernel → núcleo; fork (en el cuerpo) → versión propia / copia adaptada; Red Team → equipo que busca fallas a propósito; Goodhart solo en glosario; malware → programas maliciosos; datasets → datos de entrenamiento; smart contract → contrato automático / reglas de pago automáticas. Glosario reescrito en llano.
 
+- **v0.4.5 (18 septiembre 2026):** Diseño de voto acordado: la malla de tres chips rivales queda como especificación objetivo; se añade la vía mínima del día de voto (terminal sencilla, anti-apertura, recibo genérico, boleta de auditoría, urna translúcida, operativa anti-borrado, cola local con VPN, impresora sellada, auditoría por contraste). Glosario: vía mínima, anti-apertura, recibo del votante, boleta de auditoría, urna translúcida. Cap. 9 alineado con recibo bajo coacción.
+
 ---
 
-*Demarquía Digital · manifiesto v0.4.4 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
+*Demarquía Digital · manifiesto v0.4.5 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
 
