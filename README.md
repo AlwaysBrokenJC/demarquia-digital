@@ -18,6 +18,10 @@ Archivo principal: [`manifiesto-v0.4-lenguaje-claro.md`](manifiesto-v0.4-lenguaj
 
 Fuentes de trabajo (borradores y base v0.3): `base.txt` / `base.pdf`, `prefacio-filosofia-v0.4-borrador.md`, `cap-economia-propiedad-borrador.md`, `mapa-inicial.md`.
 
+## Canal
+
+Explicaciones y actualizaciones del proyecto en YouTube: **[Horizonte Liberal](https://www.youtube.com/@HorizonteLiberal)**.
+
 ## Licencia
 
 **CC BY-SA 4.0** (Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional).  
