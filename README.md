@@ -1,12 +1,12 @@
 # Demarquía Digital
 
-**Manifiesto v0.4.3** · borrador abierto · 18 de septiembre de 2026
+**Manifiesto v0.4.4** · borrador abierto · 18 de septiembre de 2026
 
 ## Qué es
 
 Propuesta libertaria de **minarquía demárquica digital**: un Estado delgado, sin políticos de carrera, con cargos por sorteo, voto directo (sin delegación), derechos negativos y techo fiscal (meta 15% del PIB / duro 20%). El destino es un país; el camino es la adopción nacional en capas.
 
-Hay impuestos y fuerza pública acotada. Quien quiera una variante más minimalista o más social puede hacer un fork bajo la misma licencia si declara qué rompe del tronco.
+Hay impuestos y fuerza pública acotada. Quien quiera una variante más minimalista o más social puede hacer una versión propia bajo la misma licencia si declara qué rompe del tronco.
 
 ## Cómo leer
 
@@ -27,8 +27,8 @@ Explicaciones y actualizaciones del proyecto en YouTube: **[Horizonte Liberal](h
 ## Licencia
 
 **CC BY-SA 4.0** (Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional).  
-Copia, mejora y forkea con crédito y la misma licencia.
+Copia, mejora y adapta con crédito y la misma licencia.
 
 ## Estado
 
-**v0.4.3 · borrador abierto.** Incluye glosario y abreviaturas explicadas. Contribuciones, críticas y forks son parte del diseño.
+**v0.4.4 · borrador abierto.** Lenguaje más ciudadano; menos jerga de ingeniería. Incluye glosario en llano. Contribuciones, críticas y versiones propias son parte del diseño.

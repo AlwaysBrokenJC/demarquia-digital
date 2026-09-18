@@ -2,10 +2,10 @@
 
 **Arquitectura de un Estado Descentralizado, Criptográfico y de Representación Aleatoria**
 
-**Versión:** v0.4.3  
+**Versión:** v0.4.4  
 **Fecha:** 18 de septiembre de 2026  
 **Licencia:** Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Puedes copiar, compartir y mejorar este texto con libertad, siempre que des crédito al autor original y publiques tus cambios bajo la misma licencia, gratis y en público.  
-**Autoría:** crédito al autor original; iteración v0.4-v0.4.3 en conversación de diseño.  
+**Autoría:** crédito al autor original; iteración v0.4-v0.4.4 en conversación de diseño.  
 **Repositorio:** https://github.com/AlwaysBrokenJC/demarquia-digital
 
 ---
@@ -14,7 +14,7 @@
 
 Esta es una propuesta abierta: cualquiera, en cualquier lugar, puede mejorarla, corregirla o hacer su propia versión.
 
-Sabemos que todo diseño humano es imperfecto. Por eso lo publicamos con licencia abierta: para que quienes viven las consecuencias de la política puedan intervenir, corregir y forkear este modelo hacia algo más justo.
+Sabemos que todo diseño humano es imperfecto. Por eso lo publicamos con licencia abierta: para que quienes viven las consecuencias de la política puedan intervenir, corregir y hacer su propia versión de este modelo hacia algo más justo.
 
 El objetivo es devolver el poder al pueblo y construir, juntos y a lo largo del tiempo, el mejor sistema que la humanidad pueda imaginar en cada momento de su historia.
 
@@ -26,7 +26,7 @@ El objetivo es devolver el poder al pueblo y construir, juntos y a lo largo del 
 >
 > Hay impuestos y un Estado con fuerza pública acotada. La meta es que el Estado gaste como máximo cerca del 15% del producto interno bruto (PIB), con un techo duro del 20%. Para romper ese techo hace falta la Triple Llave (el mismo blindaje que para cambiar la Constitución). El gasto se recorta, caduca si no sirve y se limpia de grasa burocrática.
 >
-> Quien quiera una variante más minimalista o más social puede hacer un fork bajo la misma licencia, y debe decir con claridad qué rompe del tronco.
+> Quien quiera una variante más minimalista o más social puede hacer una versión propia bajo la misma licencia, y debe decir con claridad qué rompe del tronco.
 
 ## Prefacio filosófico
 
@@ -44,7 +44,7 @@ La etiqueta del tronco es minarquía demárquica digital.
 |----------|--------|
 | **Minarquía clásica** | Espíritu cercano; el tronco es un poco más grueso (créditos de edu/salud, educación cívica, cascada de excedentes). |
 | **Minarquía demárquica digital** | **Tronco.** Libertad negativa + sorteo + voto directo + hardware que asume ataques + techo fiscal. |
-| **Otras variantes** | Forks con otro énfasis (más minimalistas o más sociales), bajo la misma licencia, declarando qué dejan fuera del tronco. |
+| **Otras variantes** | Versiones propias con otro énfasis (más minimalistas o más sociales), bajo la misma licencia, declarando qué dejan fuera del tronco. |
 
 ### 3. Lo no negociable del tronco
 
@@ -55,7 +55,7 @@ La etiqueta del tronco es minarquía demárquica digital.
 5. Honestidad sobre la transición y sobre los problemas abiertos (Cap. 10).
 6. Techo fiscal: meta 15% / duro 20% (Capítulo de Economía).
 
-Un fork que rompa estos puntos debe cambiar de nombre.
+Una versión propia que rompa estos puntos debe cambiar de nombre.
 
 ### 4. Opt-Out cívico (1.8)
 
@@ -75,7 +75,7 @@ Es el derecho a no participar en la vida pública: renuncias al voto. Dejas inta
 
 ### 7. Gobernanza del repo
 
-Con el tiempo el repositorio tendrá una carpeta `forks/` y plantillas breves (por ejemplo variantes más minimalistas o más sociales) que digan con claridad qué cláusulas del tronco deja fuera cada variante.
+Con el tiempo el repositorio tendrá una carpeta de variantes (`forks/`) y plantillas breves (por ejemplo variantes más minimalistas o más sociales) que digan con claridad qué cláusulas del tronco deja fuera cada variante.
 
 ---
 
@@ -191,11 +191,11 @@ Esa misma frase admite una Frase de coacción (Capítulo 9): si te amenazan, pue
 
 ### 2.3 Terminales de Votación Malla (TVM)
 
-El voto que cuenta solo se emite en Terminales de Votación Malla (TVM): máquinas físicas en jornadas electorales. No se vota desde el celular. Motivo: coacción remota, malware, capturas de pantalla y pérdida del secreto del voto. El voto presencial también cuida el ritual cívico.
+El voto que cuenta solo se emite en Terminales de Votación Malla (TVM): máquinas físicas en jornadas electorales. No se vota desde el celular. Motivo: coacción remota, programas maliciosos, capturas de pantalla y pérdida del secreto del voto. El voto presencial también cuida el ritual cívico.
 
-Cada TVM tiene tres microprocesadores de arquitecturas distintas, fabricados en bloques geopolíticos rivales (por ejemplo: un chip occidental, uno RISC-V local (arquitectura de chip de diseño abierto), uno de fundición asiática no alineada). Los tres calculan el hash del voto (la huella digital del voto) en paralelo. Si no coinciden bit a bit, la máquina se bloquea y reporta el incidente. Para falsificar un voto, rivales geopolíticos tendrían que coludir: casi imposible.
+Cada TVM tiene tres microprocesadores de diseños distintos, fabricados en fábricas de chips de países rivales (por ejemplo: un chip occidental, uno de diseño abierto hecho en el país, uno de una fábrica asiática no alineada). Los tres calculan la huella digital del voto en paralelo. Si no coinciden bit a bit, la máquina se bloquea y reporta el incidente. Para falsificar un voto, esos países rivales tendrían que conspirar juntos: casi imposible.
 
-Las TVM tienen antenas y routers de baja frecuencia para una red mesh. Cada voto se encripta y viaja en milisegundos a la cadena de bloques nacional.
+Las TVM tienen antenas y routers de baja frecuencia para una red entre terminales: cada máquina se conecta con las vecinas. Cada voto se encripta y viaja en milisegundos a la cadena de bloques nacional.
 
 Al empezar la sesión, tras autenticarte, la TVM te muestra tu nivel de participación (local, federal, ambos o ninguno) y te deja cambiarlo antes de votar. Quien no use la app puede gestionar todo desde la terminal el día de la votación.
 
@@ -205,7 +205,7 @@ Las TVM solo se encienden en jornadas electorales (Trimestrales; Mega Anual, la 
 
 Al cerrar la jornada, cada TVM imprime **una sola boleta resumen** firmada con su clave única. Esa boleta trae:
 
-- Hash agregado de todos los votos de esa terminal.
+- Huella digital agregada de todos los votos de esa terminal.
 - Conteo por opción (sin vincular a personas).
 - Firma criptográfica verificable.
 - Hora y ubicación.
@@ -269,7 +269,7 @@ La separación TVM / TMC es constitucional e irreversible. Ningún software pued
 
 Si cae la infraestructura eléctrica más de 72 horas (pulso electromagnético, tormenta solar, etc.), el Estado entra en hibernación: Protocolo BIOS. Las TVM tienen jaula de Faraday y paneles solares propios.
 
-El nivel federal se pausa; el poder baja a los municipios. Un Consejo de Supervivencia de 7 ciudadanos locales, elegidos por tómbola física en cada alcaldía, gestiona logística de supervivencia por 12 meses. Si no hay recuperación, los cabildos deciden federación, autonomía o reconstrucción del kernel nacional (Fork de Soberanía analógico).
+El nivel federal se pausa; el poder baja a los municipios. Un Consejo de Supervivencia de 7 ciudadanos locales, elegidos por tómbola física en cada alcaldía, gestiona logística de supervivencia por 12 meses. Si no hay recuperación, los cabildos deciden federación, autonomía o reconstrucción del núcleo nacional (versión propia de soberanía en papel y asamblea).
 
 Es el momento más vulnerable. La tómbola física puede ser tomada por grupos armados. Sin organización comunitaria previa y lealtad cultural al sistema, el Protocolo BIOS no garantiza nada.
 
@@ -318,7 +318,7 @@ Para entrar al pool de los 250 “filtrados” hay que aprobar un examen prácti
 
 ### 3.5 Bancos de Preguntas Competitivos
 
-No hay un solo banco de preguntas. Hay cuatro (A, B, C y D), mantenidos por equipos sorteados distintos que no se comunican entre sí. Cada examen toma 30 preguntas de cada banco (120 en total). Los cuatro son públicos, versionados en GitHub y abiertos a propuestas de cambio en GitHub (pull requests) de cualquiera.
+No hay un solo banco de preguntas. Hay cuatro (A, B, C y D), mantenidos por equipos sorteados distintos que no se comunican entre sí. Cada examen toma 30 preguntas de cada banco (120 en total). Los cuatro son públicos, versionados en GitHub y abiertos a propuestas de cambio en GitHub de cualquiera.
 
 Si un banco está en auditoría, el examen se reparte entre los otros tres. Un banco con muchas impugnaciones exitosas pierde peso hasta resolverse o reemplazarse. Ningún equipo lleva el mismo banco más de dos ciclos seguidos.
 
@@ -488,9 +488,9 @@ La metodología del punto de quiebre es pública e impugnable.
 
 Cada trimestre, los umbrales del punto de quiebre se mueven al azar ±5% sin aviso. Así la burocracia no puede “optimizar” métricas justo por encima del corte para sobrevivir.
 
-### 5.3 Circuit Breaker con Jurado Físico
+### 5.3 Freno de emergencia con jurado físico
 
-Si una métrica automática dispara la cancelación de algo crítico (Filtro 3), se activa un freno: 100 ciudadanos locales sorteados van a ver las instalaciones o servicios en persona. Pueden vetar la decisión del dashboard si la realidad contradice los números. Nada de gobernar solo por pantallas.
+Si una métrica automática dispara la cancelación de algo crítico (Filtro 3), se activa un freno: 100 ciudadanos locales sorteados van a ver las instalaciones o servicios en persona. Pueden vetar la decisión del tablero automático si la realidad contradice los números. Nada de gobernar solo por pantallas.
 
 ### 5.4 Algoritmo de Prelación de Recortes
 
@@ -499,14 +499,14 @@ Si una métrica automática dispara la cancelación de algo crítico (Filtro 3),
 | 0 | Recorte cruzado | Primero eliminar duplicidades entre ministerios. |
 | 1 | Grasa burocrática | Bonos extras, subidas salariales sobre inflación, cajas VIP, seguros médicos de alta burocracia: se absorben al 100%. |
 | 2 | Gasto de vanidad | Viáticos internacionales, flotillas nuevas, remodelación de oficinas, publicidad oficial: se cancelan. |
-| 3 | Diferir obra | Solo si lo anterior ya está en cero. Pausar infraestructura nueva no prioritaria. Activa el circuit breaker con jurado físico. |
+| 3 | Diferir obra | Solo si lo anterior ya está en cero. Pausar infraestructura nueva no prioritaria. Activa el freno de emergencia con jurado físico. |
 
 **Gasto Fijo Operativo intocable** (seis partidas; coherente con el Cap. 5A):
 
 1. **Justicia operativa:** jueces y equipos sorteados en funciones (no burocracia VIP).
 2. **Seguridad:** policías operativos / seguridad local.
-3. **Defensa sandbox:** fuerzas armadas bajo aislamiento operativo.
-4. **Infraestructura de soberanía:** TVM, CSC, auditoría, red mesh, boleta física.
+3. **Defensa en aislamiento operativo:** fuerzas armadas con misión y alcance acotados.
+4. **Infraestructura de soberanía:** TVM, CSC, auditoría, red entre terminales, boleta física.
 5. **División de Desastres:** capacidad operativa (no clientela).
 6. **Créditos universales del paquete:** voucher educativo + prima mínima del seguro (catastrófico y enfermedades transmisibles), pagados a instituciones y aseguradoras. El monto lo ajusta el pueblo en la Mega Anual; la burocracia sola no lo tumba.
 
@@ -520,9 +520,9 @@ Ninguna política grande puede depender de un solo número. Toda asignación imp
 
 Se usan indicadores que chocan a propósito. Si optimizas uno, otro empeora. Eso evita “mejorar” una cifra a costa de todo lo demás. Ejemplo: eficiencia de gasto vs. cobertura territorial vs. calidad vs. tiempos de respuesta.
 
-### 5.7 Auditoría Anual Anti-Goodhart
+### 5.7 Auditoría anual anti-trampa de métricas
 
-*(Anti-Goodhart = cuando una métrica se vuelve el objetivo, deja de medir bien lo que importaba. Aquí se audita esa trampa.)*
+*(Cuando una métrica se vuelve el objetivo, deja de medir bien lo que importaba. Aquí se audita esa trampa.)*
 
 Cada año los Auditores publican un análisis de métricas manipuladas (por ejemplo: etiquetar grasa burocrática como “gasto esencial”). Si hay manipulación documentada, recorte automático extra del 10% al ministerio infractor.
 
@@ -532,7 +532,7 @@ Toda política grande caduca sola en N años si no demuestra resultados según m
 
 ### 5.9 Cascada de Excedentes de Soberanía
 
-El dinero que sobra de los recortes se reparte por contrato inteligente inalterable:
+El dinero que sobra de los recortes se reparte por reglas de pago automáticas inalterables:
 
 1. **Alpha, Bóveda de Resiliencia (30%):** reserva líquida para desastres y protección civil. Tope: 2% del PIB. Si se llena, rebosa a la siguiente.
 2. **Beta, Amortización de Deuda (40%):** pago de capital de la deuda con mayor tasa.
@@ -602,17 +602,17 @@ Crear o mantener empresa pública exige: ley universal, caducidad ≤ N años, m
 
 **Moneda (régimen A+).**
 
-- **Unidad fiscal:** el peso (u homólogo local en forks regionales) es la unidad de curso legal para impuestos, contabilidad del Estado y medición de la carga vs. PIB (meta 15% / techo 20%).
+- **Unidad fiscal:** el peso (u homólogo local en versiones regionales) es la unidad de curso legal para impuestos, contabilidad del Estado y medición de la carga vs. PIB (meta 15% / techo 20%).
 - **Regla dura de emisión:** parámetros públicos auditables; expansión de emergencia solo con declaración bajo División de Desastres + ratificación popular en 72 h. Prohibidos los rescates clientelares con expansión monetaria o fiscal.
 - **Libertad monetaria privada:** personas físicas y morales pueden contratar, ahorrar y pagar entre sí en cualquier moneda, cripto o trueque. El Estado no prohíbe ni impone medios privados de pago.
 - **Interoperabilidad:** obligaciones fiscales se liquidan en pesos (o equivalencia transparente al tipo publicado); anti-fraude sin vigilancia masiva del patrimonio privado.
-- Un fork de competencia fiscal total (impuestos en N monedas) queda fuera del tronco: pelea con el techo 15/20.
+- Una versión propia de competencia fiscal total (impuestos en N monedas) queda fuera del tronco: pelea con el techo 15/20.
 
 ### 5A.5 Mercados, trabajo y regulación
 
 **Libertad contractual.** Contratos entre adultos capaces son válidos; el Estado no “mejora” el contenido salvo dolo, violencia, fraude o incapacidad.
 
-**Regulación.** Solo reglas universales (seguridad mínima medible, externalidades, información). Prohibidas las licencias que crean castas gremiales sin evidencia de daño. Toda licencia profesional entra a caducidad y revisión anti-Goodhart.
+**Regulación.** Solo reglas universales (seguridad mínima medible, externalidades, información). Prohibidas las licencias que crean castas gremiales sin evidencia de daño. Toda licencia profesional entra a caducidad y revisión anti-trampa de métricas.
 
 **Trabajo.** Libertad de asociación laboral (coherente con 1.1). El Estado no fija precios ni salarios del mercado. El salario mínimo económico queda fuera del tronco; si el pueblo lo quiere, debe aprobarlo como ley universal ordinaria (1.2), no como supuesto constitucional. Sí permanece la compensación cívica del Cap. 4 (pago por servicio democrático: voto/trabajo extendido), que es otra cosa.
 
@@ -665,12 +665,12 @@ Este capítulo justifica el motor financiero; no lo sustituye:
 | Punto de quiebre + ruido | Anti-burocracia, no anti-mercado |
 | Gasto fijo operativo | Núcleo de protección + infra cívica |
 | Cascada Alpha/Beta/Gamma | Resiliencia, no deuda eterna, no clientelismo |
-| Caducidad + anti-Goodhart | Toda política pública es sospechosa hasta prueba |
+| Caducidad + anti-trampa de métricas | Toda política pública es sospechosa hasta prueba |
 
-### 5A.9 Qué queda fuera (forks)
+### 5A.9 Qué queda fuera (versiones propias)
 
-- Abolición de impuestos / defensa privada pura → fork con otro énfasis (más minimalista); fuera del tronco.
-- Nacionalización amplia / planificación / topes patrimoniales → fork no-minárquico (debe renunciar a este capítulo).
+- Abolición de impuestos / defensa privada pura → versión propia con otro énfasis (más minimalista); fuera del tronco.
+- Nacionalización amplia / planificación / topes patrimoniales → versión propia no-minárquica (debe renunciar a este capítulo).
 - Renta básica universal sin criterio 1.2 → requiere Triple Llave si se constitucionaliza; queda fuera del default.
 
 ### 5A.10 Qué queda cerrado en el tronco (edu/salud y economía)
@@ -695,9 +695,9 @@ Los juzgados de primera instancia operan bajo Justicia Dinámica.
 - Casos simples (faltas, procedimientos menores): el juez se sortea del Pool Judicial la misma mañana de la audiencia. Así no hay tiempo de sobornar con anticipación.
 - Casos complejos (fraude grande, crimen organizado, evasión estructurada): el sorteo es 30 a 90 días antes. Al juez se le asigna un equipo técnico también sorteado, que rota con él. Se elimina el personal burocrático permanente del juzgado. Los registros se auditan en tiempo real por software que detecta anomalías.
 
-### 6.2 Ejército en Sandbox
+### 6.2 Ejército en aislamiento operativo
 
-Para evitar golpes de Estado, las Fuerzas Armadas viven en aislamiento operativo (sandbox): misión limitada a defensa de fronteras y control técnico de ciberseguridad nacional. No pueden movilizar tropas internas sin autorización explícita de una Asamblea de Emergencia ratificada por el pueblo.
+Para evitar golpes de Estado, las Fuerzas Armadas viven en aislamiento operativo: misión limitada a defensa de fronteras y control técnico de ciberseguridad nacional. No pueden movilizar tropas internas sin autorización explícita de una Asamblea de Emergencia ratificada por el pueblo.
 
 ### 6.3 Separación de Capacidades Coercitivas
 
@@ -715,7 +715,7 @@ Policías municipales con jefes sorteados del Pool de Seguridad Pública. Financ
 El sistema no resuelve del todo el problema de la violencia como poder último. Si las fuerzas se alinean unánimemente contra el sistema o las captura un actor externo, no hay mecanismo constitucional que lo impida. La viabilidad última depende de:
 
 - Lealtad cultural cultivada entre fuerzas de seguridad.
-- Modo Resistencia con forks municipales analógicos si cae la infra digital.
+- Modo Resistencia con versiones municipales en papel si cae la infra digital.
 - Defensa civil distribuida y arraigada en comunidad.
 
 No se diseña milicia armada distribuida (riesgo de señores de la guerra). Se acepta depender en parte de cultura y lealtad institucional.
@@ -724,13 +724,13 @@ No se diseña milicia armada distribuida (riesgo de señores de la guerra). Se a
 
 **Modo Ciego opcional en TVM:** ves propuestas sin nombres de autores, partidos legacy ni métricas sociales. Decides sobre el contenido, no sobre marcas.
 
-**Registro Público de Influencia Política:** quien alcance umbral de difusión política masiva debe registrar financiamiento, automatización, segmentación y datasets de entrenamiento si usa inteligencia artificial (IA). Información auditable.
+**Registro Público de Influencia Política:** quien alcance umbral de difusión política masiva debe registrar financiamiento, automatización, segmentación y datos de entrenamiento si usa inteligencia artificial (IA). Información auditable.
 
 **Etiquetado obligatorio de contenido IA:** todo contenido político generado o asistido por IA debe etiquetarse. Las plataformas que operan en el territorio responden por incumplimiento con multas automáticas.
 
 **Latencia democrática:** mínimo 30 días de exposición pública entre publicación y voto vinculante (ya en Cap. 4). Protege contra pánicos morales de 48 horas.
 
-**Equipos adversariales (Red Teams) permanentes:** financiados constitucionalmente. Intentan manipular Ágora, votaciones, pools y exámenes para revelar huecos antes que lo hagan actores hostiles. Publican hallazgos.
+**Equipos que buscan fallas a propósito, permanentes:** financiados constitucionalmente. Intentan manipular Ágora, votaciones, pools y exámenes para revelar huecos antes que lo hagan actores hostiles. Publican hallazgos.
 
 Esto no detiene por completo la manipulación memética. Influencia extranjera, iglesias, redes familiares y plataformas externas seguirán moldeando opinión. Es defensa de daños, no vacuna total.
 
@@ -833,7 +833,7 @@ Cualquier ciudadano puede inscribirse como tutor cívico voluntario en la app, d
 - Los aprendices solicitan tutoría por tema.
 - El sistema empareja por sorteo, no por elección, con prohibición de asignar familiares directos o personas con historial previo de interacción.
 - Cada sesión se registra cuando ambas partes confirman.
-- Compensación: tarifa cívica por hora alineada al trabajo cívico extendido del Cap. 4 (10% del salario promedio nacional por hora), vía contrato inteligente. *(Distinto del salario mínimo económico del mercado.)*
+- Compensación: tarifa cívica por hora alineada al trabajo cívico extendido del Cap. 4 (10% del salario promedio nacional por hora), vía contrato automático. *(Distinto del salario mínimo económico del mercado.)*
 - Tope semanal de horas compensadas por persona, para que no se vuelva ingreso principal.
 - El aprendiz evalúa la sesión. Tutores con baja evaluación promedio pierden la opción hasta revalidación.
 - Auditoría aleatoria contra sesiones fantasma o fraude.
@@ -862,13 +862,13 @@ Tres mecanismos contra monopolios armados locales (carteles, mafias):
 
 **Triple factor:** credencial + biometría + frase mental a la vez. Robar tarjeta y dedo no basta sin la frase consciente.
 
-**Inanición económica del crimen:** sin alcaldes ni diputados que muevan presupuesto a mano, no hay intermediarios a quienes extorsionar para adjudicar contratos. Pagos vía contratos inteligentes directos a proveedores validados: se reduce el incentivo financiero del control territorial delictivo.
+**Inanición económica del crimen:** sin alcaldes ni diputados que muevan presupuesto a mano, no hay intermediarios a quienes extorsionar para adjudicar contratos. Pagos vía contratos automáticos directos a proveedores validados: se reduce el incentivo financiero del control territorial delictivo.
 
 ### 9.2 Tres escenarios realistas de transición
 
 La implementación pacífica desde un Estado consolidado y polarizado es altamente improbable. Los escenarios realistas son tres:
 
-**Escenario A: Estado paralelo gradual.** En sociedades con instituciones funcionales y baja violencia se avanza por capas hacia una república demárquica a escala nacional: primero opinión pública y normas voluntarias; después soberanía parcial donde un estado, región o zona adopte el kernel como cabeza de playa; más adelante el salto constitucional. En el camino caben presupuesto participativo, arbitraje ciudadano, auditoría pública y votaciones no vinculantes, a veces a escala local como módulo técnico del proyecto nacional. Se escala solo cuando baja la corrupción medible y crece la legitimidad, sin confrontación armada y sin intentar controlar ejército ni policía en fases tempranas. El plan de adopción nacional en capas desarrolla este camino.
+**Escenario A: Estado paralelo gradual.** En sociedades con instituciones funcionales y baja violencia se avanza por capas hacia una república demárquica a escala nacional: primero opinión pública y normas voluntarias; después soberanía parcial donde un estado, región o zona adopte el núcleo del manifiesto como cabeza de playa; más adelante el salto constitucional. En el camino caben presupuesto participativo, arbitraje ciudadano, auditoría pública y votaciones no vinculantes, a veces a escala local como módulo técnico del proyecto nacional. Se escala solo cuando baja la corrupción medible y crece la legitimidad, sin confrontación armada y sin intentar controlar ejército ni policía en fases tempranas. El plan de adopción nacional en capas desarrolla este camino.
 
 **Escenario B: Pacto con élites legacy.** Élites tradicionales aceptan transición negociada a cambio de “paracaídas dorado”: amnistía local, inmunidad de tránsito, protección de activos legales, espacio ceremonial sin poder presupuestal por un periodo acordado. La transición es real; los actores existentes no se destruyen. Modelos históricos: España post-franquismo, Sudáfrica post-apartheid.
 
@@ -890,9 +890,9 @@ Esta sección documenta problemas no resueltos. Su publicación abierta es delib
 
 El sistema introduce verificación criptográfica, auditorías, jurados aleatorios, métricas dinámicas, transparencia total, rotación continua. Puede superar la capacidad de cualquier Estado real. Riesgo: colapso por complejidad, dependencia extrema de expertos, errores emergentes, imposibilidad de auditoría completa, parálisis administrativa.
 
-### 10.2 Tiranía de los Core Maintainers del Repositorio
+### 10.2 Tiranía de los mantenedores centrales del repositorio
 
-El manifiesto vive en GitHub y evoluciona por propuestas de cambio (pull requests). Alguien tiene permisos de merge final. Si los mantenedores se corrompen o secuestran, controlan el Estado. Requiere gobernanza del repositorio (ver Cap. 11.5; sigue abierto).
+El manifiesto vive en GitHub y evoluciona por propuestas de cambio. Alguien tiene permisos finales para incorporar cambios. Si los mantenedores se corrompen o secuestran, controlan el Estado. Requiere gobernanza del repositorio (ver Cap. 11.5; sigue abierto).
 
 ### 10.3 Escalabilidad Nacional y Fragmentación Regulatoria
 
@@ -908,7 +908,7 @@ Quien controla el cálculo del punto de quiebre controla efectivamente el gasto.
 
 ### 10.6 Riesgo de Hardware Residual
 
-Aún con triple chip, geopolítica diversa, papel paralelo y auditorías destructivas, ataques coordinados a la cadena de suministro a escala estatal siguen siendo riesgo.
+Aún con triple chip, fábricas en países rivales, papel paralelo y auditorías destructivas, ataques coordinados a la cadena de suministro a escala estatal siguen siendo riesgo.
 
 ### 10.7 Conflictos Transfronterizos
 
@@ -948,7 +948,7 @@ Mientras más se blinda contra irracionalidad, más tecnocrático. Mientras más
 
 ### 11.1 Infraestructura
 
-Repositorio público en GitHub. Motivo: uso general consolidado, mentalidad open source, herramientas nativas de propuestas de cambio (pull requests), issues, versionado y discusión pública.
+Repositorio público en GitHub. Motivo: uso general consolidado, mentalidad de código abierto, herramientas nativas de propuestas de cambio, incidencias, versionado y discusión pública.
 
 ### 11.2 Componentes del Repositorio
 
@@ -957,19 +957,19 @@ Repositorio público en GitHub. Motivo: uso general consolidado, mentalidad open
 - Bancos de preguntas para cada pool técnico y para el pool del Congreso.
 - Guía de contribución (`CONTRIBUTING.md`).
 - Código de conducta (`CODE_OF_CONDUCT.md`).
-- Plantillas estandarizadas para issues y pull requests.
+- Plantillas estandarizadas para incidencias y propuestas de cambio.
 - Documentación técnica de hardware (TVM, CSC) con especificaciones abiertas.
-- Carpeta de forks regionales y nacionales (`forks/`), con plantillas para variantes con otro énfasis (más minimalistas o más sociales).
+- Carpeta de variantes regionales y nacionales (`forks/`), con plantillas para versiones con otro énfasis (más minimalistas o más sociales).
 
 ### 11.3 Filosofía de Contribución
 
-Cualquier persona en el mundo puede proponer cambios vía pull request. Las contribuciones se evalúan por la comunidad activa y por los mecanismos de validación que cada componente exige.
+Cualquier persona en el mundo puede proponer cambios con una propuesta de cambio. Las contribuciones se evalúan por la comunidad activa y por los mecanismos de validación que cada componente exige.
 
-Los forks son bienvenidos. Si una región, país o comunidad quiere adaptar el modelo, o explorar otras variantes filosóficas con otro énfasis, puede crear su propia versión bajo la misma licencia CC BY-SA 4.0. La proliferación de variantes auditables entre sí enriquece el ecosistema.
+Las versiones propias son bienvenidas. Si una región, país o comunidad quiere adaptar el modelo, o explorar otras variantes filosóficas con otro énfasis, puede crear su copia adaptada bajo la misma licencia CC BY-SA 4.0. La proliferación de variantes auditables entre sí enriquece el ecosistema.
 
 ### 11.4 Versionado
 
-Versionado semántico. Cambios menores incrementan patch (v0.4.3). Cambios significativos incrementan menor (v0.5). La transición a v1.0 representa la primera implementación nacional efectiva del sistema.
+Versionado semántico. Cambios menores incrementan patch (v0.4.4). Cambios significativos incrementan menor (v0.5). La transición a v1.0 representa la primera implementación nacional efectiva del sistema.
 
 ### 11.5 Gobernanza de Mantenedores (Issue Abierto)
 
@@ -978,7 +978,7 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 - Comité rotativo de mantenedores sorteados internacionalmente.
 - Decisiones de merge con consenso multipartito.
 - Auditoría continua del código mergeado.
-- Posibilidad de fork legítimo y respaldado si los mantenedores se desvían.
+- Posibilidad de una versión propia legítima y respaldada si los mantenedores se desvían.
 
 ---
 
@@ -987,7 +987,7 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 - **CSC:** Credencial de Soberanía Criptográfica; tarjeta con chip seguro que guarda tu identidad cívica y biometría en el dispositivo.
 - **TVM:** Terminal de Votación Malla; máquina física donde se emite el voto vinculante.
 - **TMC:** Terminal de Módulo Cívico; terminal administrativa (trámites, examen, configuración); no emite voto.
-- **TSC:** Tribunal Supremo de Consenso; antivirus constitucional; miembros sorteados del Pool Judicial.
+- **TSC:** Tribunal Supremo de Consenso; filtro constitucional; miembros sorteados del Pool Judicial.
 - **Protocolo BIOS:** plan post-colapso si cae la electricidad más de 72 horas; hibernación del Estado con tómbola física.
 - **Triple Llave:** blindaje para cambiar la Constitución o romper el techo fiscal (Congreso + Tribunal + 75% popular).
 - **Opt-Out cívico:** renuncia al voto; dejas intactas obligaciones fiscales y el orden legal.
@@ -996,17 +996,21 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 - **Frase de coacción:** versión preconfigurada de tu frase mental; si te fuerzan a votar, el sistema finge éxito y anula el voto en silencio.
 - **Ágora:** portal abierto donde cualquier ciudadano activo registra propuestas de ley.
 - **Pool:** lista de personas disponibles para sorteo de un cargo o función (Congreso, judicial, seguridad, etc.).
-- **Goodhart / anti-Goodhart:** cuando una métrica se vuelve el objetivo, deja de medir bien; la auditoría anual busca esa trampa.
+- **Anti-trampa de métricas:** cuando una métrica se vuelve el objetivo, deja de medir bien; la auditoría anual busca esa trampa. (En teoría de métricas a veces se llama Goodhart.)
 - **Alpha / Beta / Gamma:** cascada de excedentes: reserva de desastres (Alpha), pago de deuda (Beta), fondo soberano de largo plazo (Gamma).
-- **Red Team:** equipo adversarial permanente que intenta romper el sistema para revelar huecos.
+- **Equipo que busca fallas a propósito:** grupo permanente que intenta romper el sistema para revelar huecos antes que lo hagan actores hostiles.
 - **Voucher:** crédito educativo que el Estado paga a la institución elegida; sigue al estudiante.
-- **Caducidad:** toda política o empresa pública vence si no se reautoriza (antes “sunset”).
+- **Caducidad automática:** toda política o empresa pública vence si no se reautoriza.
 - **Mega Anual:** votación anual grande del ciclo (asuntos estructurales).
 - **Cadena de bloques:** registro distribuido donde se asientan los votos firmados.
-- **Hash:** huella digital de un dato (por ejemplo, del voto); sirve para verificar integridad sin revelar el contenido.
-- **RISC-V:** arquitectura de chip de diseño abierto.
-- **Sandbox / aislamiento operativo:** las fuerzas armadas operan con misión y alcance acotados, sin movilización interna libre.
-- **Pull request:** propuesta de cambio en GitHub.
+- **Huella digital (del voto):** comprobación digital de un dato; sirve para verificar integridad sin revelar el contenido.
+- **Aislamiento operativo:** las fuerzas armadas operan con misión y alcance acotados, sin movilización interna libre.
+- **Propuesta de cambio:** en GitHub, el mecanismo para sugerir una edición al texto o al código.
+- **Versión propia / copia adaptada:** adaptación del modelo bajo la misma licencia; en software a veces se llama *fork*.
+- **Núcleo (del manifiesto / del sistema):** el tronco no negociable y las reglas base que una jurisdicción adopta.
+- **Red entre terminales:** cada TVM se conecta con las vecinas para enviar votos sin depender de un solo centro.
+- **Freno de emergencia con jurado:** corte de seguridad: 100 ciudadanos sorteados revisan en persona antes de aceptar una cancelación automática crítica.
+- **Contrato automático / reglas de pago automáticas:** pago que se ejecuta según reglas públicas fijadas de antemano, sin intermediario discrecional.
 - **IA:** inteligencia artificial.
 
 ---
@@ -1026,7 +1030,9 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 
 - **v0.4.3 (18 septiembre 2026):** Glosario al final; glosas en primeras menciones (PIB, Frase de coacción, Opt-Out, IA, hash, cadena de bloques, RISC-V, pull request, Mega Anual, caducidad). Se retiró ancap del relato del tronco: el tronco se afirma como libertario → minarquía demárquica digital; forks como variantes con otro énfasis (más minimalistas o más sociales). NIP de Coacción renombrado a Frase de coacción.
 
+- **v0.4.4 (18 septiembre 2026):** Lenguaje más ciudadano: menos jerga de ingeniería. Hash → huella digital; blockchain → cadena de bloques; RISC-V → chip de diseño abierto; pull request → propuesta de cambio; sandbox → aislamiento operativo; mesh → red entre terminales; circuit breaker → freno de emergencia; kernel → núcleo; fork (en el cuerpo) → versión propia / copia adaptada; Red Team → equipo que busca fallas a propósito; Goodhart solo en glosario; malware → programas maliciosos; datasets → datos de entrenamiento; smart contract → contrato automático / reglas de pago automáticas. Glosario reescrito en llano.
+
 ---
 
-*Demarquía Digital · manifiesto v0.4.3 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
+*Demarquía Digital · manifiesto v0.4.4 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
 
