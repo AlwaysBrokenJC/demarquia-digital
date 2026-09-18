@@ -31,4 +31,4 @@ Copia, mejora y forkea con crédito y la misma licencia.
 
 ## Estado
 
-**v0.4.3 · borrador abierto.** Glosario y primeras menciones; ancap retirado del relato del tronco. Contribuciones, críticas y forks son parte del diseño.
+**v0.4.3 · borrador abierto.** Incluye glosario y abreviaturas explicadas. Contribuciones, críticas y forks son parte del diseño.
