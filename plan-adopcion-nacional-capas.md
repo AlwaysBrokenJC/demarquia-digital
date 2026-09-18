@@ -1,181 +1,139 @@
 # Plan de adopción nacional en capas
-## Demarquía Digital — destino: país (no “piloto de pueblo”)
 
-**Estado:** borrador de trabajo · complemento al manifiesto v0.4 · 18 sep 2026  
-**Premisa:** el *destino* es un Estado a escala nacional. Las capas son el *camino*. Un municipio puede ser herramienta técnica en alguna capa; **no** es la marca ni el techo de ambición.
+**Demarquía Digital** · complemento al manifiesto v0.4.1 · 18 sep 2026
 
----
-
-## 0. Destino (qué estamos construyendo)
-
-Un país bajo **minarquía demárquica digital**:
-
-- Sin políticos de carrera; cargos por sorteo + voto directo sin delegación  
-- Constitución de derechos negativos + Triple Llave  
-- Techo fiscal: meta **15% del PIB** / duro **20%**  
-- Infra de voto física (TVM) + credencial (CSC)  
-- Economía del Cap. 5A (propiedad, peso fiscal, voucher/seguro, banca libre)
-
-Eso es el norte. Si el relato se queda en “app municipal”, perdemos el proyecto.
+El destino es un país bajo minarquía demárquica digital. Las capas son el camino: se ejecutan en secuencia (o en paralelo cuando tiene sentido), siempre con la República demárquica como norte.
 
 ---
 
-## 1. Principio de diseño del camino
+## Destino
+
+Un país con:
+
+- cargos por sorteo y voto directo, sin que nadie vote por ti;
+- Constitución de derechos negativos y Triple Llave;
+- techo fiscal: meta **15% del PIB**, duro **20%**;
+- infra física de voto (TVM) y credencial (CSC);
+- economía del Cap. 5A — propiedad privada, peso como unidad fiscal, voucher educativo, seguro de salud en competencia, banca libre.
+
+Eso es lo que construimos. Todo lo demás — software, normas voluntarias, jurisdicciones intermedias — son peldaños hacia ese orden nacional.
+
+---
+
+## Principio del camino
 
 **País en el discurso desde el día 1. Capas en la ejecución.**
 
-- Cada capa debe poder contarse como avance hacia la República demárquica, no como “otro experimento local”.  
-- Ninguna capa exige controlar ejército ni policía al inicio (coherente con Cap. 9).  
-- Cada capa tiene **métrica de salida**: si no reduce corrupción percibida / captura presupuestal / fatiga cívica, no se escala.  
-- El municipio o el estado federado son **módulos opcionales** dentro de una capa, no el producto.
+Cada capa se cuenta como avance hacia la República demárquica. Ninguna exige controlar ejército ni policía al inicio (coherente con el Cap. 9). Antes de subir de capa, conviene poder mostrar — aunque sea de forma tosca — que bajó la corrupción percibida, la captura del presupuesto o la fatiga cívica; si no, no se escala.
 
-Honestidad (Cap. 9.3): un reemplazo total y rápido de un Estado consolidado no tiene precedente pacífico. Este plan no promete magia; ordena el riesgo.
+Un estado o una región pueden servir de cabeza de playa: territorio real donde el kernel manda en lo que su competencia permita, al servicio del proyecto nacional. Lo local no se menosprecia; tampoco se confunde con el techo de ambición.
 
----
-
-## 2. Las cuatro capas
-
-### Capa 1 — Nación de opinión (kernel blando)
-**Objetivo:** que “Demarquía Digital” exista como *alternativa nacional* en la cabeza de la gente, no como rareza local.
-
-**Qué se construye**
-- Manifiesto + repo + canal (ya en marcha).  
-- **Ágora ciudadana nacional no vinculante:** proponer, argumentar, rankear ideas con las reglas del tronco (Argumentos Críticos, sin trending opaco).  
-- Tablero público de “cómo gasta el Estado hoy” vs techo 15/20 (presión epistémica, no poder).  
-- Red de lectura / círculos / contenido (Horizonte Liberal y forks).
-
-**Qué no se hace aún**
-- No se pretende TVM nacional.  
-- No se disputa el monopolio policial.
-
-**Métrica de salida**
-- Reconocimiento del marco (encuestas / menciones / forks serios).  
-- Calidad del debate (no solo virality).  
-- Aparición de actores que usen el lenguaje del tronco sin que los controles.
-
-**Tiempo típico:** 6–24 meses de trabajo cultural y de software ligero.
+Con honestidad (Cap. 9.3): un reemplazo total y rápido de un Estado consolidado no tiene precedente pacífico. Este plan no promete magia; ordena el riesgo.
 
 ---
 
-### Capa 2 — Norma voluntaria nacional (presupuesto y reglas sin soberanía plena)
-**Objetivo:** que piezas del kernel se vuelvan *costumbre o compromiso público* a escala país, aunque el Estado legacy siga existiendo.
+## Las cuatro capas
 
-**Qué se construye**
-- Compromisos voluntarios de partidos, gobernadores, legisladores o coaliciones con:  
-  - techo de gasto visible,  
-  - sunset en programas,  
-  - transparencia anti-Goodhart,  
-  - financiamiento político solo de personas físicas (donde se pueda firmar).  
-- **Presupuesto participativo nacional o multi-estatal** como capa suplementaria (recomendaciones fuertes, no necesariamente ley aún).  
-- Créditos tipo voucher/seguro como *propuesta de política nacional* empaquetada (listo para negociar en Escenario B).
+### Capa 1 — Nación de opinión
 
-**Qué no se hace aún**
-- No se disuelve el Congreso legacy.  
-- No se exige hardware TVM masivo.
+Que “Demarquía Digital” exista en la cabeza de la gente como alternativa nacional, no como rareza de un rincón.
 
-**Métrica de salida**
-- Al menos una coalición nacional o bloque serio adopta el paquete 15/20 + no-delegación + anti-captura empresarial como plataforma.  
-- Leyes o reglamentos parciales que copien piezas del tronco.
+Se construye el manifiesto, el repo, el canal; un Ágora ciudadana nacional no vinculante (proponer, argumentar, rankear con Argumentos Críticos y sin trending opaco); un tablero público de cómo gasta el Estado hoy frente al techo 15/20; y una red de lectura, círculos y contenido (Horizonte Liberal y forks).
 
-**Puente a Escenario B:** aquí nace el material del “paracaídas dorado” negociable.
+Todavía no hace falta TVM nacional ni disputar el monopolio policial.
+
+**Cómo sabemos que avanzamos:** reconocimiento del marco (encuestas, menciones, forks serios); calidad del debate, no solo virality; actores que usen el lenguaje del tronco sin que nadie los controle.
+
+Tiempo típico: entre medio año y dos años de trabajo cultural y de software ligero.
 
 ---
 
-### Capa 3 — Soberanía parcial (estados / regiones / cantones bajo el kernel)
-**Objetivo:** territorio real donde el kernel **manda** en lo local-regional, federado o asociado a un proyecto nacional explícito.
+### Capa 2 — Norma voluntaria nacional
 
-**Qué se construye**
-- Adopción del código base (Caps. 1–5A en lo aplicable) en una o varias jurisdicciones con competencia real (estado, provincia, región autónoma, zona económica especial cívica — según el país).  
-- Primeras TVM / CSC en esa jurisdicción (o malla híbrida honesta: papel + digital auditado).  
-- Congreso demárquico local/regional + Ágora vinculante en el ámbito de sus competencias.  
-- Gasto fijo de 6 partidas a esa escala; techo fiscal recalculado al PIB / presupuesto de esa jurisdicción.
+Piezas del kernel se vuelven costumbre o compromiso público a escala país, aunque el Estado legacy siga en pie.
 
-**Relato obligatorio:** esto no es “el proyecto se redujo a un estado”. Es **cabeza de playa de la República**: laboratorio de soberanía al servicio del reemplazo nacional.
+Partidos, gobernadores, legisladores o coaliciones pueden firmar compromisos visibles: techo de gasto, sunset en programas, transparencia anti-Goodhart, financiamiento político solo de personas físicas donde se pueda. Puede nacer un presupuesto participativo nacional o multi-estatal como capa suplementaria (recomendaciones fuertes, aún sin fuerza de ley). El paquete voucher/seguro queda empaquetado como política nacional lista para negociar en el Escenario B.
 
-**Métrica de salida**
-- Corrupción / captura presupuestal medible a la baja.  
-- Legitimidad local alta y contagio a otras jurisdicciones.  
-- Capacidad de federar reglas (mismo kernel, mismos forks documentados).
+Todavía no se disuelve el Congreso legacy ni se exige hardware TVM masivo.
 
-**Nota:** si el país es unitario sin estados fuertes, esta capa puede ser “ciudades + distritos + zonas” *bajo bandera nacional*, no marca municipalista.
+**Cómo sabemos que avanzamos:** al menos una coalición o bloque serio adopta el paquete 15/20 + no-delegación + anti-captura empresarial como plataforma; aparecen leyes o reglamentos parciales que copian piezas del tronco.
+
+Aquí nace el material negociable del “paracaídas dorado” del Escenario B.
+
+---
+
+### Capa 3 — Soberanía parcial
+
+Territorio real donde el kernel manda en lo local-regional, federado o asociado a un proyecto nacional explícito. Un estado, provincia, región autónoma o zona con competencia real adopta el código base (Caps. 1–5A en lo aplicable). Llegan las primeras TVM/CSC — o una malla híbrida honesta: papel más digital auditado —. Hay Congreso demárquico y Ágora vinculante en el ámbito de sus competencias. El gasto fijo de seis partidas y el techo fiscal se recalculan al PIB o presupuesto de esa jurisdicción.
+
+Esto no achica el proyecto: es cabeza de playa de la República. Laboratorio de soberanía al servicio del reemplazo nacional. En países unitarios sin estados fuertes, la misma idea puede tomar forma de ciudades, distritos o zonas bajo bandera nacional.
+
+**Cómo sabemos que avanzamos:** corrupción y captura presupuestal a la baja; legitimidad alta y contagio a otras jurisdicciones; capacidad de federar reglas (mismo kernel, forks documentados).
 
 ---
 
 ### Capa 4 — Reemplazo constitucional nacional
-**Objetivo:** el tronco deja de ser capa y pasa a ser **el** orden jurídico del país.
 
-**Qué se construye**
-- Proceso constituyente / Triple Llave (o equivalente histórico del país).  
-- Congreso Demárquico 500, TSC, ciclo electoral nacional, TVM a escala país.  
-- Migración del presupuesto al motor Cap. 5 + 5A.  
-- Presidente ceremonial; defensa sandbox; División de Desastres.
+El tronco deja de ser capa y pasa a ser el orden jurídico del país.
 
-**Vías (Cap. 9, sin romanticismo)**
-- **B (pacto):** la más deseable si hay élites que prefieren salir con garantías a pelear.  
-- **C (post-colapso):** si el Estado legacy ya falló; Demarquía Digital como reinicio, no como golpe improvisado.  
-- **A ampliada:** solo si la Capa 3 se contagió tanto que el centro queda vacío de legitimidad — sigue sin ser “asalto”.
+Proceso constituyente o Triple Llave (o el equivalente histórico del país). Congreso Demárquico de 500, Tribunal Supremo de Consenso, ciclo electoral nacional, TVM a escala país. El presupuesto migra al motor de los Caps. 5 y 5A. Presidente ceremonial, defensa en sandbox, División de Desastres.
 
-**Métrica de salida**
-- Constitución demárquica en vigor.  
-- Primera Mega Anual nacional.  
-- Techo 15/20 medido y publicado.
+Vías (Cap. 9, sin romanticismo):
+
+- **B (pacto):** la más deseable si hay élites que prefieren salir con garantías a pelear.
+- **C (post-colapso):** si el Estado legacy ya falló; Demarquía Digital como reinicio, no como golpe improvisado.
+- **A ampliada:** solo si la Capa 3 se contagió tanto que el centro queda vacío de legitimidad — sigue sin ser asalto.
+
+**Cómo sabemos que avanzamos:** Constitución demárquica en vigor; primera Mega Anual nacional; techo 15/20 medido y publicado.
 
 Eso es, en el versionado del manifiesto, el espíritu de **v1.0**.
 
 ---
 
-## 3. Cómo se habla (marca)
+## Tono
 
-| Evitar | Preferir |
-|--------|----------|
-| “Somos un piloto municipal” | “Estamos construyendo la República demárquica; hoy activamos la Capa N” |
-| “Cuando un pueblo funcione…” | “Cuando el país tenga masa crítica / una cabeza de playa soberana…” |
-| Esconder el costo histórico | Nombrarlo (Cap. 9.3) y mostrar por qué las capas reducen violencia innecesaria |
-
-El municipio, si aparece, se presenta como **infra o módulo**, igual que una TVM o un pool: pieza, no destino.
+Hablamos de república y de país. Cuando una jurisdicción intermedia entra en escena, se presenta como cabeza de playa hacia ese orden nacional — avance concreto, no repliegue. Nombramos el costo histórico (Cap. 9.3) y mostramos por qué las capas reducen violencia innecesaria. No escondemos la ambición.
 
 ---
 
-## 4. Qué construir en software (alineado a capas)
+## Software alineado a capas
 
-1. **Capa 1:** sitio + Ágora no vinculante + tablero fiscal 15/20 + repo.  
-2. **Capa 2:** plantillas de compromiso político, scorecards de legisladores, paquetes de ley modelo.  
-3. **Capa 3:** malla de voto auditable (empezar honesto: puede ser híbrido), padrón, Ágora vinculante regional.  
-4. **Capa 4:** TVM/CSC a especificación completa del Cap. 2.
+1. **Capa 1:** sitio, Ágora no vinculante, tablero fiscal 15/20, repo.
+2. **Capa 2:** plantillas de compromiso político, scorecards de legisladores, paquetes de ley modelo.
+3. **Capa 3:** malla de voto auditable (puede empezar híbrida), padrón, Ágora vinculante regional.
+4. **Capa 4:** TVM y CSC a la especificación completa del Cap. 2.
 
-No hace falta el Cap. 2 entero para merecer Capa 1–2.
-
----
-
-## 5. Relación con Escenarios A / B / C
-
-- **A** = sobre todo Capas 1→2→3 sin confrontación armada.  
-- **B** = atajo político desde Capa 2 hacia Capa 4 con negociación.  
-- **C** = salto a Capa 3–4 cuando el tablero legacy desaparece.
-
-El plan en capas **no reemplaza** esos escenarios: los ordena en el tiempo y en el relato nacional.
+No hace falta el Cap. 2 entero para merecer las Capas 1 y 2.
 
 ---
 
-## 6. Criterio de no autoengaño
+## Relación con los escenarios A, B y C
 
-Escala a la siguiente capa solo si:
+- **A** = sobre todo Capas 1 → 2 → 3 sin confrontación armada.
+- **B** = atajo político desde Capa 2 hacia Capa 4 con negociación.
+- **C** = salto a Capas 3–4 cuando el tablero legacy desaparece.
 
-1. La capa actual tiene usuarios / adoptantes reales (no solo likes).  
-2. Hay métricas públicas (aunque sean toscas).  
-3. El relato sigue siendo **país**.  
-4. No se ha traicionado el no-negociable del tronco (no-delegación, derechos negativos, techo, honestidad).
-
-Si Capa 3 se vuelve un feudo personal o un partido disfrazado, se documenta como **fallo** y se forkea — no se maquilla como victoria.
+El plan en capas no reemplaza esos escenarios: los ordena en el tiempo y en el relato nacional.
 
 ---
 
-## 7. Próximos entregables sugeridos
+## Criterio de no autoengaño
 
-1. One-pager “República demárquica: las 4 capas” (para el canal).  
-2. Ajuste fino del Cap. 9 del manifiesto para citar este plan y bajar el protagonismo del “municipio piloto” en el resumen ejecutivo.  
-3. Plantillas `forks/` + scorecard de Capa 1.
+Se escala a la siguiente capa solo si:
+
+1. la capa actual tiene adoptantes reales, no solo likes;
+2. hay cifras o señales públicas, aunque sean toscas;
+3. el relato sigue siendo país;
+4. no se ha traicionado lo no negociable del tronco (no-delegación, derechos negativos, techo fiscal, honestidad).
+
+Si la Capa 3 se vuelve un feudo personal o un partido disfrazado, se documenta como fallo y se forkea — no se maquilla como victoria.
 
 ---
 
-*Demarquía Digital · plan de adopción nacional · borrador*
+## Qué sigue
+
+Un one-pager de las cuatro capas para el canal. Plantillas en `forks/`. Un scorecard sencillo de Capa 1. El Cap. 9 del manifiesto ya apunta a este plan.
+
+---
+
+*Demarquía Digital · plan de adopción nacional en capas · v0.4.1*

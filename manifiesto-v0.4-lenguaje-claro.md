@@ -2,11 +2,11 @@
 
 **Arquitectura de un Estado Descentralizado, Criptográfico y de Representación Aleatoria**
 
-**Versión:** v0.4  
+**Versión:** v0.4.1  
 **Fecha:** 18 de septiembre de 2026  
 **Licencia:** Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Puedes copiar, compartir y mejorar este texto con libertad, siempre que des crédito al autor original y publiques tus cambios bajo la misma licencia, gratis y en público.  
-**Autoría:** crédito al autor original; iteración v0.4 en conversación de diseño.  
-**Repositorio (planeado):** GitHub.
+**Autoría:** crédito al autor original; iteración v0.4–v0.4.1 en conversación de diseño.  
+**Repositorio:** https://github.com/AlwaysBrokenJC/demarquia-digital
 
 ---
 
@@ -63,7 +63,7 @@ Un fork que rompa estos puntos debe cambiar de nombre.
 
 Es el derecho a **no participar en la vida pública**: renuncias al voto. **No** es secesión fiscal ni salir del orden legal. Es distinto del **opt-out del beneficio** de educación o salud (rebaja fiscal del 80% del crédito que no usas).
 
-### 5. Economía (ya cerrada en tronco — ver Cap. 5A)
+### 5. Economía (ver Cap. 5A)
 
 - Propiedad privada por defecto; sin topes a cuánto puedes acumular.
 - El peso como unidad fiscal (regla dura) + libertad de usar otras monedas entre privados.
@@ -71,13 +71,13 @@ Es el derecho a **no participar en la vida pública**: renuncias al voto. **No**
 - Banca libre; sin rescates a amigos del poder; depósitos con tope; el fondo soberano no hace favores.
 - Gasto fijo en seis partidas: justicia, seguridad, defensa limitada, infraestructura del voto, Desastres, y créditos mínimos de edu/salud.
 
-### 6. Frase clave para el 1.8
+### 6. Una frase sobre el Opt-Out (1.8)
 
 > El Opt-Out cívico no es secesión fiscal ni salida del orden legal.
 
 ### 7. Gobernanza del repo
 
-Habrá una carpeta `forks/` con plantillas `FORK-ANCAP.md` y `FORK-SOCIAL.md` que listen qué cláusulas del tronco invalidan.
+Con el tiempo el repositorio tendrá una carpeta `forks/` y plantillas breves (por ejemplo ancap o más social) que digan con claridad qué cláusulas del tronco deja fuera cada variante.
 
 ---
 
@@ -85,7 +85,7 @@ Habrá una carpeta `forks/` con plantillas `FORK-ANCAP.md` y `FORK-SOCIAL.md` qu
 
 Este documento propone una **"Política sin Políticos"**: devolverle al pueblo el poder de decidir, sin intermediarios de carrera.
 
-Partimos de una premisa simple: la democracia representativa actual es fácil de corromper, cansa a la gente y deja que el presupuesto se secuestra. Por eso diseñamos un Estado desintermediado.
+La democracia representativa actual es fácil de corromper, cansa a la gente y deja que el presupuesto se secuestra. Por eso este diseño apunta a un Estado sin intermediarios de carrera.
 
 La votación pasa por máquinas físicas difíciles de hackear (tres chips de orígenes distintos) y una credencial con biometría que vive en tu tarjeta, no en un servidor del gobierno. No hace falta un político que vote por ti: hay **democracia directa** (tú decides) y **demarquía** (cargos por sorteo).
 
@@ -95,7 +95,7 @@ El dinero público se controla con recorte ponderado, cascada de excedentes y la
 
 El tronco se llama **minarquía demárquica digital**: el Estado apunta a gastar ≤15% del PIB, con techo duro al 20% (solo rompible con Triple Llave). El gasto fijo se limita a seis partidas. Propiedad, moneda, banca y créditos de edu/salud van en el Capítulo 5A.
 
-**Sobre si es viable:** es más realista en municipios piloto, regiones autónomas, territorios post-colapso o capas paralelas voluntarias. Meterlo de golpe en un Estado consolidado ha tenido, históricamente, un precio de violencia organizada — como todo cambio sistémico real. Este manifiesto no esconde ese costo.
+**Sobre si es viable:** el destino es un país. El camino natural es la adopción nacional en capas — primero opinión y normas voluntarias a escala país; luego soberanía parcial donde una jurisdicción abra espacio; al final el orden constitucional demárquico — junto con los escenarios A, B y C del Capítulo 9 (paralelo gradual, pacto con élites, post-colapso). Meterlo de golpe en un Estado consolidado ha tenido, históricamente, un precio de violencia organizada — como todo cambio sistémico real. Este manifiesto no esconde ese costo. El detalle del camino está en el plan de adopción nacional en capas.
 
 ---
 
@@ -542,11 +542,9 @@ El dinero que sobra de los recortes se reparte por contrato inteligente inaltera
 
 ---
 
----
-
 ## Capítulo 5A: Economía y Régimen de Propiedad
 
-*Cierra el issue 10.12 (economía) y el 10.11 (edu/salud) en el tronco.*
+*Este capítulo cierra, en el tronco, la economía y el régimen de edu/salud (antes abiertos como 10.12 y 10.11).*
 
 ### 5A.0 Principio rector
 
@@ -677,7 +675,7 @@ Este capítulo **no sustituye** el motor financiero; lo justifica:
 - Nacionalización amplia / planificación / topes patrimoniales → **fork no-minárquico** (debe renunciar a este capítulo).
 - Renta básica universal sin criterio 1.2 → requiere Triple Llave si se constitucionaliza; no es default.
 
-### 5A.10 Cierre de issues 10.11 y 10.12
+### 5A.10 Qué queda cerrado en el tronco (edu/salud y economía)
 
 > **Cerrado en tronco (minarquía):** propiedad privada por defecto, sin topes de acumulación, impuestos acotados al núcleo + gasto condicionado, empresas públicas bajo sunset, no rescates clientelares, regulación universal, salud/educación vía voucher + seguro competitivo con opt-out fiscal, banca libre sin rescates con depósitos acotados.  
 > **Clavado:** meta 15% PIB / techo duro 20% PIB (Triple Llave).  
@@ -872,7 +870,7 @@ Tres mecanismos contra monopolios armados locales (carteles, mafias):
 
 La implementación pacífica desde un Estado consolidado y polarizado es altamente improbable. Los escenarios realistas son tres:
 
-**Escenario A — Estado paralelo gradual.** Sociedades con instituciones funcionales y baja violencia: empezar por presupuesto participativo local, arbitraje ciudadano, auditoría pública, votaciones municipales no vinculantes. Operar como capa suplementaria voluntaria. Escalar solo cuando reduce corrupción medible y gana legitimidad. Sin confrontación armada. Sin intentar controlar ejército ni policía en fases tempranas.
+**Escenario A — Estado paralelo gradual.** En sociedades con instituciones funcionales y baja violencia se avanza por capas hacia una república demárquica a escala nacional: primero opinión pública y normas voluntarias; después soberanía parcial donde un estado, región o zona adopte el kernel como cabeza de playa; más adelante el salto constitucional. En el camino caben presupuesto participativo, arbitraje ciudadano, auditoría pública y votaciones no vinculantes — a veces a escala local como módulo técnico, nunca como techo de ambición. Se escala solo cuando baja la corrupción medible y crece la legitimidad. Sin confrontación armada. Sin intentar controlar ejército ni policía en fases tempranas. El plan de adopción nacional en capas desarrolla este camino.
 
 **Escenario B — Pacto con élites legacy.** Élites tradicionales aceptan transición negociada a cambio de “paracaídas dorado”: amnistía local, inmunidad de tránsito, protección de activos legales, espacio ceremonial sin poder presupuestal por un periodo acordado. La transición es real; los actores existentes no se destruyen. Modelos históricos: España post-franquismo, Sudáfrica post-apartheid.
 
@@ -930,13 +928,13 @@ Para leyes universales con criterio objetivo: protocolos concretos de verificaci
 
 Tema grande no desarrollado: filosofía del castigo, sistema penitenciario, justicia restaurativa, garantías procesales detalladas, libertad condicional, reinserción.
 
-### 10.11 Educación, Salud y Sistemas Públicos — **CERRADO en tronco (v0.4)**
+### 10.11 Educación, Salud y Sistemas Públicos — cerrado en tronco (v0.4)
 
-> **Cerrado.** Ver Cap. 5A.7: el Estado no opera escuelas ni hospitales; financia voucher educativo (pago a institución + matrícula + evidencia de servicio + portabilidad) y crédito a aseguradora en competencia (pago a aseguradora + portabilidad + paquete mínimo catastrófico/transmisibles); opt-out del beneficio con rebaja fiscal 80%/20% al pool. Detalles de currículo fino y protocolos médicos clínicos quedan al mercado y a la Mega Anual; el régimen institucional ya está en el tronco.
+> Ver Cap. 5A.7: el Estado no opera escuelas ni hospitales; financia voucher educativo (pago a institución + matrícula + evidencia de servicio + portabilidad) y crédito a aseguradora en competencia (pago a aseguradora + portabilidad + paquete mínimo catastrófico/transmisibles); opt-out del beneficio con rebaja fiscal 80%/20% al pool. Detalles de currículo fino y protocolos médicos clínicos quedan al mercado y a la Mega Anual; el régimen institucional ya está en el tronco.
 
-### 10.12 Economía y Régimen de Propiedad — **CERRADO en tronco (v0.4)**
+### 10.12 Economía y Régimen de Propiedad — cerrado en tronco (v0.4)
 
-> **Cerrado.** Ver Cap. 5A completo: propiedad privada por defecto, sin topes de acumulación, meta fiscal 15% / techo 20% (Triple Llave), moneda A+ (peso fiscal + libertad privada), banca libre sin rescates clientelares, depósitos acotados, Gamma limpio, seis partidas de gasto fijo, sin salario mínimo económico en tronco. Parámetro aún abierto: tope numérico del seguro de depósitos (Mega Anual).
+> Ver Cap. 5A completo: propiedad privada por defecto, sin topes de acumulación, meta fiscal 15% / techo 20% (Triple Llave), moneda A+ (peso fiscal + libertad privada), banca libre sin rescates clientelares, depósitos acotados, Gamma limpio, seis partidas de gasto fijo, sin salario mínimo económico en tronco. Parámetro aún abierto: tope numérico del seguro de depósitos (Mega Anual).
 
 ### 10.13 Tribunal Supremo como Cuello de Botella Soberano
 
@@ -996,7 +994,9 @@ La cuestión de quién tiene permisos finales de merge queda como issue abierto 
 
 - **v0.4 (18 septiembre 2026):** Reescritura completa en **lenguaje sencillo** (apto para video / lectura fácil). Prefacio filosófico explícito: tronco = **minarquía demárquica digital**; ancap = fork. Frase clavada en 1.8: *«El Opt-Out cívico no es secesión fiscal ni salida del orden legal.»* Nuevo **Cap. 5A Economía y Propiedad**: cierra issues **10.11** (edu/salud) y **10.12** (economía). Clavados: meta fiscal 15% PIB / techo duro 20% (Triple Llave); moneda A+ (peso fiscal + libertad privada); sin salario mínimo económico en tronco (sí compensación cívica Cap. 4); voucher educativo (Estado paga a institución; matrícula + evidencia; portabilidad); salud vía crédito a aseguradora en competencia (Estado paga a aseguradora; portabilidad); opt-out del beneficio con rebaja 80%/20% al pool; banca libre sin rescates salvo desastre+72h; depósitos acotados; Gamma limpio; gasto fijo operativo en 6 partidas. Gasto fijo del Cap. 5 alineado (ya no salarios de médicos/maestros ni “luz de hospitales” como fijo: el tronco no opera escuelas ni hospitales). Plantillas de fork ancap/social previstas en Cap. 11.
 
+- **v0.4.1 (18 septiembre 2026):** Humanización del relato y destino país desde el día 1. Repositorio público enlazado. Resumen ejecutivo y Capítulo 9 alineados con adopción nacional en capas (escenarios A–C); la viabilidad deja de centrarse en municipios piloto. Prefacio de forks en tono breve.
+
 ---
 
-*Demarquía Digital · manifiesto v0.4 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
+*Demarquía Digital · manifiesto v0.4.1 · lenguaje claro · CC BY-SA 4.0 · 18 sep 2026*
 
